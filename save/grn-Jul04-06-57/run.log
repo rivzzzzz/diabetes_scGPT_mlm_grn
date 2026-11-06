@@ -1,0 +1,89 @@
+06:57:51-scGPT-INFO-<module>: After QC: 21498  / 38395 cells
+06:57:51-scGPT-INFO-<module>: condition
+No_Diabetes    10337
+T2D             6381
+T1D             4780
+06:57:51-scGPT-INFO-<module>: condition
+No_Diabetes    22
+T1D            18
+T2D            21
+06:57:53-scGPT-INFO-<module>: Prevalence filter (min_cells=1074, 5.0% of cells): 10821 / 24285 genes retained, 13464 dropped
+06:57:53-scGPT-INFO-__call__: Filtering genes by counts ...
+06:57:53-scGPT-INFO-__call__: Normalizing total counts ...
+06:57:54-scGPT-INFO-__call__: Binning data ...
+06:58:20-scGPT-INFO-<module>: Attention extraction: 100 / 2688 batches done (3.7%)
+06:58:33-scGPT-INFO-<module>: Attention extraction: 200 / 2688 batches done (7.4%)
+06:58:46-scGPT-INFO-<module>: Attention extraction: 300 / 2688 batches done (11.2%)
+06:58:59-scGPT-INFO-<module>: Attention extraction: 400 / 2688 batches done (14.9%)
+06:59:12-scGPT-INFO-<module>: Attention extraction: 500 / 2688 batches done (18.6%)
+06:59:25-scGPT-INFO-<module>: Attention extraction: 600 / 2688 batches done (22.3%)
+06:59:37-scGPT-INFO-<module>: Attention extraction: 700 / 2688 batches done (26.0%)
+06:59:50-scGPT-INFO-<module>: Attention extraction: 800 / 2688 batches done (29.8%)
+07:00:03-scGPT-INFO-<module>: Attention extraction: 900 / 2688 batches done (33.5%)
+07:00:16-scGPT-INFO-<module>: Attention extraction: 1000 / 2688 batches done (37.2%)
+07:00:29-scGPT-INFO-<module>: Attention extraction: 1100 / 2688 batches done (40.9%)
+07:00:42-scGPT-INFO-<module>: Attention extraction: 1200 / 2688 batches done (44.6%)
+07:00:55-scGPT-INFO-<module>: Attention extraction: 1300 / 2688 batches done (48.4%)
+07:01:08-scGPT-INFO-<module>: Attention extraction: 1400 / 2688 batches done (52.1%)
+07:01:20-scGPT-INFO-<module>: Attention extraction: 1500 / 2688 batches done (55.8%)
+07:01:33-scGPT-INFO-<module>: Attention extraction: 1600 / 2688 batches done (59.5%)
+07:01:46-scGPT-INFO-<module>: Attention extraction: 1700 / 2688 batches done (63.2%)
+07:01:59-scGPT-INFO-<module>: Attention extraction: 1800 / 2688 batches done (67.0%)
+07:02:12-scGPT-INFO-<module>: Attention extraction: 1900 / 2688 batches done (70.7%)
+07:02:25-scGPT-INFO-<module>: Attention extraction: 2000 / 2688 batches done (74.4%)
+07:02:38-scGPT-INFO-<module>: Attention extraction: 2100 / 2688 batches done (78.1%)
+07:02:50-scGPT-INFO-<module>: Attention extraction: 2200 / 2688 batches done (81.8%)
+07:03:03-scGPT-INFO-<module>: Attention extraction: 2300 / 2688 batches done (85.6%)
+07:03:16-scGPT-INFO-<module>: Attention extraction: 2400 / 2688 batches done (89.3%)
+07:03:29-scGPT-INFO-<module>: Attention extraction: 2500 / 2688 batches done (93.0%)
+07:03:42-scGPT-INFO-<module>: Attention extraction: 2600 / 2688 batches done (96.7%)
+07:03:54-scGPT-INFO-<module>: {'No_Diabetes': array([[0.75988615, 0.76233536, 0.33964393, ..., 0.24593104, 0.2066011 ,
+        0.21466021],
+       [0.45453617, 0.368429  , 0.57168543, ..., 0.5955223 , 0.604183  ,
+        0.59890074],
+       [0.59728944, 0.6561093 , 0.4845186 , ..., 0.43679395, 0.4144319 ,
+        0.42932186],
+       ...,
+       [0.6319472 , 0.76229006, 0.3625658 , ..., 0.24969228, 0.18202281,
+        0.22915518],
+       [0.6421883 , 0.77360594, 0.32905158, ..., 0.23988152, 0.18717608,
+        0.21599801],
+       [0.6269745 , 0.7583048 , 0.35772276, ..., 0.25617683, 0.1893607 ,
+        0.24540325]], dtype=float32), 'T2D': array([[0.7554875 , 0.74297833, 0.35480747, ..., 0.2686714 , 0.22936   ,
+        0.24531746],
+       [0.43409243, 0.38359046, 0.56516427, ..., 0.5820596 , 0.5862192 ,
+        0.5795383 ],
+       [0.6135366 , 0.64183515, 0.47589698, ..., 0.43749863, 0.41272545,
+        0.4324298 ],
+       ...,
+       [0.6283981 , 0.77098566, 0.36161706, ..., 0.2639751 , 0.20786233,
+        0.24999331],
+       [0.63301706, 0.7745965 , 0.33771896, ..., 0.2635131 , 0.21681063,
+        0.24764998],
+       [0.62050015, 0.762385  , 0.36081517, ..., 0.28036225, 0.22437987,
+        0.27290687]], dtype=float32), 'T1D': array([[0.75830525, 0.7501036 , 0.35321927, ..., 0.279146  , 0.23557344,
+        0.25480473],
+       [0.43942842, 0.3701985 , 0.563929  , ..., 0.5845158 , 0.5900761 ,
+        0.5806894 ],
+       [0.621241  , 0.6472325 , 0.4759333 , ..., 0.42616582, 0.39435852,
+        0.420467  ],
+       ...,
+       [0.626041  , 0.7706488 , 0.37304118, ..., 0.27299282, 0.21580772,
+        0.26192865],
+       [0.63802516, 0.7757713 , 0.34981447, ..., 0.26749626, 0.21920569,
+        0.2524445 ],
+       [0.6158067 , 0.76044124, 0.37239364, ..., 0.29177064, 0.23471753,
+        0.288547  ]], dtype=float32)}
+07:03:54-scGPT-INFO-<module>: Top T1D-driving genes: ['BACH2', 'AQP1', 'MX1', 'HLA-DRB1', 'SOX4', 'CD93', 'MAF', 'RNASE1', 'FGL2', 'ITGA4', 'FPR3', 'ZEB1-AS1', 'HBEGF', 'ITGB2', 'MX2', 'MNDA', 'CLDN5', 'SRGN', 'IFI27', 'P2RY8']
+07:03:54-scGPT-INFO-<module>: Scores T1D: [22.512075, 20.93341, 20.699038, 19.627146, 19.524597, 19.218851, 19.107143, 19.045605, 18.849398, 18.463594, 18.27415, 18.142513, 18.109911, 18.036564, 17.69157, 17.641014, 17.616861, 17.55637, 17.538506, 17.521938]
+07:03:54-scGPT-INFO-<module>: Top T2D-driving genes: ['SOX4', 'BACH2', 'MX1', 'MAF', 'HLA-DRB1', 'CD93', 'GYS2', 'HBEGF', 'P2RY14', 'ADGRE5', 'FGL2', 'ZEB1-AS1', 'AQP1', 'FPR3', 'CTSL', 'AKR1C2', 'MX2', 'IFI27', 'RNASE1', 'LEP']
+07:03:54-scGPT-INFO-<module>: Scores T2D: [16.14505, 16.041843, 15.930324, 15.567937, 15.428726, 15.38504, 15.073791, 15.0363655, 14.762946, 14.700604, 14.430834, 14.249926, 14.22815, 13.657842, 13.642326, 13.63789, 13.552906, 13.432679, 13.407725, 13.230389]
+07:03:54-scGPT-INFO-<module>: Done. Files saved:
+07:03:54-scGPT-INFO-<module>:   attention_matrices.npz
+07:03:54-scGPT-INFO-<module>:   difference_matrices.npz
+07:03:54-scGPT-INFO-<module>:   gene_panel.json
+07:03:54-scGPT-INFO-<module>:   gene_vocab_idx.npy
+07:03:54-scGPT-INFO-<module>:   ranked_genes_top20.csv
+07:03:54-scGPT-INFO-<module>:   ranked_genes_top20.json
+07:03:54-scGPT-INFO-<module>:   run.log
+07:03:54-scGPT-INFO-<module>:   sample_counts.json

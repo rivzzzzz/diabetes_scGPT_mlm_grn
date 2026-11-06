@@ -1,0 +1,20 @@
+08:12:32-scGPT-INFO-<module>: After QC: 21498  / 38395 cells
+08:12:32-scGPT-INFO-<module>: condition
+No_Diabetes    10337
+T2D             6381
+T1D             4780
+08:12:32-scGPT-INFO-<module>: condition
+No_Diabetes    22
+T1D            18
+T2D            21
+08:12:32-scGPT-INFO-<module>: After PTPRC purity gate: 13340 cells
+08:12:32-scGPT-INFO-<module>: condition
+No_Diabetes    6755
+T2D            3789
+T1D            2796
+08:12:33-scGPT-INFO-<module>: Prevalence filter (min_cells=667, 5.0% of cells): 9871 / 24285 genes retained, 14414 dropped
+08:12:33-scGPT-INFO-__call__: Filtering genes by counts ...
+08:12:34-scGPT-INFO-__call__: Normalizing total counts ...
+08:12:34-scGPT-INFO-__call__: Binning data ...
+08:12:41-scGPT-INFO-<module>: Using 1604 / 3000 genes (dropped 1396)
+08:12:41-scGPT-INFO-<module>: Extended gene panel: 1609 genes (1604 original + 5 markers added)

@@ -1,0 +1,257 @@
+00:52:02-scGPT-INFO-<module>: Running with batch size of: 64
+00:52:05-scGPT-INFO-<module>: match 24285/36601 genes in vocabulary of size 60697.
+00:52:05-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will be overriden by the config scGPT_human/args.json.
+00:52:06-scGPT-INFO-__call__: Filtering genes by counts ...
+00:52:07-scGPT-INFO-__call__: Filtering cells by counts ...
+00:52:07-scGPT-INFO-__call__: Normalizing total counts ...
+00:52:08-scGPT-INFO-__call__: Log1p transforming ...
+00:52:08-scGPT-INFO-__call__: Subsetting highly variable genes ...
+00:52:08-scGPT-WARNING-__call__: No batch_key is provided, will use all cells for HVG selection.
+00:52:15-scGPT-INFO-__call__: Binning data ...
+00:53:49-scGPT-INFO-<module>: train set number of samples: 31052, 
+	 feature length: 3001
+00:53:49-scGPT-INFO-<module>: valid set number of samples: 3451, 
+	 feature length: 3001
+00:53:49-scGPT-INFO-<module>: Model loaded from scGPT_human
+00:53:49-scGPT-INFO-<module>: ['cls_decoder._decoder.0.weight', 'cls_decoder._decoder.0.bias', 'cls_decoder._decoder.2.weight', 'cls_decoder._decoder.2.bias', 'cls_decoder._decoder.3.weight', 'cls_decoder._decoder.3.bias', 'cls_decoder._decoder.5.weight', 'cls_decoder._decoder.5.bias', 'cls_decoder.out_layer.weight', 'cls_decoder.out_layer.bias']
+00:55:34-scGPT-INFO-train: | epoch   1 | 100/486 batches | lr 0.0000 | ms/batch 1015.29 | loss 2013.00 | mse 870.85 | mre 28037955.36 |gepc 1142.15 |
+00:57:14-scGPT-INFO-train: | epoch   1 | 200/486 batches | lr 0.0000 | ms/batch 1003.84 | loss 1960.47 | mse 851.10 | mre 27560433.96 |gepc 1109.37 |
+00:58:55-scGPT-INFO-train: | epoch   1 | 300/486 batches | lr 0.0000 | ms/batch 1003.34 | loss 1932.07 | mse 841.33 | mre 27415738.96 |gepc 1090.74 |
+01:00:35-scGPT-INFO-train: | epoch   1 | 400/486 batches | lr 0.0000 | ms/batch 1002.28 | loss 1904.98 | mse 831.65 | mre 27281405.62 |gepc 1073.33 |
+01:02:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:02:14-scGPT-INFO-<module>: | end of epoch   1 | time: 504.02s | valid loss/mse 804.5882 | mre 26811482.8102
+01:02:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:02:14-scGPT-INFO-<module>: Best model with score 804.5882
+01:03:58-scGPT-INFO-train: | epoch   2 | 100/486 batches | lr 0.0000 | ms/batch 1014.30 | loss 1132.83 | mse 512.59 | mre 20366329.53 |gepc 620.24 |
+01:05:39-scGPT-INFO-train: | epoch   2 | 200/486 batches | lr 0.0000 | ms/batch 1003.07 | loss 140.17 | mse 64.04 | mre 2727895.26 |gepc 76.13 |
+01:07:19-scGPT-INFO-train: | epoch   2 | 300/486 batches | lr 0.0000 | ms/batch 1002.10 | loss 101.38 | mse 48.62 | mre 1996038.21 |gepc 52.76 |
+01:08:59-scGPT-INFO-train: | epoch   2 | 400/486 batches | lr 0.0000 | ms/batch 1001.03 | loss 92.35 | mse 45.15 | mre 1756748.16 |gepc 47.19 |
+01:10:38-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:10:38-scGPT-INFO-<module>: | end of epoch   2 | time: 503.87s | valid loss/mse 42.7555 | mre 1617847.4395
+01:10:38-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:10:38-scGPT-INFO-<module>: Best model with score 42.7555
+01:12:22-scGPT-INFO-train: | epoch   3 | 100/486 batches | lr 0.0000 | ms/batch 1012.32 | loss 85.83 | mse 42.07 | mre 1570350.71 |gepc 43.76 |
+01:14:02-scGPT-INFO-train: | epoch   3 | 200/486 batches | lr 0.0000 | ms/batch 1001.33 | loss 83.74 | mse 40.99 | mre 1487170.44 |gepc 42.75 |
+01:15:42-scGPT-INFO-train: | epoch   3 | 300/486 batches | lr 0.0000 | ms/batch 1001.14 | loss 82.22 | mse 40.20 | mre 1435940.45 |gepc 42.02 |
+01:17:23-scGPT-INFO-train: | epoch   3 | 400/486 batches | lr 0.0000 | ms/batch 1000.82 | loss 81.75 | mse 39.88 | mre 1395133.71 |gepc 41.87 |
+01:19:01-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:19:01-scGPT-INFO-<module>: | end of epoch   3 | time: 503.51s | valid loss/mse 38.1912 | mre 1240544.9641
+01:19:01-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:19:01-scGPT-INFO-<module>: Best model with score 38.1912
+01:20:46-scGPT-INFO-train: | epoch   4 | 100/486 batches | lr 0.0000 | ms/batch 1013.53 | loss 79.98 | mse 38.88 | mre 1309994.78 |gepc 41.10 |
+01:22:26-scGPT-INFO-train: | epoch   4 | 200/486 batches | lr 0.0000 | ms/batch 1002.59 | loss 78.49 | mse 38.04 | mre 1264438.02 |gepc 40.45 |
+01:24:06-scGPT-INFO-train: | epoch   4 | 300/486 batches | lr 0.0000 | ms/batch 1002.55 | loss 78.38 | mse 37.93 | mre 1249580.80 |gepc 40.45 |
+01:25:46-scGPT-INFO-train: | epoch   4 | 400/486 batches | lr 0.0000 | ms/batch 1002.47 | loss 77.23 | mse 37.33 | mre 1234123.98 |gepc 39.90 |
+01:27:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:27:26-scGPT-INFO-<module>: | end of epoch   4 | time: 504.20s | valid loss/mse 36.4452 | mre 1095248.1672
+01:27:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:27:26-scGPT-INFO-<module>: Best model with score 36.4452
+01:29:10-scGPT-INFO-train: | epoch   5 | 100/486 batches | lr 0.0000 | ms/batch 1012.49 | loss 77.51 | mse 37.39 | mre 1207766.04 |gepc 40.12 |
+01:30:50-scGPT-INFO-train: | epoch   5 | 200/486 batches | lr 0.0000 | ms/batch 1002.44 | loss 76.05 | mse 36.66 | mre 1180354.63 |gepc 39.39 |
+01:32:30-scGPT-INFO-train: | epoch   5 | 300/486 batches | lr 0.0000 | ms/batch 1003.19 | loss 76.07 | mse 36.62 | mre 1170003.48 |gepc 39.44 |
+01:34:11-scGPT-INFO-train: | epoch   5 | 400/486 batches | lr 0.0000 | ms/batch 1003.76 | loss 75.40 | mse 36.26 | mre 1157088.87 |gepc 39.14 |
+01:35:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:35:50-scGPT-INFO-<module>: | end of epoch   5 | time: 504.35s | valid loss/mse 35.4876 | mre 1019238.8109
+01:35:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:35:50-scGPT-INFO-<module>: Best model with score 35.4876
+01:35:50-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+01:35:53-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+01:41:04-scGPT-INFO-<module>: {'best_model_epoch': 5, 'Condition_Silhouette': -0.034403723, 'L2_No_Diabetes_vs_T1D': 0.09056352, 'L2_No_Diabetes_vs_T2D': 0.15391092, 'condition_plot': <Figure size 320x320 with 1 Axes>}
+01:42:48-scGPT-INFO-train: | epoch   6 | 100/486 batches | lr 0.0000 | ms/batch 1013.27 | loss 76.33 | mse 36.66 | mre 1156249.97 |gepc 39.67 |
+01:44:29-scGPT-INFO-train: | epoch   6 | 200/486 batches | lr 0.0000 | ms/batch 1005.48 | loss 75.10 | mse 36.07 | mre 1133668.25 |gepc 39.03 |
+01:46:09-scGPT-INFO-train: | epoch   6 | 300/486 batches | lr 0.0000 | ms/batch 1004.67 | loss 74.12 | mse 35.56 | mre 1119826.11 |gepc 38.56 |
+01:47:50-scGPT-INFO-train: | epoch   6 | 400/486 batches | lr 0.0000 | ms/batch 1004.55 | loss 73.39 | mse 35.22 | mre 1105598.97 |gepc 38.17 |
+01:49:29-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:49:29-scGPT-INFO-<module>: | end of epoch   6 | time: 504.93s | valid loss/mse 34.8762 | mre 943573.6498
+01:49:29-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:49:29-scGPT-INFO-<module>: Best model with score 34.8762
+01:51:14-scGPT-INFO-train: | epoch   7 | 100/486 batches | lr 0.0000 | ms/batch 1014.73 | loss 74.49 | mse 35.75 | mre 1111861.00 |gepc 38.74 |
+01:52:54-scGPT-INFO-train: | epoch   7 | 200/486 batches | lr 0.0000 | ms/batch 1004.15 | loss 73.99 | mse 35.50 | mre 1100337.21 |gepc 38.49 |
+01:54:34-scGPT-INFO-train: | epoch   7 | 300/486 batches | lr 0.0000 | ms/batch 1004.12 | loss 73.51 | mse 35.29 | mre 1091802.78 |gepc 38.22 |
+01:56:15-scGPT-INFO-train: | epoch   7 | 400/486 batches | lr 0.0000 | ms/batch 1004.19 | loss 72.83 | mse 34.94 | mre 1080114.87 |gepc 37.89 |
+01:57:54-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:57:54-scGPT-INFO-<module>: | end of epoch   7 | time: 505.11s | valid loss/mse 34.7909 | mre 994334.3277
+01:57:54-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+01:57:55-scGPT-INFO-<module>: Best model with score 34.7909
+01:59:39-scGPT-INFO-train: | epoch   8 | 100/486 batches | lr 0.0000 | ms/batch 1014.44 | loss 73.42 | mse 35.25 | mre 1082893.16 |gepc 38.17 |
+02:01:20-scGPT-INFO-train: | epoch   8 | 200/486 batches | lr 0.0000 | ms/batch 1004.29 | loss 72.60 | mse 34.84 | mre 1069023.94 |gepc 37.76 |
+02:03:00-scGPT-INFO-train: | epoch   8 | 300/486 batches | lr 0.0000 | ms/batch 1003.96 | loss 73.58 | mse 35.35 | mre 1082074.32 |gepc 38.23 |
+02:04:40-scGPT-INFO-train: | epoch   8 | 400/486 batches | lr 0.0000 | ms/batch 1003.93 | loss 72.88 | mse 35.01 | mre 1071615.76 |gepc 37.87 |
+02:06:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:06:20-scGPT-INFO-<module>: | end of epoch   8 | time: 504.95s | valid loss/mse 34.6748 | mre 970669.0816
+02:06:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:06:20-scGPT-INFO-<module>: Best model with score 34.6748
+02:08:04-scGPT-INFO-train: | epoch   9 | 100/486 batches | lr 0.0000 | ms/batch 1013.77 | loss 73.09 | mse 35.14 | mre 1065862.68 |gepc 37.95 |
+02:09:44-scGPT-INFO-train: | epoch   9 | 200/486 batches | lr 0.0000 | ms/batch 1003.74 | loss 72.02 | mse 34.63 | mre 1050396.62 |gepc 37.39 |
+02:11:25-scGPT-INFO-train: | epoch   9 | 300/486 batches | lr 0.0000 | ms/batch 1003.92 | loss 73.05 | mse 35.11 | mre 1060677.03 |gepc 37.94 |
+02:13:05-scGPT-INFO-train: | epoch   9 | 400/486 batches | lr 0.0000 | ms/batch 1003.71 | loss 72.60 | mse 34.92 | mre 1053094.45 |gepc 37.68 |
+02:14:44-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:14:44-scGPT-INFO-<module>: | end of epoch   9 | time: 504.82s | valid loss/mse 34.6111 | mre 966698.2014
+02:14:44-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:14:44-scGPT-INFO-<module>: Best model with score 34.6111
+02:16:29-scGPT-INFO-train: | epoch  10 | 100/486 batches | lr 0.0000 | ms/batch 1013.72 | loss 72.38 | mse 34.84 | mre 1049120.85 |gepc 37.54 |
+02:18:09-scGPT-INFO-train: | epoch  10 | 200/486 batches | lr 0.0000 | ms/batch 1003.79 | loss 72.42 | mse 34.86 | mre 1049242.64 |gepc 37.57 |
+02:19:50-scGPT-INFO-train: | epoch  10 | 300/486 batches | lr 0.0000 | ms/batch 1003.99 | loss 71.92 | mse 34.63 | mre 1041745.82 |gepc 37.29 |
+02:21:30-scGPT-INFO-train: | epoch  10 | 400/486 batches | lr 0.0000 | ms/batch 1003.82 | loss 72.10 | mse 34.72 | mre 1038739.86 |gepc 37.37 |
+02:23:09-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:23:09-scGPT-INFO-<module>: | end of epoch  10 | time: 504.92s | valid loss/mse 34.7588 | mre 1004465.8704
+02:23:09-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:23:09-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+02:23:12-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+02:27:59-scGPT-INFO-<module>: {'best_model_epoch': 9, 'Condition_Silhouette': -0.040225126, 'L2_No_Diabetes_vs_T1D': 0.11371816, 'L2_No_Diabetes_vs_T2D': 0.1959968, 'condition_plot': <Figure size 320x320 with 1 Axes>}
+02:29:43-scGPT-INFO-train: | epoch  11 | 100/486 batches | lr 0.0000 | ms/batch 1013.89 | loss 72.00 | mse 34.71 | mre 1041110.41 |gepc 37.29 |
+02:31:23-scGPT-INFO-train: | epoch  11 | 200/486 batches | lr 0.0000 | ms/batch 1003.71 | loss 71.11 | mse 34.28 | mre 1025787.86 |gepc 36.83 |
+02:33:04-scGPT-INFO-train: | epoch  11 | 300/486 batches | lr 0.0000 | ms/batch 1004.75 | loss 72.28 | mse 34.83 | mre 1034696.78 |gepc 37.45 |
+02:34:44-scGPT-INFO-train: | epoch  11 | 400/486 batches | lr 0.0000 | ms/batch 1004.34 | loss 72.06 | mse 34.76 | mre 1037970.30 |gepc 37.29 |
+02:36:23-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:36:23-scGPT-INFO-<module>: | end of epoch  11 | time: 504.56s | valid loss/mse 35.0900 | mre 1043659.4677
+02:36:23-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:38:08-scGPT-INFO-train: | epoch  12 | 100/486 batches | lr 0.0000 | ms/batch 1013.91 | loss 72.55 | mse 35.02 | mre 1041031.24 |gepc 37.53 |
+02:39:48-scGPT-INFO-train: | epoch  12 | 200/486 batches | lr 0.0000 | ms/batch 1003.92 | loss 71.46 | mse 34.51 | mre 1024124.21 |gepc 36.95 |
+02:41:29-scGPT-INFO-train: | epoch  12 | 300/486 batches | lr 0.0000 | ms/batch 1003.80 | loss 70.73 | mse 34.16 | mre 1017468.74 |gepc 36.57 |
+02:43:09-scGPT-INFO-train: | epoch  12 | 400/486 batches | lr 0.0000 | ms/batch 1003.75 | loss 72.07 | mse 34.82 | mre 1028074.72 |gepc 37.25 |
+02:44:48-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:44:48-scGPT-INFO-<module>: | end of epoch  12 | time: 504.88s | valid loss/mse 35.2289 | mre 1047793.5325
+02:44:48-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:46:33-scGPT-INFO-train: | epoch  13 | 100/486 batches | lr 0.0000 | ms/batch 1013.80 | loss 71.76 | mse 34.68 | mre 1022097.62 |gepc 37.07 |
+02:48:13-scGPT-INFO-train: | epoch  13 | 200/486 batches | lr 0.0000 | ms/batch 1003.50 | loss 71.11 | mse 34.38 | mre 1011176.44 |gepc 36.72 |
+02:49:54-scGPT-INFO-train: | epoch  13 | 300/486 batches | lr 0.0000 | ms/batch 1003.82 | loss 70.68 | mse 34.19 | mre 1007313.36 |gepc 36.48 |
+02:51:34-scGPT-INFO-train: | epoch  13 | 400/486 batches | lr 0.0000 | ms/batch 1003.84 | loss 71.76 | mse 34.73 | mre 1022821.34 |gepc 37.03 |
+02:53:13-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:53:13-scGPT-INFO-<module>: | end of epoch  13 | time: 504.77s | valid loss/mse 35.0610 | mre 1029664.9904
+02:53:13-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+02:54:58-scGPT-INFO-train: | epoch  14 | 100/486 batches | lr 0.0000 | ms/batch 1014.62 | loss 70.89 | mse 34.33 | mre 1009166.48 |gepc 36.56 |
+02:56:38-scGPT-INFO-train: | epoch  14 | 200/486 batches | lr 0.0000 | ms/batch 1004.13 | loss 71.04 | mse 34.41 | mre 1004806.83 |gepc 36.63 |
+02:58:18-scGPT-INFO-train: | epoch  14 | 300/486 batches | lr 0.0000 | ms/batch 1004.00 | loss 71.43 | mse 34.60 | mre 1012286.52 |gepc 36.83 |
+02:59:59-scGPT-INFO-train: | epoch  14 | 400/486 batches | lr 0.0000 | ms/batch 1003.82 | loss 70.67 | mse 34.26 | mre 1004387.18 |gepc 36.42 |
+03:01:38-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:01:38-scGPT-INFO-<module>: | end of epoch  14 | time: 504.87s | valid loss/mse 34.6429 | mre 1051687.5898
+03:01:38-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:03:22-scGPT-INFO-train: | epoch  15 | 100/486 batches | lr 0.0000 | ms/batch 1013.33 | loss 71.08 | mse 34.45 | mre 1005488.51 |gepc 36.63 |
+03:05:03-scGPT-INFO-train: | epoch  15 | 200/486 batches | lr 0.0000 | ms/batch 1002.91 | loss 69.86 | mse 33.92 | mre 988912.18 |gepc 35.94 |
+03:06:43-scGPT-INFO-train: | epoch  15 | 300/486 batches | lr 0.0000 | ms/batch 1003.09 | loss 72.04 | mse 34.94 | mre 1019232.62 |gepc 37.10 |
+03:08:23-scGPT-INFO-train: | epoch  15 | 400/486 batches | lr 0.0000 | ms/batch 1003.18 | loss 70.47 | mse 34.19 | mre 995911.92 |gepc 36.28 |
+03:10:02-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:10:02-scGPT-INFO-<module>: | end of epoch  15 | time: 504.44s | valid loss/mse 34.4293 | mre 980213.1545
+03:10:02-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:10:02-scGPT-INFO-<module>: Best model with score 34.4293
+03:10:02-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+03:10:05-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+03:14:54-scGPT-INFO-<module>: {'best_model_epoch': 15, 'Condition_Silhouette': -0.04320592, 'L2_No_Diabetes_vs_T1D': 0.12072896, 'L2_No_Diabetes_vs_T2D': 0.2098024, 'condition_plot': <Figure size 320x320 with 1 Axes>}
+03:16:38-scGPT-INFO-train: | epoch  16 | 100/486 batches | lr 0.0000 | ms/batch 1013.71 | loss 71.46 | mse 34.68 | mre 1007136.67 |gepc 36.77 |
+03:18:18-scGPT-INFO-train: | epoch  16 | 200/486 batches | lr 0.0000 | ms/batch 1005.27 | loss 70.92 | mse 34.45 | mre 1003381.46 |gepc 36.47 |
+03:19:59-scGPT-INFO-train: | epoch  16 | 300/486 batches | lr 0.0000 | ms/batch 1003.74 | loss 71.18 | mse 34.56 | mre 1000926.26 |gepc 36.62 |
+03:21:39-scGPT-INFO-train: | epoch  16 | 400/486 batches | lr 0.0000 | ms/batch 1002.87 | loss 69.36 | mse 33.71 | mre 979384.06 |gepc 35.65 |
+03:23:18-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:23:18-scGPT-INFO-<module>: | end of epoch  16 | time: 504.21s | valid loss/mse 34.9845 | mre 1075604.2290
+03:23:18-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:25:02-scGPT-INFO-train: | epoch  17 | 100/486 batches | lr 0.0000 | ms/batch 1013.61 | loss 70.29 | mse 34.16 | mre 991211.56 |gepc 36.13 |
+03:26:43-scGPT-INFO-train: | epoch  17 | 200/486 batches | lr 0.0000 | ms/batch 1003.46 | loss 70.72 | mse 34.36 | mre 994310.39 |gepc 36.36 |
+03:28:23-scGPT-INFO-train: | epoch  17 | 300/486 batches | lr 0.0000 | ms/batch 1004.05 | loss 70.43 | mse 34.26 | mre 992644.47 |gepc 36.17 |
+03:30:03-scGPT-INFO-train: | epoch  17 | 400/486 batches | lr 0.0000 | ms/batch 1003.63 | loss 70.56 | mse 34.33 | mre 989040.84 |gepc 36.23 |
+03:31:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:31:43-scGPT-INFO-<module>: | end of epoch  17 | time: 504.41s | valid loss/mse 34.9895 | mre 1087319.3671
+03:31:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:33:27-scGPT-INFO-train: | epoch  18 | 100/486 batches | lr 0.0000 | ms/batch 1015.26 | loss 71.13 | mse 34.60 | mre 994481.24 |gepc 36.54 |
+03:35:07-scGPT-INFO-train: | epoch  18 | 200/486 batches | lr 0.0000 | ms/batch 1003.61 | loss 70.83 | mse 34.47 | mre 995906.13 |gepc 36.37 |
+03:36:47-scGPT-INFO-train: | epoch  18 | 300/486 batches | lr 0.0000 | ms/batch 1003.35 | loss 70.05 | mse 34.12 | mre 981765.65 |gepc 35.94 |
+03:38:28-scGPT-INFO-train: | epoch  18 | 400/486 batches | lr 0.0000 | ms/batch 1003.17 | loss 70.55 | mse 34.35 | mre 989445.52 |gepc 36.19 |
+03:40:07-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:40:07-scGPT-INFO-<module>: | end of epoch  18 | time: 504.24s | valid loss/mse 34.8500 | mre 1052233.9251
+03:40:07-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:41:51-scGPT-INFO-train: | epoch  19 | 100/486 batches | lr 0.0000 | ms/batch 1013.58 | loss 70.06 | mse 34.11 | mre 982238.10 |gepc 35.95 |
+03:43:31-scGPT-INFO-train: | epoch  19 | 200/486 batches | lr 0.0000 | ms/batch 1002.65 | loss 70.46 | mse 34.32 | mre 987399.07 |gepc 36.14 |
+03:45:11-scGPT-INFO-train: | epoch  19 | 300/486 batches | lr 0.0000 | ms/batch 1001.47 | loss 70.88 | mse 34.52 | mre 989066.98 |gepc 36.36 |
+03:46:52-scGPT-INFO-train: | epoch  19 | 400/486 batches | lr 0.0000 | ms/batch 1003.50 | loss 70.48 | mse 34.34 | mre 984608.43 |gepc 36.14 |
+03:48:31-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:48:31-scGPT-INFO-<module>: | end of epoch  19 | time: 503.96s | valid loss/mse 34.9224 | mre 1059987.4182
+03:48:31-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:50:15-scGPT-INFO-train: | epoch  20 | 100/486 batches | lr 0.0000 | ms/batch 1013.34 | loss 70.82 | mse 34.51 | mre 992031.35 |gepc 36.31 |
+03:51:55-scGPT-INFO-train: | epoch  20 | 200/486 batches | lr 0.0000 | ms/batch 1002.75 | loss 70.84 | mse 34.53 | mre 989416.77 |gepc 36.31 |
+03:53:35-scGPT-INFO-train: | epoch  20 | 300/486 batches | lr 0.0000 | ms/batch 1002.71 | loss 71.02 | mse 34.60 | mre 990608.16 |gepc 36.41 |
+03:55:16-scGPT-INFO-train: | epoch  20 | 400/486 batches | lr 0.0000 | ms/batch 1002.68 | loss 68.65 | mse 33.46 | mre 960168.97 |gepc 35.19 |
+03:56:55-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:56:55-scGPT-INFO-<module>: | end of epoch  20 | time: 503.84s | valid loss/mse 34.9914 | mre 1077749.6249
+03:56:55-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+03:56:55-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+03:56:57-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+04:01:29-scGPT-INFO-<module>: {'best_model_epoch': 15, 'Condition_Silhouette': -0.043378517, 'L2_No_Diabetes_vs_T1D': 0.120527476, 'L2_No_Diabetes_vs_T2D': 0.2097125, 'condition_plot': <Figure size 320x320 with 1 Axes>}
+04:03:13-scGPT-INFO-train: | epoch  21 | 100/486 batches | lr 0.0000 | ms/batch 1013.23 | loss 70.40 | mse 34.32 | mre 982949.44 |gepc 36.08 |
+04:04:53-scGPT-INFO-train: | epoch  21 | 200/486 batches | lr 0.0000 | ms/batch 1004.61 | loss 69.84 | mse 34.07 | mre 974073.33 |gepc 35.77 |
+04:06:34-scGPT-INFO-train: | epoch  21 | 300/486 batches | lr 0.0000 | ms/batch 1003.95 | loss 70.72 | mse 34.49 | mre 985720.18 |gepc 36.23 |
+04:08:14-scGPT-INFO-train: | epoch  21 | 400/486 batches | lr 0.0000 | ms/batch 1003.62 | loss 69.78 | mse 34.03 | mre 969307.40 |gepc 35.75 |
+04:09:53-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:09:53-scGPT-INFO-<module>: | end of epoch  21 | time: 504.20s | valid loss/mse 34.9661 | mre 1106640.1361
+04:09:53-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:11:37-scGPT-INFO-train: | epoch  22 | 100/486 batches | lr 0.0000 | ms/batch 1013.33 | loss 70.31 | mse 34.31 | mre 978239.83 |gepc 36.00 |
+04:13:18-scGPT-INFO-train: | epoch  22 | 200/486 batches | lr 0.0000 | ms/batch 1002.86 | loss 69.29 | mse 33.81 | mre 965515.39 |gepc 35.48 |
+04:14:58-scGPT-INFO-train: | epoch  22 | 300/486 batches | lr 0.0000 | ms/batch 1002.96 | loss 69.68 | mse 34.00 | mre 968262.24 |gepc 35.68 |
+04:16:38-scGPT-INFO-train: | epoch  22 | 400/486 batches | lr 0.0000 | ms/batch 1002.97 | loss 70.66 | mse 34.49 | mre 982666.11 |gepc 36.17 |
+04:18:17-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:18:17-scGPT-INFO-<module>: | end of epoch  22 | time: 504.09s | valid loss/mse 34.6820 | mre 1037049.2667
+04:18:17-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:20:01-scGPT-INFO-train: | epoch  23 | 100/486 batches | lr 0.0000 | ms/batch 1013.39 | loss 71.36 | mse 34.85 | mre 989369.72 |gepc 36.52 |
+04:21:42-scGPT-INFO-train: | epoch  23 | 200/486 batches | lr 0.0000 | ms/batch 1002.86 | loss 70.32 | mse 34.31 | mre 975378.21 |gepc 36.01 |
+04:23:22-scGPT-INFO-train: | epoch  23 | 300/486 batches | lr 0.0000 | ms/batch 1003.31 | loss 70.33 | mse 34.34 | mre 978124.54 |gepc 35.99 |
+04:25:02-scGPT-INFO-train: | epoch  23 | 400/486 batches | lr 0.0000 | ms/batch 1003.47 | loss 68.93 | mse 33.66 | mre 956575.07 |gepc 35.27 |
+04:26:41-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:26:41-scGPT-INFO-<module>: | end of epoch  23 | time: 504.36s | valid loss/mse 34.9540 | mre 1054502.5528
+04:26:41-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:28:26-scGPT-INFO-train: | epoch  24 | 100/486 batches | lr 0.0000 | ms/batch 1012.59 | loss 70.55 | mse 34.45 | mre 980845.13 |gepc 36.09 |
+04:30:06-scGPT-INFO-train: | epoch  24 | 200/486 batches | lr 0.0000 | ms/batch 1002.93 | loss 69.93 | mse 34.15 | mre 972298.38 |gepc 35.78 |
+04:31:46-scGPT-INFO-train: | epoch  24 | 300/486 batches | lr 0.0000 | ms/batch 1002.69 | loss 69.27 | mse 33.84 | mre 961943.35 |gepc 35.43 |
+04:33:27-scGPT-INFO-train: | epoch  24 | 400/486 batches | lr 0.0000 | ms/batch 1002.77 | loss 70.20 | mse 34.28 | mre 973434.74 |gepc 35.92 |
+04:35:06-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:35:06-scGPT-INFO-<module>: | end of epoch  24 | time: 504.12s | valid loss/mse 34.3795 | mre 1035870.1573
+04:35:06-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:35:06-scGPT-INFO-<module>: Best model with score 34.3795
+04:36:50-scGPT-INFO-train: | epoch  25 | 100/486 batches | lr 0.0000 | ms/batch 1013.37 | loss 71.69 | mse 35.01 | mre 995331.78 |gepc 36.68 |
+04:38:30-scGPT-INFO-train: | epoch  25 | 200/486 batches | lr 0.0000 | ms/batch 1003.13 | loss 70.24 | mse 34.31 | mre 977570.15 |gepc 35.93 |
+04:40:10-scGPT-INFO-train: | epoch  25 | 300/486 batches | lr 0.0000 | ms/batch 1003.24 | loss 69.43 | mse 33.94 | mre 963460.28 |gepc 35.49 |
+04:41:51-scGPT-INFO-train: | epoch  25 | 400/486 batches | lr 0.0000 | ms/batch 1003.34 | loss 68.85 | mse 33.64 | mre 953306.57 |gepc 35.21 |
+04:43:30-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:43:30-scGPT-INFO-<module>: | end of epoch  25 | time: 504.18s | valid loss/mse 34.5595 | mre 1030076.0611
+04:43:30-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:43:30-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+04:43:32-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+04:48:02-scGPT-INFO-<module>: {'best_model_epoch': 24, 'Condition_Silhouette': -0.044491764, 'L2_No_Diabetes_vs_T1D': 0.13632514, 'L2_No_Diabetes_vs_T2D': 0.2240462, 'condition_plot': <Figure size 320x320 with 1 Axes>}
+04:49:46-scGPT-INFO-train: | epoch  26 | 100/486 batches | lr 0.0000 | ms/batch 1012.64 | loss 70.30 | mse 34.34 | mre 972009.31 |gepc 35.96 |
+04:51:26-scGPT-INFO-train: | epoch  26 | 200/486 batches | lr 0.0000 | ms/batch 1005.25 | loss 70.60 | mse 34.50 | mre 978003.02 |gepc 36.10 |
+04:53:07-scGPT-INFO-train: | epoch  26 | 300/486 batches | lr 0.0000 | ms/batch 1004.30 | loss 69.02 | mse 33.73 | mre 958120.99 |gepc 35.29 |
+04:54:47-scGPT-INFO-train: | epoch  26 | 400/486 batches | lr 0.0000 | ms/batch 1003.07 | loss 70.31 | mse 34.35 | mre 967539.70 |gepc 35.96 |
+04:56:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:56:26-scGPT-INFO-<module>: | end of epoch  26 | time: 504.19s | valid loss/mse 34.2716 | mre 1051337.5355
+04:56:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+04:56:26-scGPT-INFO-<module>: Best model with score 34.2716
+04:58:10-scGPT-INFO-train: | epoch  27 | 100/486 batches | lr 0.0000 | ms/batch 1013.45 | loss 69.94 | mse 34.18 | mre 970168.51 |gepc 35.76 |
+04:59:51-scGPT-INFO-train: | epoch  27 | 200/486 batches | lr 0.0000 | ms/batch 1003.32 | loss 69.86 | mse 34.13 | mre 966321.70 |gepc 35.73 |
+05:01:31-scGPT-INFO-train: | epoch  27 | 300/486 batches | lr 0.0000 | ms/batch 1003.12 | loss 69.01 | mse 33.73 | mre 958387.03 |gepc 35.28 |
+05:03:11-scGPT-INFO-train: | epoch  27 | 400/486 batches | lr 0.0000 | ms/batch 1003.01 | loss 70.34 | mse 34.38 | mre 970988.19 |gepc 35.96 |
+05:04:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:04:50-scGPT-INFO-<module>: | end of epoch  27 | time: 504.29s | valid loss/mse 34.7123 | mre 1051079.9286
+05:04:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:06:34-scGPT-INFO-train: | epoch  28 | 100/486 batches | lr 0.0000 | ms/batch 1012.46 | loss 70.98 | mse 34.70 | mre 985025.29 |gepc 36.29 |
+05:08:15-scGPT-INFO-train: | epoch  28 | 200/486 batches | lr 0.0000 | ms/batch 1003.05 | loss 69.33 | mse 33.89 | mre 960765.90 |gepc 35.44 |
+05:09:55-scGPT-INFO-train: | epoch  28 | 300/486 batches | lr 0.0000 | ms/batch 1003.06 | loss 68.73 | mse 33.59 | mre 952745.30 |gepc 35.13 |
+05:11:35-scGPT-INFO-train: | epoch  28 | 400/486 batches | lr 0.0000 | ms/batch 1002.98 | loss 70.07 | mse 34.25 | mre 968075.35 |gepc 35.81 |
+05:13:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:13:14-scGPT-INFO-<module>: | end of epoch  28 | time: 504.15s | valid loss/mse 34.1878 | mre 1030058.7054
+05:13:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:13:14-scGPT-INFO-<module>: Best model with score 34.1878
+05:14:59-scGPT-INFO-train: | epoch  29 | 100/486 batches | lr 0.0000 | ms/batch 1013.18 | loss 70.38 | mse 34.43 | mre 976231.65 |gepc 35.95 |
+05:16:39-scGPT-INFO-train: | epoch  29 | 200/486 batches | lr 0.0000 | ms/batch 1003.29 | loss 68.44 | mse 33.46 | mre 950048.81 |gepc 34.98 |
+05:18:19-scGPT-INFO-train: | epoch  29 | 300/486 batches | lr 0.0000 | ms/batch 1003.21 | loss 69.39 | mse 33.92 | mre 958166.68 |gepc 35.47 |
+05:20:00-scGPT-INFO-train: | epoch  29 | 400/486 batches | lr 0.0000 | ms/batch 1003.25 | loss 70.62 | mse 34.53 | mre 979066.22 |gepc 36.09 |
+05:21:39-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:21:39-scGPT-INFO-<module>: | end of epoch  29 | time: 504.32s | valid loss/mse 34.6589 | mre 1044857.9629
+05:21:39-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:23:23-scGPT-INFO-train: | epoch  30 | 100/486 batches | lr 0.0000 | ms/batch 1013.90 | loss 70.02 | mse 34.25 | mre 970580.91 |gepc 35.77 |
+05:25:03-scGPT-INFO-train: | epoch  30 | 200/486 batches | lr 0.0000 | ms/batch 1003.47 | loss 69.15 | mse 33.80 | mre 954997.78 |gepc 35.35 |
+05:26:43-scGPT-INFO-train: | epoch  30 | 300/486 batches | lr 0.0000 | ms/batch 1003.41 | loss 69.64 | mse 34.04 | mre 962076.71 |gepc 35.60 |
+05:28:24-scGPT-INFO-train: | epoch  30 | 400/486 batches | lr 0.0000 | ms/batch 1003.43 | loss 68.47 | mse 33.49 | mre 950357.72 |gepc 34.98 |
+05:30:03-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:30:03-scGPT-INFO-<module>: | end of epoch  30 | time: 504.09s | valid loss/mse 34.4884 | mre 1036494.4391
+05:30:03-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+05:30:03-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-May26-00-52
+05:30:05-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+05:34:30-scGPT-INFO-<module>: {'best_model_epoch': 28, 'Condition_Silhouette': -0.044168174, 'L2_No_Diabetes_vs_T1D': 0.13927557, 'L2_No_Diabetes_vs_T2D': 0.22644809, 'condition_plot': <Figure size 320x320 with 1 Axes>}

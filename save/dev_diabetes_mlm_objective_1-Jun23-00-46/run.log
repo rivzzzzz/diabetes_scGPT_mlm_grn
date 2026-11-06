@@ -1,0 +1,82 @@
+00:46:55-scGPT-INFO-<module>: Running with batch size of: 64
+00:47:08-scGPT-INFO-<module>: match 24285/36601 genes in vocabulary of size 60697.
+00:47:08-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will be overriden by the config scGPT_human/args.json.
+00:47:09-scGPT-INFO-__call__: Filtering genes by counts ...
+00:47:10-scGPT-INFO-__call__: Filtering cells by counts ...
+00:47:10-scGPT-INFO-__call__: Normalizing total counts ...
+00:47:10-scGPT-INFO-__call__: Log1p transforming ...
+00:47:10-scGPT-INFO-__call__: Subsetting highly variable genes ...
+00:47:10-scGPT-WARNING-__call__: No batch_key is provided, will use all cells for HVG selection.
+00:47:13-scGPT-INFO-__call__: Binning data ...
+00:47:13-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:13-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:13-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+00:47:18-scGPT-INFO-__call__: Normalizing total counts ...
+00:47:18-scGPT-INFO-__call__: Log1p transforming ...
+00:47:18-scGPT-INFO-__call__: Binning data ...
+00:47:21-scGPT-INFO-<module>: Saved 1200 HVGs to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-Jun23-00-46/hvg_selection.json
+00:47:21-scGPT-INFO-<module>: On-the-fly split complete! Train: 30773 cells | Valid: 3434 cells
+00:47:21-scGPT-INFO-<module>: Train unique donors: 46
+00:47:21-scGPT-INFO-<module>: Valid unique donors: 6
+00:47:22-scGPT-INFO-<module>: train set number of samples: 30773, 
+	 feature length: 1201
+00:47:22-scGPT-INFO-<module>: valid set number of samples: 3434, 
+	 feature length: 1201
+00:47:27-scGPT-INFO-<module>: Reinitialized cls_decoder weights
+00:47:28-scGPT-INFO-<module>: 🚨 RUNNING PURE PYTORCH OVERFIT TEST (NO AMP, NO MASKING)...
+00:47:30-scGPT-INFO-<module>: Diagnostic | Epoch   5 | Loss: 0.0000 | Acc: 1.0000
+00:47:30-scGPT-INFO-<module>: ✅ SUCCESS: The classification pathway is working perfectly!
+00:47:30-scGPT-INFO-<module>: Skipping official training loop.

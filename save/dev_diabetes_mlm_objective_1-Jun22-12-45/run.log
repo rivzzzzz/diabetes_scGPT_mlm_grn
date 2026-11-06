@@ -1,0 +1,135 @@
+12:45:47-scGPT-INFO-<module>: Running with batch size of: 64
+12:46:09-scGPT-INFO-<module>: match 24285/36601 genes in vocabulary of size 60697.
+12:46:09-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will be overriden by the config scGPT_human/args.json.
+12:46:09-scGPT-INFO-__call__: Filtering genes by counts ...
+12:46:10-scGPT-INFO-__call__: Filtering cells by counts ...
+12:46:10-scGPT-INFO-__call__: Normalizing total counts ...
+12:46:10-scGPT-INFO-__call__: Log1p transforming ...
+12:46:11-scGPT-INFO-__call__: Subsetting highly variable genes ...
+12:46:11-scGPT-WARNING-__call__: No batch_key is provided, will use all cells for HVG selection.
+12:46:13-scGPT-INFO-__call__: Binning data ...
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:14-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:15-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:16-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:17-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:18-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+12:46:18-scGPT-INFO-__call__: Normalizing total counts ...
+12:46:18-scGPT-INFO-__call__: Log1p transforming ...
+12:46:18-scGPT-INFO-__call__: Binning data ...
+12:46:21-scGPT-INFO-<module>: Saved 1200 HVGs to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-Jun22-12-45/hvg_selection.json
+12:46:21-scGPT-INFO-<module>: On-the-fly split complete! Train: 30773 cells | Valid: 3434 cells
+12:46:21-scGPT-INFO-<module>: Train unique donors: 46
+12:46:21-scGPT-INFO-<module>: Valid unique donors: 6
+12:46:23-scGPT-INFO-<module>: train set number of samples: 30773, 
+	 feature length: 1201
+12:46:23-scGPT-INFO-<module>: valid set number of samples: 3434, 
+	 feature length: 1201
+12:46:28-scGPT-INFO-freeze_for_cls_finetune: Frozen params: 31,342,592 | Trainable params: 20,515,332
+12:46:28-scGPT-INFO-<module>: Reinitialized cls_decoder weights
+12:47:29-scGPT-INFO-train: | epoch   1 | 100/481 batches | lr 0.0000 | ms/batch 585.23 | loss 2070.60 | mse 903.02 | mre 28631241.20 |gepc 1166.10 |cls_loss  1.48 | cls_err  0.69
+12:48:27-scGPT-INFO-train: | epoch   1 | 200/481 batches | lr 0.0000 | ms/batch 582.26 | loss 2011.19 | mse 884.79 | mre 28186476.80 |gepc 1124.93 |cls_loss  1.47 | cls_err  0.68
+12:49:25-scGPT-INFO-train: | epoch   1 | 300/481 batches | lr 0.0000 | ms/batch 576.75 | loss 1972.35 | mse 875.04 | mre 28013964.26 |gepc 1095.82 |cls_loss  1.49 | cls_err  0.68
+12:50:21-scGPT-INFO-train: | epoch   1 | 400/481 batches | lr 0.0000 | ms/batch 565.11 | loss 1934.69 | mse 865.20 | mre 27852163.78 |gepc 1068.00 |cls_loss  1.48 | cls_err  0.68
+12:51:19-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+12:51:19-scGPT-INFO-<module>: | end of epoch   1 | time: 290.54s | valid loss/mse 847.2084 | mre 27425475.3069 | cls_err 0.6771
+12:51:19-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+12:51:19-scGPT-INFO-<module>: Best model with score 847.2084
+12:52:19-scGPT-INFO-train: | epoch   2 | 100/481 batches | lr 0.0000 | ms/batch 583.42 | loss 1030.36 | mse 522.91 | mre 20277042.32 |gepc 505.74 |cls_loss  1.72 | cls_err  0.70
+12:53:16-scGPT-INFO-train: | epoch   2 | 200/481 batches | lr 0.0000 | ms/batch 565.88 | loss 146.46 | mse 64.42 | mre 2220711.23 |gepc 80.66 |cls_loss  1.38 | cls_err  0.66
+12:54:15-scGPT-INFO-train: | epoch   2 | 300/481 batches | lr 0.0000 | ms/batch 592.88 | loss 123.21 | mse 59.73 | mre 2280679.59 |gepc 62.32 |cls_loss  1.16 | cls_err  0.64
+12:55:15-scGPT-INFO-train: | epoch   2 | 400/481 batches | lr 0.0000 | ms/batch 597.11 | loss 115.70 | mse 56.85 | mre 2109353.85 |gepc 57.70 |cls_loss  1.15 | cls_err  0.63
+12:56:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+12:56:14-scGPT-INFO-<module>: | end of epoch   2 | time: 294.50s | valid loss/mse 59.3794 | mre 1830157.0748 | cls_err 0.5973
+12:56:14-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+12:56:14-scGPT-INFO-<module>: Best model with score 59.3794
+12:57:12-scGPT-INFO-train: | epoch   3 | 100/481 batches | lr 0.0000 | ms/batch 569.36 | loss 111.64 | mse 54.99 | mre 1928074.24 |gepc 55.50 |cls_loss  1.15 | cls_err  0.63
+12:58:09-scGPT-INFO-train: | epoch   3 | 200/481 batches | lr 0.0000 | ms/batch 562.86 | loss 105.50 | mse 51.88 | mre 1785485.85 |gepc 52.49 |cls_loss  1.14 | cls_err  0.61
+12:59:06-scGPT-INFO-train: | epoch   3 | 300/481 batches | lr 0.0000 | ms/batch 574.00 | loss 101.85 | mse 49.93 | mre 1706035.35 |gepc 50.80 |cls_loss  1.13 | cls_err  0.60
+13:00:06-scGPT-INFO-train: | epoch   3 | 400/481 batches | lr 0.0000 | ms/batch 595.14 | loss 101.23 | mse 49.40 | mre 1670179.56 |gepc 50.70 |cls_loss  1.13 | cls_err  0.62
+13:01:04-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:01:04-scGPT-INFO-<module>: | end of epoch   3 | time: 290.47s | valid loss/mse 51.4224 | mre 1392595.4141 | cls_err 0.5917
+13:01:04-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:01:04-scGPT-INFO-<module>: Best model with score 51.4224
+13:02:03-scGPT-INFO-train: | epoch   4 | 100/481 batches | lr 0.0000 | ms/batch 574.24 | loss 97.57 | mse 47.10 | mre 1577093.19 |gepc 49.36 |cls_loss  1.11 | cls_err  0.60
+13:03:00-scGPT-INFO-train: | epoch   4 | 200/481 batches | lr 0.0000 | ms/batch 571.25 | loss 94.49 | mse 45.34 | mre 1507467.74 |gepc 48.04 |cls_loss  1.10 | cls_err  0.60
+13:03:58-scGPT-INFO-train: | epoch   4 | 300/481 batches | lr 0.0000 | ms/batch 578.63 | loss 92.30 | mse 44.09 | mre 1465349.95 |gepc 47.12 |cls_loss  1.09 | cls_err  0.59
+13:04:56-scGPT-INFO-train: | epoch   4 | 400/481 batches | lr 0.0000 | ms/batch 581.24 | loss 92.09 | mse 43.83 | mre 1427667.95 |gepc 47.18 |cls_loss  1.08 | cls_err  0.57
+13:05:52-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:05:52-scGPT-INFO-<module>: | end of epoch   4 | time: 288.19s | valid loss/mse 47.2420 | mre 1276044.3154 | cls_err 0.5914
+13:05:52-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:05:52-scGPT-INFO-<module>: Best model with score 47.2420
+13:06:53-scGPT-INFO-train: | epoch   5 | 100/481 batches | lr 0.0000 | ms/batch 586.88 | loss 91.02 | mse 43.03 | mre 1385084.31 |gepc 46.90 |cls_loss  1.09 | cls_err  0.57
+13:07:51-scGPT-INFO-train: | epoch   5 | 200/481 batches | lr 0.0000 | ms/batch 586.49 | loss 88.77 | mse 41.83 | mre 1342578.59 |gepc 45.85 |cls_loss  1.08 | cls_err  0.57
+13:08:49-scGPT-INFO-train: | epoch   5 | 300/481 batches | lr 0.0000 | ms/batch 572.99 | loss 89.78 | mse 42.28 | mre 1338329.43 |gepc 46.42 |cls_loss  1.08 | cls_err  0.57
+13:09:46-scGPT-INFO-train: | epoch   5 | 400/481 batches | lr 0.0000 | ms/batch 573.03 | loss 88.64 | mse 41.64 | mre 1307155.17 |gepc 45.92 |cls_loss  1.07 | cls_err  0.57
+13:10:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:10:43-scGPT-INFO-<module>: | end of epoch   5 | time: 290.84s | valid loss/mse 46.1243 | mre 1177923.9715 | cls_err 0.5390
+13:10:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:10:43-scGPT-INFO-<module>: Best model with score 46.1243
+13:10:43-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_1-Jun22-12-45
+13:10:44-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+13:10:52-scGPT-INFO-eval_custom_metrics: Skipping CellType Silhouette calculation (Dataset is restricted to Adipocyte-only).
+13:11:16-scGPT-INFO-<module>: {'best_model_epoch': 5, 'Condition_Silhouette': -0.03864609, 'CellType_Silhouette': 1.0, 'L2_No_Diabetes_vs_T1D': 0.06243343, 'L2_No_Diabetes_vs_T2D': 0.16992772, 'condition_plot': <Figure size 320x320 with 1 Axes>, 'cell_type_plot': <Figure size 320x320 with 1 Axes>}
+13:12:15-scGPT-INFO-train: | epoch   6 | 100/481 batches | lr 0.0000 | ms/batch 571.53 | loss 87.54 | mse 41.01 | mre 1279720.89 |gepc 45.46 |cls_loss  1.07 | cls_err  0.56
+13:13:12-scGPT-INFO-train: | epoch   6 | 200/481 batches | lr 0.0000 | ms/batch 567.99 | loss 86.53 | mse 40.48 | mre 1258920.84 |gepc 44.99 |cls_loss  1.06 | cls_err  0.56
+13:14:07-scGPT-INFO-train: | epoch   6 | 300/481 batches | lr 0.0000 | ms/batch 553.50 | loss 86.58 | mse 40.56 | mre 1252919.73 |gepc 44.96 |cls_loss  1.06 | cls_err  0.57
+13:15:06-scGPT-INFO-train: | epoch   6 | 400/481 batches | lr 0.0000 | ms/batch 582.38 | loss 87.38 | mse 40.79 | mre 1253710.40 |gepc 45.53 |cls_loss  1.07 | cls_err  0.57
+13:16:05-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:16:05-scGPT-INFO-<module>: | end of epoch   6 | time: 289.17s | valid loss/mse 45.4916 | mre 1173429.0480 | cls_err 0.5728
+13:16:05-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+13:16:05-scGPT-INFO-<module>: Best model with score 45.4916
+13:17:02-scGPT-INFO-train: | epoch   7 | 100/481 batches | lr 0.0000 | ms/batch 553.30 | loss 86.80 | mse 40.51 | mre 1239815.99 |gepc 45.22 |cls_loss  1.07 | cls_err  0.57
+13:18:00-scGPT-INFO-train: | epoch   7 | 200/481 batches | lr 0.0000 | ms/batch 580.76 | loss 85.65 | mse 40.00 | mre 1222653.24 |gepc 44.60 |cls_loss  1.06 | cls_err  0.56
+13:18:58-scGPT-INFO-train: | epoch   7 | 300/481 batches | lr 0.0000 | ms/batch 576.23 | loss 84.43 | mse 39.44 | mre 1207008.43 |gepc 43.94 |cls_loss  1.05 | cls_err  0.56
+13:19:55-scGPT-INFO-train: | epoch   7 | 400/481 batches | lr 0.0000 | ms/batch 571.99 | loss 85.04 | mse 39.68 | mre 1210599.57 |gepc 44.31 |cls_loss  1.06 | cls_err  0.56

@@ -1,0 +1,140 @@
+08:20:52-scGPT-INFO-<module>: After QC: 21498  / 38395 cells
+08:20:52-scGPT-INFO-<module>: condition
+No_Diabetes    10337
+T2D             6381
+T1D             4780
+08:20:52-scGPT-INFO-<module>: condition
+No_Diabetes    22
+T1D            18
+T2D            21
+08:20:52-scGPT-INFO-<module>: After PTPRC purity gate: 13340 cells
+08:20:52-scGPT-INFO-<module>: condition
+No_Diabetes    6755
+T2D            3789
+T1D            2796
+08:20:53-scGPT-INFO-<module>: Prevalence filter (min_cells=667, 5.0% of cells): 9871 / 24285 genes retained, 14414 dropped
+08:20:53-scGPT-INFO-__call__: Filtering genes by counts ...
+08:20:54-scGPT-INFO-__call__: Normalizing total counts ...
+08:20:54-scGPT-INFO-__call__: Binning data ...
+08:21:00-scGPT-INFO-<module>: Using 1604 / 3000 genes (dropped 1396)
+08:21:00-scGPT-INFO-<module>: Extended gene panel: 1606 genes (1604 original + 2 markers added)
+08:21:13-scGPT-INFO-<module>: Attention extraction: 100 / 1668 batches done (6.0%)
+08:21:24-scGPT-INFO-<module>: Attention extraction: 200 / 1668 batches done (12.0%)
+08:21:35-scGPT-INFO-<module>: Attention extraction: 300 / 1668 batches done (18.0%)
+08:21:45-scGPT-INFO-<module>: Attention extraction: 400 / 1668 batches done (24.0%)
+08:21:56-scGPT-INFO-<module>: Attention extraction: 500 / 1668 batches done (30.0%)
+08:22:07-scGPT-INFO-<module>: Attention extraction: 600 / 1668 batches done (36.0%)
+08:22:18-scGPT-INFO-<module>: Attention extraction: 700 / 1668 batches done (42.0%)
+08:22:29-scGPT-INFO-<module>: Attention extraction: 800 / 1668 batches done (48.0%)
+08:22:40-scGPT-INFO-<module>: Attention extraction: 900 / 1668 batches done (54.0%)
+08:22:51-scGPT-INFO-<module>: Attention extraction: 1000 / 1668 batches done (60.0%)
+08:23:02-scGPT-INFO-<module>: Attention extraction: 1100 / 1668 batches done (65.9%)
+08:23:12-scGPT-INFO-<module>: Attention extraction: 1200 / 1668 batches done (71.9%)
+08:23:23-scGPT-INFO-<module>: Attention extraction: 1300 / 1668 batches done (77.9%)
+08:23:34-scGPT-INFO-<module>: Attention extraction: 1400 / 1668 batches done (83.9%)
+08:23:45-scGPT-INFO-<module>: Attention extraction: 1500 / 1668 batches done (89.9%)
+08:23:56-scGPT-INFO-<module>: Attention extraction: 1600 / 1668 batches done (95.9%)
+08:24:03-scGPT-INFO-<module>: {'No_Diabetes': array([[0.7444744 , 0.76655793, 0.300317  , ..., 0.20802642, 0.60544133,
+        0.5322816 ],
+       [0.4423798 , 0.37355295, 0.5638364 , ..., 0.5828381 , 0.5115046 ,
+        0.53627217],
+       [0.6152116 , 0.65927386, 0.49035653, ..., 0.418566  , 0.44367164,
+        0.42201445],
+       ...,
+       [0.64227617, 0.7364137 , 0.33265746, ..., 0.24834949, 0.4917127 ,
+        0.4308078 ],
+       [0.4389059 , 0.55210054, 0.53421754, ..., 0.5904538 , 0.5096972 ,
+        0.5019595 ],
+       [0.42611098, 0.5637414 , 0.53290856, ..., 0.6570382 , 0.5059734 ,
+        0.49433905]], dtype=float32), 'T2D': array([[0.7431555 , 0.7574486 , 0.31929693, ..., 0.23188522, 0.611525  ,
+        0.5295217 ],
+       [0.41817796, 0.38067964, 0.5561403 , ..., 0.57923627, 0.4824797 ,
+        0.51350516],
+       [0.62653595, 0.65124846, 0.476831  , ..., 0.41436347, 0.47705865,
+        0.44045553],
+       ...,
+       [0.6370408 , 0.7371689 , 0.34346282, ..., 0.2759599 , 0.526672  ,
+        0.46686998],
+       [0.45226794, 0.5355713 , 0.5151686 , ..., 0.5435353 , 0.51048136,
+        0.49905518],
+       [0.43810952, 0.5477382 , 0.50985223, ..., 0.61807376, 0.51727986,
+        0.49564695]], dtype=float32), 'T1D': array([[0.746965  , 0.75688565, 0.32413048, ..., 0.24735242, 0.6118095 ,
+        0.53214175],
+       [0.41688985, 0.37280205, 0.5564418 , ..., 0.5757023 , 0.48133713,
+        0.50708735],
+       [0.63481516, 0.64989525, 0.47515368, ..., 0.40435472, 0.4675093 ,
+        0.44727513],
+       ...,
+       [0.62795734, 0.73543453, 0.35725775, ..., 0.30051598, 0.5182559 ,
+        0.4682854 ],
+       [0.44119114, 0.53747743, 0.5098247 , ..., 0.52307665, 0.51356524,
+        0.5020144 ],
+       [0.44791296, 0.54418534, 0.5062642 , ..., 0.58765936, 0.5145114 ,
+        0.4911082 ]], dtype=float32)}
+08:24:03-scGPT-INFO-<module>: Top T1D-driving genes: ['BACH2', 'AQP1', 'SOX4', 'TM4SF1', 'HLA-DRB1', 'CD93', 'ANGPT2', 'MAF', 'MX2', 'TGFB3', 'PELI2', 'GLI3', 'SRGN', 'ID3', 'CD74', 'CCL2', 'DYNC1I1', 'IER3', 'IFI44', 'OGN']
+08:24:03-scGPT-INFO-<module>: Scores T1D: [23.93129, 23.128244, 20.790676, 20.500038, 20.333025, 20.157957, 20.124256, 20.094025, 20.037926, 19.840168, 19.802103, 19.721277, 19.50742, 19.439608, 19.047758, 19.027773, 18.79638, 18.695135, 18.6485, 18.60728]
+08:24:03-scGPT-INFO-<module>: Top T2D-driving genes: ['ADGRE5', 'BACH2', 'ANGPT2', 'HLA-DRB1', 'SOX4', 'AQP1', 'MAF', 'CTSL', 'CD93', 'NQO1', 'MX2', 'TGFB3', 'CCL2', 'TM4SF1', 'CD74', 'EGR3', 'IER3', 'FOXN4', 'NRG2', 'GLI3']
+08:24:03-scGPT-INFO-<module>: Scores T2D: [15.529655, 14.119003, 13.893332, 13.828433, 13.554557, 13.359562, 13.173798, 13.1259775, 13.096268, 13.075981, 12.905001, 12.622026, 12.5967655, 12.574383, 12.48178, 12.388362, 12.374341, 12.315403, 12.221794, 12.14959]
+08:24:04-scGPT-INFO-<module>: Done. Files saved:
+08:24:04-scGPT-INFO-<module>:   attention_matrices.npz
+08:24:04-scGPT-INFO-<module>:   difference_matrices.npz
+08:24:04-scGPT-INFO-<module>:   gene_panel.json
+08:24:04-scGPT-INFO-<module>:   gene_vocab_idx.npy
+08:24:04-scGPT-INFO-<module>:   ranked_genes_top20.csv
+08:24:04-scGPT-INFO-<module>:   ranked_genes_top20.json
+08:24:04-scGPT-INFO-<module>:   run.log
+08:24:04-scGPT-INFO-<module>:   sample_counts.json
+08:24:04-scGPT-INFO-<module>: Canonical marker scores (T1D): {
+  "ADIPOQ": {
+    "score": 5.704805850982666,
+    "rank": 760,
+    "percentile": 0.5276913503422527
+  },
+  "PLIN1": {
+    "score": 0.3716524541378021,
+    "rank": 1552,
+    "percentile": 0.034847542003733634
+  }
+}
+08:24:04-scGPT-INFO-<module>: Canonical marker scores (T2D): {
+  "ADIPOQ": {
+    "score": 3.4085354804992676,
+    "rank": 810,
+    "percentile": 0.4965774735532047
+  },
+  "PLIN1": {
+    "score": 0.8285073041915894,
+    "rank": 1393,
+    "percentile": 0.133789670192906
+  }
+}
+08:24:04-scGPT-INFO-<module>: Raw attention stats for markers, condition=No_Diabetes: {
+  "ADIPOQ": {
+    "row_sum": 778.9434204101562,
+    "z_score_vs_panel": -1.02196204662323
+  },
+  "PLIN1": {
+    "row_sum": 791.8738403320312,
+    "z_score_vs_panel": -0.47265708446502686
+  }
+}
+08:24:04-scGPT-INFO-<module>: Raw attention stats for markers, condition=T2D: {
+  "ADIPOQ": {
+    "row_sum": 782.3518676757812,
+    "z_score_vs_panel": -1.0586062669754028
+  },
+  "PLIN1": {
+    "row_sum": 791.04541015625,
+    "z_score_vs_panel": -0.6128982305526733
+  }
+}
+08:24:04-scGPT-INFO-<module>: Raw attention stats for markers, condition=T1D: {
+  "ADIPOQ": {
+    "row_sum": 784.648193359375,
+    "z_score_vs_panel": -1.0478909015655518
+  },
+  "PLIN1": {
+    "row_sum": 792.2454833984375,
+    "z_score_vs_panel": -0.6140859723091125
+  }
+}

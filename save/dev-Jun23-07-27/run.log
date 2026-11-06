@@ -1,0 +1,387 @@
+07:27:18-scGPT-INFO-<module>: Running with batch size of: 32
+07:27:18-scGPT-INFO-log_config: ========================================
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - CLS                       : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - DAB                       : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - DSBN                      : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - ESC                       : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - GEP                       : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - GEPC                      : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - amp                       : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - batch_size                : 32
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - cls_lr                    : 0.001
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - cls_weight                : 10.0
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - dab_weight                : 1.0
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - dropout                   : 0.2
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - ecs_thres                 : 0
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - epochs                    : 20
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - eval_batch_size           : 32
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - explicit_zero_prob        : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - fast_transformer          : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - freeze                    : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - gep_weight                : 0.1
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - gepc_weight               : 0.1
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - include_zero_gene         : True
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - input_layer_key           : X_binned
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - layer_size                : 512
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - log_interval              : 100
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - lr                        : 1e-05
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - mask_ratio                : 0.4
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - mask_value                : -1
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - max_seq_len               : 1201
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - model_path                : scGPT_human
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - n_bins                    : 51
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - n_hvg                     : 1200
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - n_hvp                     : 4000
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - nhead                     : 8
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - nlayers                   : 4
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - pad_token                 : <pad>
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - pad_value                 : -2
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - per_seq_batch_sample      : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - pre_norm                  : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - run_note                  : this run is for testing whether using a double forward pass approach could work, i.e. using one for mlm and gepc, and another with target_values as input (unmasked binned expressions) for cls
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - sanity                    : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - save_eval_interval        : 5
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - seed                      : 42
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - task                      : <__main__.TrickVariable object at 0x7feb9dd4ba10>
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - trial_version             : 1
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - use_batch_labels          : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - use_mod                   : False
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - warmup_epochs             : 3
+07:27:18-scGPT-INFO-log_config: scGPT - CONFIG - wd                        : 0.01
+07:27:18-scGPT-INFO-log_config: ========================================
+07:27:20-scGPT-INFO-<module>: match 24285/36601 genes in vocabulary of size 60697.
+07:27:20-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will be overriden by the config scGPT_human/args.json.
+07:27:20-scGPT-INFO-__call__: Filtering genes by counts ...
+07:27:21-scGPT-INFO-__call__: Filtering cells by counts ...
+07:27:22-scGPT-INFO-__call__: Normalizing total counts ...
+07:27:22-scGPT-INFO-__call__: Log1p transforming ...
+07:27:22-scGPT-INFO-__call__: Subsetting highly variable genes ...
+07:27:22-scGPT-WARNING-__call__: No batch_key is provided, will use all cells for HVG selection.
+07:27:25-scGPT-INFO-__call__: Binning data ...
+07:27:25-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:25-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:25-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:26-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:27-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:28-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:28-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:28-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:28-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:29-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:29-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:29-scGPT-WARNING-__call__: The input data contains all zero rows. Please make sure this is expected. You can use the `filter_cell_by_counts` arg to filter out all zero rows.
+07:27:30-scGPT-INFO-__call__: Normalizing total counts ...
+07:27:30-scGPT-INFO-__call__: Log1p transforming ...
+07:27:30-scGPT-INFO-__call__: Binning data ...
+07:27:33-scGPT-INFO-<module>: Saved 1200 HVGs to diabetes_scGPT_mlm_objective/save/dev-Jun23-07-27/hvg_selection.json
+07:27:33-scGPT-INFO-<module>: On-the-fly split complete! Train: 30773 cells | Valid: 3434 cells
+07:27:33-scGPT-INFO-<module>: Train unique donors: 46
+07:27:33-scGPT-INFO-<module>: Valid unique donors: 6
+07:27:34-scGPT-INFO-<module>: train set number of samples: 30773, 
+	 feature length: 1201
+07:27:34-scGPT-INFO-<module>: valid set number of samples: 3434, 
+	 feature length: 1201
+07:27:38-scGPT-INFO-<module>: Reinitialized cls_decoder weights
+07:28:49-scGPT-INFO-train: | epoch   1 | 100/962 batches | lr 0.0000 | ms/batch 683.37 | loss 224.53 | mse 906.00 | mre 28675127.06 |gepc 1175.86 |cls_loss  1.63 | cls_err  0.69
+07:29:57-scGPT-INFO-train: | epoch   1 | 200/962 batches | lr 0.0000 | ms/batch 682.08 | loss 220.79 | mse 895.28 | mre 28367313.62 |gepc 1160.78 |cls_loss  1.52 | cls_err  0.68
+07:31:05-scGPT-INFO-train: | epoch   1 | 300/962 batches | lr 0.0000 | ms/batch 675.99 | loss 218.53 | mse 891.69 | mre 28263698.06 |gepc 1150.20 |cls_loss  1.43 | cls_err  0.68
+07:32:12-scGPT-INFO-train: | epoch   1 | 400/962 batches | lr 0.0000 | ms/batch 676.94 | loss 218.05 | mse 892.65 | mre 28345587.28 |gepc 1151.29 |cls_loss  1.37 | cls_err  0.70
+07:33:20-scGPT-INFO-train: | epoch   1 | 500/962 batches | lr 0.0000 | ms/batch 671.99 | loss 216.28 | mse 889.06 | mre 28242191.80 |gepc 1142.35 |cls_loss  1.31 | cls_err  0.68
+07:34:27-scGPT-INFO-train: | epoch   1 | 600/962 batches | lr 0.0000 | ms/batch 669.00 | loss 215.11 | mse 887.56 | mre 28215652.26 |gepc 1138.24 |cls_loss  1.25 | cls_err  0.67
+07:35:34-scGPT-INFO-train: | epoch   1 | 700/962 batches | lr 0.0000 | ms/batch 677.28 | loss 214.07 | mse 884.95 | mre 28164078.66 |gepc 1131.82 |cls_loss  1.24 | cls_err  0.69
+07:36:37-scGPT-INFO-train: | epoch   1 | 800/962 batches | lr 0.0000 | ms/batch 625.76 | loss 213.36 | mse 883.68 | mre 28157807.70 |gepc 1129.06 |cls_loss  1.21 | cls_err  0.67
+07:37:40-scGPT-INFO-train: | epoch   1 | 900/962 batches | lr 0.0000 | ms/batch 632.26 | loss 211.93 | mse 880.66 | mre 28075609.28 |gepc 1119.70 |cls_loss  1.19 | cls_err  0.68
+07:38:51-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+07:38:51-scGPT-INFO-<module>: | end of epoch   1 | time: 672.45s | valid loss/mse 209.2317 | mre 27898925.6331 | cls_err 0.6479
+07:38:51-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+07:38:51-scGPT-INFO-<module>: Best model with validation error rate score 0.6479
+07:40:00-scGPT-INFO-train: | epoch   2 | 100/962 batches | lr 0.0000 | ms/batch 668.51 | loss 202.45 | mse 859.73 | mre 27929625.70 |gepc 1050.45 |cls_loss  1.14 | cls_err  0.68
+07:41:08-scGPT-INFO-train: | epoch   2 | 200/962 batches | lr 0.0000 | ms/batch 681.93 | loss 179.89 | mse 792.17 | mre 26608460.48 |gepc 897.12 |cls_loss  1.10 | cls_err  0.62
+07:42:17-scGPT-INFO-train: | epoch   2 | 300/962 batches | lr 0.0000 | ms/batch 682.93 | loss 163.58 | mse 741.19 | mre 25764894.92 |gepc 786.85 |cls_loss  1.08 | cls_err  0.59
+07:43:24-scGPT-INFO-train: | epoch   2 | 400/962 batches | lr 0.0000 | ms/batch 676.06 | loss 149.33 | mse 693.71 | mre 24956505.48 |gepc 692.28 |cls_loss  1.07 | cls_err  0.58
+07:44:31-scGPT-INFO-train: | epoch   2 | 500/962 batches | lr 0.0000 | ms/batch 673.06 | loss 135.49 | mse 645.48 | mre 24007256.24 |gepc 601.85 |cls_loss  1.08 | cls_err  0.57
+07:45:39-scGPT-INFO-train: | epoch   2 | 600/962 batches | lr 0.0000 | ms/batch 674.96 | loss 123.36 | mse 601.53 | mre 23144867.76 |gepc 524.54 |cls_loss  1.08 | cls_err  0.58
+07:46:46-scGPT-INFO-train: | epoch   2 | 700/962 batches | lr 0.0000 | ms/batch 672.98 | loss 112.19 | mse 559.71 | mre 22290053.54 |gepc 454.93 |cls_loss  1.07 | cls_err  0.58
+07:47:54-scGPT-INFO-train: | epoch   2 | 800/962 batches | lr 0.0000 | ms/batch 678.05 | loss 102.53 | mse 521.51 | mre 21537858.80 |gepc 396.49 |cls_loss  1.07 | cls_err  0.58
+07:49:02-scGPT-INFO-train: | epoch   2 | 900/962 batches | lr 0.0000 | ms/batch 676.08 | loss 92.76 | mse 481.96 | mre 20629712.74 |gepc 338.49 |cls_loss  1.07 | cls_err  0.56
+07:50:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+07:50:20-scGPT-INFO-<module>: | end of epoch   2 | time: 689.18s | valid loss/mse 81.2020 | mre 19405595.8824 | cls_err 0.5879
+07:50:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+07:50:20-scGPT-INFO-<module>: Best model with validation error rate score 0.5879
+07:51:31-scGPT-INFO-train: | epoch   3 | 100/962 batches | lr 0.0000 | ms/batch 683.38 | loss 76.74 | mse 411.07 | mre 19032068.20 |gepc 247.48 |cls_loss  1.09 | cls_err  0.58
+07:52:38-scGPT-INFO-train: | epoch   3 | 200/962 batches | lr 0.0000 | ms/batch 670.07 | loss 67.54 | mse 360.80 | mre 17674111.78 |gepc 206.27 |cls_loss  1.08 | cls_err  0.58
+07:53:44-scGPT-INFO-train: | epoch   3 | 300/962 batches | lr 0.0000 | ms/batch 662.92 | loss 62.50 | mse 329.38 | mre 16818693.16 |gepc 187.68 |cls_loss  1.08 | cls_err  0.56
+07:54:51-scGPT-INFO-train: | epoch   3 | 400/962 batches | lr 0.0000 | ms/batch 671.09 | loss 57.28 | mse 298.98 | mre 15930015.60 |gepc 165.72 |cls_loss  1.08 | cls_err  0.57
+07:55:58-scGPT-INFO-train: | epoch   3 | 500/962 batches | lr 0.0000 | ms/batch 671.01 | loss 52.45 | mse 270.44 | mre 15060583.22 |gepc 145.91 |cls_loss  1.08 | cls_err  0.58
+07:57:05-scGPT-INFO-train: | epoch   3 | 600/962 batches | lr 0.0000 | ms/batch 668.46 | loss 47.70 | mse 242.36 | mre 14123051.27 |gepc 126.56 |cls_loss  1.08 | cls_err  0.57
+07:58:12-scGPT-INFO-train: | epoch   3 | 700/962 batches | lr 0.0000 | ms/batch 669.88 | loss 43.53 | mse 215.83 | mre 13147316.16 |gepc 111.05 |cls_loss  1.08 | cls_err  0.57
+07:59:13-scGPT-INFO-train: | epoch   3 | 800/962 batches | lr 0.0000 | ms/batch 613.60 | loss 39.88 | mse 190.84 | mre 12160003.85 |gepc 99.51 |cls_loss  1.08 | cls_err  0.59
+08:00:15-scGPT-INFO-train: | epoch   3 | 900/962 batches | lr 0.0000 | ms/batch 617.18 | loss 36.51 | mse 166.85 | mre 11165809.20 |gepc 90.00 |cls_loss  1.08 | cls_err  0.57
+08:01:25-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:01:25-scGPT-INFO-<module>: | end of epoch   3 | time: 664.79s | valid loss/mse 33.2040 | mre 9559067.4496 | cls_err 0.5879
+08:01:25-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:02:32-scGPT-INFO-train: | epoch   4 | 100/962 batches | lr 0.0000 | ms/batch 644.73 | loss 32.01 | mse 128.45 | mre 9183871.44 |gepc 82.43 |cls_loss  1.09 | cls_err  0.58
+08:03:38-scGPT-INFO-train: | epoch   4 | 200/962 batches | lr 0.0000 | ms/batch 665.61 | loss 28.63 | mse 101.45 | mre 7437475.42 |gepc 76.95 |cls_loss  1.08 | cls_err  0.57
+08:04:46-scGPT-INFO-train: | epoch   4 | 300/962 batches | lr 0.0000 | ms/batch 678.18 | loss 26.74 | mse 84.63 | mre 5947520.92 |gepc 74.38 |cls_loss  1.08 | cls_err  0.58
+08:05:54-scGPT-INFO-train: | epoch   4 | 400/962 batches | lr 0.0000 | ms/batch 675.51 | loss 25.47 | mse 74.66 | mre 4751937.33 |gepc 71.93 |cls_loss  1.08 | cls_err  0.57
+08:07:01-scGPT-INFO-train: | epoch   4 | 500/962 batches | lr 0.0000 | ms/batch 672.37 | loss 24.50 | mse 68.34 | mre 3915830.63 |gepc 68.36 |cls_loss  1.08 | cls_err  0.59
+08:08:08-scGPT-INFO-train: | epoch   4 | 600/962 batches | lr 0.0000 | ms/batch 668.16 | loss 24.32 | mse 66.88 | mre 3348307.05 |gepc 67.93 |cls_loss  1.08 | cls_err  0.57
+08:09:15-scGPT-INFO-train: | epoch   4 | 700/962 batches | lr 0.0000 | ms/batch 678.01 | loss 24.18 | mse 66.25 | mre 3029453.30 |gepc 67.26 |cls_loss  1.08 | cls_err  0.56
+08:10:23-scGPT-INFO-train: | epoch   4 | 800/962 batches | lr 0.0000 | ms/batch 673.76 | loss 23.92 | mse 64.81 | mre 2844942.11 |gepc 65.56 |cls_loss  1.09 | cls_err  0.58
+08:11:30-scGPT-INFO-train: | epoch   4 | 900/962 batches | lr 0.0000 | ms/batch 676.49 | loss 23.78 | mse 64.21 | mre 2701224.63 |gepc 64.61 |cls_loss  1.09 | cls_err  0.57
+08:12:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:12:50-scGPT-INFO-<module>: | end of epoch   4 | time: 684.58s | valid loss/mse 24.6535 | mre 2341042.9929 | cls_err 0.5879
+08:12:50-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:14:00-scGPT-INFO-train: | epoch   5 | 100/962 batches | lr 0.0000 | ms/batch 683.38 | loss 24.16 | mse 65.70 | mre 2535763.92 |gepc 65.74 |cls_loss  1.10 | cls_err  0.58
+08:15:08-scGPT-INFO-train: | epoch   5 | 200/962 batches | lr 0.0000 | ms/batch 677.74 | loss 23.73 | mse 64.26 | mre 2452044.67 |gepc 63.96 |cls_loss  1.09 | cls_err  0.57
+08:16:15-scGPT-INFO-train: | epoch   5 | 300/962 batches | lr 0.0000 | ms/batch 672.44 | loss 23.63 | mse 63.75 | mre 2475562.72 |gepc 63.21 |cls_loss  1.09 | cls_err  0.58
+08:17:19-scGPT-INFO-train: | epoch   5 | 400/962 batches | lr 0.0000 | ms/batch 642.86 | loss 23.71 | mse 64.17 | mre 2467521.54 |gepc 63.55 |cls_loss  1.09 | cls_err  0.58
+08:18:26-scGPT-INFO-train: | epoch   5 | 500/962 batches | lr 0.0000 | ms/batch 662.94 | loss 23.72 | mse 64.29 | mre 2429327.49 |gepc 63.50 |cls_loss  1.09 | cls_err  0.57
+08:19:32-scGPT-INFO-train: | epoch   5 | 600/962 batches | lr 0.0000 | ms/batch 666.06 | loss 24.02 | mse 65.86 | mre 2355909.56 |gepc 65.01 |cls_loss  1.09 | cls_err  0.57
+08:20:39-scGPT-INFO-train: | epoch   5 | 700/962 batches | lr 0.0000 | ms/batch 667.99 | loss 23.48 | mse 63.19 | mre 2286820.80 |gepc 62.34 |cls_loss  1.09 | cls_err  0.57
+08:21:46-scGPT-INFO-train: | epoch   5 | 800/962 batches | lr 0.0000 | ms/batch 668.99 | loss 24.01 | mse 65.93 | mre 2190577.62 |gepc 65.01 |cls_loss  1.09 | cls_err  0.56
+08:22:53-scGPT-INFO-train: | epoch   5 | 900/962 batches | lr 0.0000 | ms/batch 672.87 | loss 23.75 | mse 64.62 | mre 2114155.23 |gepc 63.64 |cls_loss  1.09 | cls_err  0.58
+08:24:12-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:24:12-scGPT-INFO-<module>: | end of epoch   5 | time: 682.64s | valid loss/mse 24.5919 | mre 1988502.8698 | cls_err 0.5879
+08:24:12-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:24:12-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev-Jun23-07-27
+08:24:13-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+08:24:22-scGPT-INFO-eval_custom_metrics: Skipping CellType Silhouette calculation (Dataset is restricted to Adipocyte-only).
+08:24:42-scGPT-INFO-<module>: {'best_model_epoch': 2, 'Condition_Silhouette': -0.045344267, 'CellType_Silhouette': 1.0, 'L2_No_Diabetes_vs_T1D': 0.0071056155, 'L2_No_Diabetes_vs_T2D': 0.036271125, 'condition_plot': <Figure size 320x320 with 1 Axes>, 'cell_type_plot': <Figure size 320x320 with 1 Axes>}
+08:25:51-scGPT-INFO-train: | epoch   6 | 100/962 batches | lr 0.0000 | ms/batch 682.24 | loss 23.87 | mse 64.90 | mre 1989735.40 |gepc 63.83 |cls_loss  1.10 | cls_err  0.56
+08:26:59-scGPT-INFO-train: | epoch   6 | 200/962 batches | lr 0.0000 | ms/batch 672.95 | loss 23.51 | mse 63.63 | mre 1906220.20 |gepc 62.49 |cls_loss  1.09 | cls_err  0.57
+08:28:05-scGPT-INFO-train: | epoch   6 | 300/962 batches | lr 0.0000 | ms/batch 666.77 | loss 23.32 | mse 62.68 | mre 1836116.69 |gepc 61.50 |cls_loss  1.09 | cls_err  0.57
+08:29:12-scGPT-INFO-train: | epoch   6 | 400/962 batches | lr 0.0000 | ms/batch 668.21 | loss 23.77 | mse 65.04 | mre 1766548.70 |gepc 63.71 |cls_loss  1.09 | cls_err  0.57
+08:30:20-scGPT-INFO-train: | epoch   6 | 500/962 batches | lr 0.0000 | ms/batch 673.13 | loss 23.54 | mse 63.85 | mre 1720324.52 |gepc 62.48 |cls_loss  1.09 | cls_err  0.58
+08:31:27-scGPT-INFO-train: | epoch   6 | 600/962 batches | lr 0.0000 | ms/batch 672.01 | loss 23.68 | mse 64.70 | mre 1673965.56 |gepc 63.19 |cls_loss  1.09 | cls_err  0.58
+08:32:34-scGPT-INFO-train: | epoch   6 | 700/962 batches | lr 0.0000 | ms/batch 671.87 | loss 24.19 | mse 67.33 | mre 1635073.93 |gepc 65.61 |cls_loss  1.09 | cls_err  0.57
+08:33:41-scGPT-INFO-train: | epoch   6 | 800/962 batches | lr 0.0000 | ms/batch 670.20 | loss 23.41 | mse 63.43 | mre 1603713.56 |gepc 61.84 |cls_loss  1.09 | cls_err  0.57
+08:34:49-scGPT-INFO-train: | epoch   6 | 900/962 batches | lr 0.0000 | ms/batch 679.45 | loss 23.42 | mse 63.55 | mre 1566051.42 |gepc 61.89 |cls_loss  1.09 | cls_err  0.58
+08:36:07-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:36:07-scGPT-INFO-<module>: | end of epoch   6 | time: 685.94s | valid loss/mse 24.4746 | mre 1507461.8446 | cls_err 0.5879
+08:36:07-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:37:16-scGPT-INFO-train: | epoch   7 | 100/962 batches | lr 0.0000 | ms/batch 672.40 | loss 23.82 | mse 65.11 | mre 1516752.86 |gepc 63.28 |cls_loss  1.10 | cls_err  0.58
+08:38:23-scGPT-INFO-train: | epoch   7 | 200/962 batches | lr 0.0000 | ms/batch 668.86 | loss 23.74 | mse 65.35 | mre 1472413.77 |gepc 63.40 |cls_loss  1.09 | cls_err  0.57
+08:39:30-scGPT-INFO-train: | epoch   7 | 300/962 batches | lr 0.0000 | ms/batch 669.96 | loss 23.30 | mse 63.05 | mre 1441640.36 |gepc 61.22 |cls_loss  1.09 | cls_err  0.57
+08:40:38-scGPT-INFO-train: | epoch   7 | 400/962 batches | lr 0.0000 | ms/batch 675.81 | loss 23.93 | mse 66.16 | mre 1368860.77 |gepc 64.06 |cls_loss  1.09 | cls_err  0.58
+08:41:41-scGPT-INFO-train: | epoch   7 | 500/962 batches | lr 0.0000 | ms/batch 631.44 | loss 23.31 | mse 63.04 | mre 1313603.72 |gepc 61.09 |cls_loss  1.09 | cls_err  0.57
+08:42:43-scGPT-INFO-train: | epoch   7 | 600/962 batches | lr 0.0000 | ms/batch 623.91 | loss 23.53 | mse 64.17 | mre 1253441.64 |gepc 62.09 |cls_loss  1.09 | cls_err  0.58
+08:43:45-scGPT-INFO-train: | epoch   7 | 700/962 batches | lr 0.0000 | ms/batch 620.06 | loss 23.88 | mse 66.01 | mre 1197438.41 |gepc 63.71 |cls_loss  1.09 | cls_err  0.57
+08:44:53-scGPT-INFO-train: | epoch   7 | 800/962 batches | lr 0.0000 | ms/batch 671.88 | loss 23.54 | mse 64.27 | mre 1154106.37 |gepc 62.06 |cls_loss  1.09 | cls_err  0.57
+08:45:59-scGPT-INFO-train: | epoch   7 | 900/962 batches | lr 0.0000 | ms/batch 666.81 | loss 23.98 | mse 66.66 | mre 1106785.62 |gepc 64.18 |cls_loss  1.09 | cls_err  0.58
+08:47:18-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:47:18-scGPT-INFO-<module>: | end of epoch   7 | time: 670.25s | valid loss/mse 24.6299 | mre 1055856.0373 | cls_err 0.5879
+08:47:18-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:48:27-scGPT-INFO-train: | epoch   8 | 100/962 batches | lr 0.0000 | ms/batch 672.48 | loss 23.94 | mse 65.86 | mre 1051813.19 |gepc 63.38 |cls_loss  1.10 | cls_err  0.59
+08:49:34-scGPT-INFO-train: | epoch   8 | 200/962 batches | lr 0.0000 | ms/batch 671.93 | loss 23.86 | mse 66.19 | mre 1003220.47 |gepc 63.56 |cls_loss  1.09 | cls_err  0.56
+08:50:41-scGPT-INFO-train: | epoch   8 | 300/962 batches | lr 0.0000 | ms/batch 673.27 | loss 23.34 | mse 63.52 | mre 971650.56 |gepc 61.12 |cls_loss  1.09 | cls_err  0.57
+08:51:48-scGPT-INFO-train: | epoch   8 | 400/962 batches | lr 0.0000 | ms/batch 666.65 | loss 24.16 | mse 67.87 | mre 933353.62 |gepc 64.95 |cls_loss  1.09 | cls_err  0.57
+08:52:56-scGPT-INFO-train: | epoch   8 | 500/962 batches | lr 0.0000 | ms/batch 675.42 | loss 23.73 | mse 65.48 | mre 901443.21 |gepc 62.76 |cls_loss  1.09 | cls_err  0.58
+08:54:03-scGPT-INFO-train: | epoch   8 | 600/962 batches | lr 0.0000 | ms/batch 678.61 | loss 23.90 | mse 66.31 | mre 866863.34 |gepc 63.46 |cls_loss  1.09 | cls_err  0.60
+08:55:11-scGPT-INFO-train: | epoch   8 | 700/962 batches | lr 0.0000 | ms/batch 678.68 | loss 23.69 | mse 65.36 | mre 832943.48 |gepc 62.52 |cls_loss  1.09 | cls_err  0.57
+08:56:19-scGPT-INFO-train: | epoch   8 | 800/962 batches | lr 0.0000 | ms/batch 672.32 | loss 23.38 | mse 63.79 | mre 802282.27 |gepc 61.04 |cls_loss  1.09 | cls_err  0.58
+08:57:24-scGPT-INFO-train: | epoch   8 | 900/962 batches | lr 0.0000 | ms/batch 655.17 | loss 23.61 | mse 65.10 | mre 767520.06 |gepc 62.17 |cls_loss  1.09 | cls_err  0.57
+08:58:34-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:58:34-scGPT-INFO-<module>: | end of epoch   8 | time: 676.54s | valid loss/mse 24.6758 | mre 729501.1160 | cls_err 0.5879
+08:58:34-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+08:59:39-scGPT-INFO-train: | epoch   9 | 100/962 batches | lr 0.0000 | ms/batch 624.55 | loss 24.04 | mse 66.91 | mre 726537.90 |gepc 63.70 |cls_loss  1.10 | cls_err  0.57
+09:00:39-scGPT-INFO-train: | epoch   9 | 200/962 batches | lr 0.0000 | ms/batch 608.99 | loss 23.49 | mse 64.57 | mre 692230.99 |gepc 61.53 |cls_loss  1.09 | cls_err  0.57
+09:01:45-scGPT-INFO-train: | epoch   9 | 300/962 batches | lr 0.0000 | ms/batch 654.31 | loss 23.81 | mse 66.25 | mre 661542.02 |gepc 62.97 |cls_loss  1.09 | cls_err  0.58
+09:02:52-scGPT-INFO-train: | epoch   9 | 400/962 batches | lr 0.0000 | ms/batch 669.44 | loss 24.19 | mse 68.22 | mre 626026.50 |gepc 64.63 |cls_loss  1.09 | cls_err  0.58
+09:03:59-scGPT-INFO-train: | epoch   9 | 500/962 batches | lr 0.0000 | ms/batch 667.55 | loss 24.08 | mse 67.74 | mre 581422.35 |gepc 64.13 |cls_loss  1.09 | cls_err  0.54
+09:05:06-scGPT-INFO-train: | epoch   9 | 600/962 batches | lr 0.0000 | ms/batch 675.51 | loss 23.81 | mse 66.22 | mre 540531.45 |gepc 62.69 |cls_loss  1.09 | cls_err  0.57
+09:06:13-scGPT-INFO-train: | epoch   9 | 700/962 batches | lr 0.0000 | ms/batch 669.37 | loss 23.70 | mse 65.67 | mre 501664.17 |gepc 62.12 |cls_loss  1.09 | cls_err  0.57
+09:07:20-scGPT-INFO-train: | epoch   9 | 800/962 batches | lr 0.0000 | ms/batch 665.56 | loss 23.65 | mse 65.48 | mre 465346.95 |gepc 61.86 |cls_loss  1.09 | cls_err  0.58
+09:08:27-scGPT-INFO-train: | epoch   9 | 900/962 batches | lr 0.0000 | ms/batch 671.06 | loss 23.97 | mse 67.17 | mre 430764.08 |gepc 63.29 |cls_loss  1.09 | cls_err  0.58
+09:09:46-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:09:46-scGPT-INFO-<module>: | end of epoch   9 | time: 671.42s | valid loss/mse 24.8785 | mre 393839.6221 | cls_err 0.5879
+09:09:46-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:10:55-scGPT-INFO-train: | epoch  10 | 100/962 batches | lr 0.0000 | ms/batch 678.11 | loss 24.35 | mse 68.69 | mre 385377.53 |gepc 64.57 |cls_loss  1.10 | cls_err  0.57
+09:12:03-scGPT-INFO-train: | epoch  10 | 200/962 batches | lr 0.0000 | ms/batch 675.28 | loss 24.05 | mse 67.69 | mre 355803.35 |gepc 63.58 |cls_loss  1.09 | cls_err  0.58
+09:13:09-scGPT-INFO-train: | epoch  10 | 300/962 batches | lr 0.0000 | ms/batch 661.20 | loss 24.10 | mse 68.04 | mre 331576.39 |gepc 63.83 |cls_loss  1.09 | cls_err  0.58
+09:14:14-scGPT-INFO-train: | epoch  10 | 400/962 batches | lr 0.0000 | ms/batch 648.17 | loss 23.58 | mse 65.29 | mre 309992.26 |gepc 61.39 |cls_loss  1.09 | cls_err  0.58
+09:15:16-scGPT-INFO-train: | epoch  10 | 500/962 batches | lr 0.0000 | ms/batch 621.82 | loss 24.06 | mse 67.82 | mre 288167.98 |gepc 63.53 |cls_loss  1.09 | cls_err  0.58
+09:16:18-scGPT-INFO-train: | epoch  10 | 600/962 batches | lr 0.0000 | ms/batch 619.00 | loss 23.98 | mse 67.57 | mre 268294.79 |gepc 63.26 |cls_loss  1.09 | cls_err  0.56
+09:17:21-scGPT-INFO-train: | epoch  10 | 700/962 batches | lr 0.0000 | ms/batch 633.80 | loss 24.35 | mse 69.52 | mre 249053.83 |gepc 64.94 |cls_loss  1.09 | cls_err  0.57
+09:18:27-scGPT-INFO-train: | epoch  10 | 800/962 batches | lr 0.0000 | ms/batch 661.96 | loss 24.13 | mse 68.39 | mre 232642.00 |gepc 63.94 |cls_loss  1.09 | cls_err  0.57
+09:19:34-scGPT-INFO-train: | epoch  10 | 900/962 batches | lr 0.0000 | ms/batch 666.04 | loss 23.61 | mse 65.55 | mre 217416.89 |gepc 61.42 |cls_loss  1.09 | cls_err  0.57
+09:20:52-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:20:52-scGPT-INFO-<module>: | end of epoch  10 | time: 666.67s | valid loss/mse 25.0109 | mre 199270.3933 | cls_err 0.5879
+09:20:52-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:20:52-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev-Jun23-07-27
+09:20:53-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+09:21:02-scGPT-INFO-eval_custom_metrics: Skipping CellType Silhouette calculation (Dataset is restricted to Adipocyte-only).
+09:21:11-scGPT-INFO-<module>: {'best_model_epoch': 2, 'Condition_Silhouette': -0.045344267, 'CellType_Silhouette': 1.0, 'L2_No_Diabetes_vs_T1D': 0.0071056155, 'L2_No_Diabetes_vs_T2D': 0.036271125, 'condition_plot': <Figure size 320x320 with 1 Axes>, 'cell_type_plot': <Figure size 320x320 with 1 Axes>}
+09:22:21-scGPT-INFO-train: | epoch  11 | 100/962 batches | lr 0.0000 | ms/batch 674.29 | loss 24.25 | mse 68.49 | mre 196171.66 |gepc 63.98 |cls_loss  1.10 | cls_err  0.57
+09:23:28-scGPT-INFO-train: | epoch  11 | 200/962 batches | lr 0.0000 | ms/batch 673.25 | loss 24.28 | mse 69.25 | mre 182053.62 |gepc 64.58 |cls_loss  1.09 | cls_err  0.58
+09:24:36-scGPT-INFO-train: | epoch  11 | 300/962 batches | lr 0.0000 | ms/batch 679.61 | loss 24.06 | mse 67.97 | mre 170730.18 |gepc 63.43 |cls_loss  1.09 | cls_err  0.58
+09:25:43-scGPT-INFO-train: | epoch  11 | 400/962 batches | lr 0.0000 | ms/batch 667.30 | loss 23.62 | mse 65.68 | mre 160337.44 |gepc 61.41 |cls_loss  1.09 | cls_err  0.58
+09:26:50-scGPT-INFO-train: | epoch  11 | 500/962 batches | lr 0.0000 | ms/batch 676.92 | loss 23.86 | mse 66.98 | mre 149553.69 |gepc 62.54 |cls_loss  1.09 | cls_err  0.57
+09:27:57-scGPT-INFO-train: | epoch  11 | 600/962 batches | lr 0.0000 | ms/batch 671.06 | loss 24.20 | mse 68.78 | mre 140586.31 |gepc 64.10 |cls_loss  1.09 | cls_err  0.58
+09:29:05-scGPT-INFO-train: | epoch  11 | 700/962 batches | lr 0.0000 | ms/batch 673.94 | loss 24.01 | mse 67.85 | mre 132344.62 |gepc 63.25 |cls_loss  1.09 | cls_err  0.57
+09:30:12-scGPT-INFO-train: | epoch  11 | 800/962 batches | lr 0.0000 | ms/batch 668.73 | loss 23.84 | mse 66.93 | mre 124406.79 |gepc 62.44 |cls_loss  1.09 | cls_err  0.57
+09:31:17-scGPT-INFO-train: | epoch  11 | 900/962 batches | lr 0.0000 | ms/batch 657.47 | loss 24.20 | mse 68.89 | mre 116452.33 |gepc 64.12 |cls_loss  1.09 | cls_err  0.58
+09:32:36-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:32:36-scGPT-INFO-<module>: | end of epoch  11 | time: 685.01s | valid loss/mse 25.0482 | mre 108576.0776 | cls_err 0.5879
+09:32:36-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:33:46-scGPT-INFO-train: | epoch  12 | 100/962 batches | lr 0.0000 | ms/batch 677.18 | loss 24.42 | mse 69.50 | mre 107753.49 |gepc 64.71 |cls_loss  1.10 | cls_err  0.58
+09:34:52-scGPT-INFO-train: | epoch  12 | 200/962 batches | lr 0.0000 | ms/batch 667.20 | loss 23.96 | mse 67.55 | mre 101535.11 |gepc 62.96 |cls_loss  1.09 | cls_err  0.58
+09:35:59-scGPT-INFO-train: | epoch  12 | 300/962 batches | lr 0.0000 | ms/batch 663.43 | loss 23.78 | mse 66.60 | mre 96700.90 |gepc 62.12 |cls_loss  1.09 | cls_err  0.58
+09:37:05-scGPT-INFO-train: | epoch  12 | 400/962 batches | lr 0.0000 | ms/batch 663.42 | loss 24.43 | mse 70.07 | mre 91896.36 |gepc 65.14 |cls_loss  1.09 | cls_err  0.58
+09:38:12-scGPT-INFO-train: | epoch  12 | 500/962 batches | lr 0.0000 | ms/batch 669.81 | loss 24.03 | mse 67.97 | mre 87633.22 |gepc 63.32 |cls_loss  1.09 | cls_err  0.57
+09:39:19-scGPT-INFO-train: | epoch  12 | 600/962 batches | lr 0.0000 | ms/batch 672.23 | loss 24.39 | mse 69.90 | mre 83543.77 |gepc 64.98 |cls_loss  1.09 | cls_err  0.57
+09:40:26-scGPT-INFO-train: | epoch  12 | 700/962 batches | lr 0.0000 | ms/batch 670.35 | loss 23.73 | mse 66.38 | mre 80055.12 |gepc 61.91 |cls_loss  1.09 | cls_err  0.58
+09:41:34-scGPT-INFO-train: | epoch  12 | 800/962 batches | lr 0.0000 | ms/batch 680.64 | loss 24.27 | mse 69.24 | mre 76687.98 |gepc 64.42 |cls_loss  1.09 | cls_err  0.58
+09:42:40-scGPT-INFO-train: | epoch  12 | 900/962 batches | lr 0.0000 | ms/batch 659.28 | loss 24.01 | mse 67.92 | mre 73914.67 |gepc 63.27 |cls_loss  1.09 | cls_err  0.56
+09:43:58-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:43:58-scGPT-INFO-<module>: | end of epoch  12 | time: 682.14s | valid loss/mse 25.0490 | mre 70546.8191 | cls_err 0.5879
+09:43:58-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:45:07-scGPT-INFO-train: | epoch  13 | 100/962 batches | lr 0.0000 | ms/batch 673.26 | loss 24.27 | mse 68.67 | mre 70611.66 |gepc 63.96 |cls_loss  1.10 | cls_err  0.59
+09:46:14-scGPT-INFO-train: | epoch  13 | 200/962 batches | lr 0.0000 | ms/batch 668.87 | loss 24.16 | mse 68.56 | mre 68021.06 |gepc 63.83 |cls_loss  1.09 | cls_err  0.59
+09:47:20-scGPT-INFO-train: | epoch  13 | 300/962 batches | lr 0.0000 | ms/batch 653.29 | loss 24.23 | mse 69.00 | mre 66155.51 |gepc 64.22 |cls_loss  1.09 | cls_err  0.58
+09:48:24-scGPT-INFO-train: | epoch  13 | 400/962 batches | lr 0.0000 | ms/batch 647.99 | loss 24.10 | mse 68.35 | mre 64332.09 |gepc 63.66 |cls_loss  1.09 | cls_err  0.57
+09:49:32-scGPT-INFO-train: | epoch  13 | 500/962 batches | lr 0.0000 | ms/batch 672.53 | loss 24.33 | mse 69.64 | mre 62803.89 |gepc 64.78 |cls_loss  1.09 | cls_err  0.58
+09:50:39-scGPT-INFO-train: | epoch  13 | 600/962 batches | lr 0.0000 | ms/batch 677.40 | loss 24.33 | mse 69.76 | mre 61468.06 |gepc 64.90 |cls_loss  1.09 | cls_err  0.56
+09:51:46-scGPT-INFO-train: | epoch  13 | 700/962 batches | lr 0.0000 | ms/batch 669.92 | loss 24.09 | mse 68.38 | mre 60388.24 |gepc 63.71 |cls_loss  1.09 | cls_err  0.58
+09:52:54-scGPT-INFO-train: | epoch  13 | 800/962 batches | lr 0.0000 | ms/batch 677.04 | loss 23.99 | mse 67.92 | mre 59460.44 |gepc 63.30 |cls_loss  1.09 | cls_err  0.55
+09:54:01-scGPT-INFO-train: | epoch  13 | 900/962 batches | lr 0.0000 | ms/batch 669.69 | loss 23.79 | mse 66.69 | mre 58471.40 |gepc 62.24 |cls_loss  1.09 | cls_err  0.58
+09:55:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:55:20-scGPT-INFO-<module>: | end of epoch  13 | time: 681.21s | valid loss/mse 25.0445 | mre 57088.1367 | cls_err 0.5879
+09:55:20-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+09:56:24-scGPT-INFO-train: | epoch  14 | 100/962 batches | lr 0.0000 | ms/batch 624.53 | loss 24.33 | mse 69.06 | mre 57789.85 |gepc 64.36 |cls_loss  1.10 | cls_err  0.58
+09:57:25-scGPT-INFO-train: | epoch  14 | 200/962 batches | lr 0.0000 | ms/batch 612.07 | loss 24.10 | mse 68.45 | mre 56684.09 |gepc 63.78 |cls_loss  1.09 | cls_err  0.56
+09:58:26-scGPT-INFO-train: | epoch  14 | 300/962 batches | lr 0.0000 | ms/batch 610.01 | loss 23.80 | mse 66.84 | mre 56361.31 |gepc 62.40 |cls_loss  1.09 | cls_err  0.57
+09:59:32-scGPT-INFO-train: | epoch  14 | 400/962 batches | lr 0.0000 | ms/batch 655.57 | loss 23.99 | mse 67.89 | mre 55905.73 |gepc 63.31 |cls_loss  1.09 | cls_err  0.57
+10:00:38-scGPT-INFO-train: | epoch  14 | 500/962 batches | lr 0.0000 | ms/batch 668.06 | loss 24.26 | mse 69.41 | mre 55629.33 |gepc 64.63 |cls_loss  1.09 | cls_err  0.56
+10:01:45-scGPT-INFO-train: | epoch  14 | 600/962 batches | lr 0.0000 | ms/batch 669.42 | loss 24.29 | mse 69.32 | mre 55427.88 |gepc 64.57 |cls_loss  1.09 | cls_err  0.58
+10:02:53-scGPT-INFO-train: | epoch  14 | 700/962 batches | lr 0.0000 | ms/batch 678.70 | loss 24.23 | mse 69.06 | mre 55216.48 |gepc 64.35 |cls_loss  1.09 | cls_err  0.57
+10:04:00-scGPT-INFO-train: | epoch  14 | 800/962 batches | lr 0.0000 | ms/batch 667.36 | loss 23.92 | mse 67.34 | mre 55317.00 |gepc 62.86 |cls_loss  1.09 | cls_err  0.58
+10:05:07-scGPT-INFO-train: | epoch  14 | 900/962 batches | lr 0.0000 | ms/batch 674.64 | loss 24.20 | mse 68.78 | mre 55152.37 |gepc 64.13 |cls_loss  1.09 | cls_err  0.59
+10:06:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:06:26-scGPT-INFO-<module>: | end of epoch  14 | time: 666.79s | valid loss/mse 25.0683 | mre 55165.4515 | cls_err 0.5879
+10:06:26-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:07:37-scGPT-INFO-train: | epoch  15 | 100/962 batches | lr 0.0000 | ms/batch 683.36 | loss 24.18 | mse 68.27 | mre 56184.57 |gepc 63.74 |cls_loss  1.10 | cls_err  0.58
+10:08:44-scGPT-INFO-train: | epoch  15 | 200/962 batches | lr 0.0000 | ms/batch 669.87 | loss 24.13 | mse 68.67 | mre 55684.77 |gepc 64.03 |cls_loss  1.09 | cls_err  0.56
+10:09:51-scGPT-INFO-train: | epoch  15 | 300/962 batches | lr 0.0000 | ms/batch 675.06 | loss 24.20 | mse 68.86 | mre 55663.53 |gepc 64.21 |cls_loss  1.09 | cls_err  0.58
+10:10:56-scGPT-INFO-train: | epoch  15 | 400/962 batches | lr 0.0000 | ms/batch 651.24 | loss 23.73 | mse 66.47 | mre 56051.37 |gepc 62.12 |cls_loss  1.09 | cls_err  0.56
+10:11:58-scGPT-INFO-train: | epoch  15 | 500/962 batches | lr 0.0000 | ms/batch 614.76 | loss 24.26 | mse 69.22 | mre 55982.84 |gepc 64.53 |cls_loss  1.09 | cls_err  0.58
+10:13:04-scGPT-INFO-train: | epoch  15 | 600/962 batches | lr 0.0000 | ms/batch 662.25 | loss 24.20 | mse 68.93 | mre 56351.79 |gepc 64.29 |cls_loss  1.09 | cls_err  0.57
+10:14:10-scGPT-INFO-train: | epoch  15 | 700/962 batches | lr 0.0000 | ms/batch 662.97 | loss 23.78 | mse 66.69 | mre 56667.51 |gepc 62.34 |cls_loss  1.09 | cls_err  0.57
+10:15:18-scGPT-INFO-train: | epoch  15 | 800/962 batches | lr 0.0000 | ms/batch 677.91 | loss 24.32 | mse 69.48 | mre 56605.26 |gepc 64.79 |cls_loss  1.09 | cls_err  0.58
+10:16:25-scGPT-INFO-train: | epoch  15 | 900/962 batches | lr 0.0000 | ms/batch 670.90 | loss 24.01 | mse 67.98 | mre 56877.26 |gepc 63.50 |cls_loss  1.09 | cls_err  0.56
+10:17:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:17:43-scGPT-INFO-<module>: | end of epoch  15 | time: 676.28s | valid loss/mse 25.0454 | mre 56703.9147 | cls_err 0.5879
+10:17:43-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:17:43-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev-Jun23-07-27
+10:17:43-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+10:17:52-scGPT-INFO-eval_custom_metrics: Skipping CellType Silhouette calculation (Dataset is restricted to Adipocyte-only).
+10:18:00-scGPT-INFO-<module>: {'best_model_epoch': 2, 'Condition_Silhouette': -0.045344267, 'CellType_Silhouette': 1.0, 'L2_No_Diabetes_vs_T1D': 0.0071056155, 'L2_No_Diabetes_vs_T2D': 0.036271125, 'condition_plot': <Figure size 320x320 with 1 Axes>, 'cell_type_plot': <Figure size 320x320 with 1 Axes>}
+10:19:07-scGPT-INFO-train: | epoch  16 | 100/962 batches | lr 0.0000 | ms/batch 649.37 | loss 24.46 | mse 69.67 | mre 57666.64 |gepc 65.01 |cls_loss  1.10 | cls_err  0.59
+10:20:09-scGPT-INFO-train: | epoch  16 | 200/962 batches | lr 0.0000 | ms/batch 620.91 | loss 24.08 | mse 68.21 | mre 57360.93 |gepc 63.71 |cls_loss  1.09 | cls_err  0.58
+10:21:15-scGPT-INFO-train: | epoch  16 | 300/962 batches | lr 0.0000 | ms/batch 655.98 | loss 24.17 | mse 68.74 | mre 57506.15 |gepc 64.17 |cls_loss  1.09 | cls_err  0.57
+10:22:22-scGPT-INFO-train: | epoch  16 | 400/962 batches | lr 0.0000 | ms/batch 675.45 | loss 23.93 | mse 67.52 | mre 57824.78 |gepc 63.11 |cls_loss  1.09 | cls_err  0.57
+10:23:30-scGPT-INFO-train: | epoch  16 | 500/962 batches | lr 0.0000 | ms/batch 678.55 | loss 24.22 | mse 69.08 | mre 57840.08 |gepc 64.48 |cls_loss  1.09 | cls_err  0.56
+10:24:37-scGPT-INFO-train: | epoch  16 | 600/962 batches | lr 0.0000 | ms/batch 672.99 | loss 24.22 | mse 68.98 | mre 58047.61 |gepc 64.38 |cls_loss  1.09 | cls_err  0.58
+10:25:44-scGPT-INFO-train: | epoch  16 | 700/962 batches | lr 0.0000 | ms/batch 664.19 | loss 23.92 | mse 67.42 | mre 58311.37 |gepc 63.04 |cls_loss  1.09 | cls_err  0.58
+10:26:49-scGPT-INFO-train: | epoch  16 | 800/962 batches | lr 0.0000 | ms/batch 656.00 | loss 24.08 | mse 68.21 | mre 58375.50 |gepc 63.74 |cls_loss  1.09 | cls_err  0.58
+10:27:51-scGPT-INFO-train: | epoch  16 | 900/962 batches | lr 0.0000 | ms/batch 612.88 | loss 23.68 | mse 66.15 | mre 58713.73 |gepc 61.94 |cls_loss  1.09 | cls_err  0.56
+10:29:01-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:29:01-scGPT-INFO-<module>: | end of epoch  16 | time: 660.51s | valid loss/mse 25.0492 | mre 58643.9083 | cls_err 0.5879
+10:29:01-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:30:09-scGPT-INFO-train: | epoch  17 | 100/962 batches | lr 0.0000 | ms/batch 665.79 | loss 24.20 | mse 68.33 | mre 59838.67 |gepc 63.90 |cls_loss  1.10 | cls_err  0.58
+10:31:15-scGPT-INFO-train: | epoch  17 | 200/962 batches | lr 0.0000 | ms/batch 666.67 | loss 23.80 | mse 66.79 | mre 59665.56 |gepc 62.52 |cls_loss  1.09 | cls_err  0.56
+10:32:22-scGPT-INFO-train: | epoch  17 | 300/962 batches | lr 0.0000 | ms/batch 665.94 | loss 24.26 | mse 69.39 | mre 59678.32 |gepc 64.78 |cls_loss  1.08 | cls_err  0.56
+10:33:29-scGPT-INFO-train: | epoch  17 | 400/962 batches | lr 0.0000 | ms/batch 673.94 | loss 24.08 | mse 68.33 | mre 59958.49 |gepc 63.87 |cls_loss  1.09 | cls_err  0.57
+10:34:37-scGPT-INFO-train: | epoch  17 | 500/962 batches | lr 0.0000 | ms/batch 676.86 | loss 24.33 | mse 69.70 | mre 59982.11 |gepc 65.07 |cls_loss  1.09 | cls_err  0.56
+10:35:45-scGPT-INFO-train: | epoch  17 | 600/962 batches | lr 0.0000 | ms/batch 681.06 | loss 24.05 | mse 68.04 | mre 60291.02 |gepc 63.63 |cls_loss  1.09 | cls_err  0.59
+10:36:53-scGPT-INFO-train: | epoch  17 | 700/962 batches | lr 0.0000 | ms/batch 675.62 | loss 24.47 | mse 70.36 | mre 60239.65 |gepc 65.64 |cls_loss  1.09 | cls_err  0.57
+10:38:00-scGPT-INFO-train: | epoch  17 | 800/962 batches | lr 0.0000 | ms/batch 668.38 | loss 23.75 | mse 66.47 | mre 60784.11 |gepc 62.26 |cls_loss  1.09 | cls_err  0.58
+10:39:07-scGPT-INFO-train: | epoch  17 | 900/962 batches | lr 0.0000 | ms/batch 676.04 | loss 24.17 | mse 68.66 | mre 60855.08 |gepc 64.18 |cls_loss  1.09 | cls_err  0.58
+10:40:27-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:40:27-scGPT-INFO-<module>: | end of epoch  17 | time: 686.40s | valid loss/mse 25.0698 | mre 60734.7750 | cls_err 0.5879
+10:40:27-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:41:34-scGPT-INFO-train: | epoch  18 | 100/962 batches | lr 0.0000 | ms/batch 651.53 | loss 23.98 | mse 67.17 | mre 61960.40 |gepc 62.92 |cls_loss  1.10 | cls_err  0.58
+10:42:35-scGPT-INFO-train: | epoch  18 | 200/962 batches | lr 0.0000 | ms/batch 614.61 | loss 24.09 | mse 68.33 | mre 61376.27 |gepc 63.91 |cls_loss  1.09 | cls_err  0.56
+10:43:40-scGPT-INFO-train: | epoch  18 | 300/962 batches | lr 0.0000 | ms/batch 641.24 | loss 23.88 | mse 67.08 | mre 61688.14 |gepc 62.83 |cls_loss  1.09 | cls_err  0.59
+10:44:47-scGPT-INFO-train: | epoch  18 | 400/962 batches | lr 0.0000 | ms/batch 672.75 | loss 24.15 | mse 68.67 | mre 61853.08 |gepc 64.22 |cls_loss  1.09 | cls_err  0.56
+10:45:54-scGPT-INFO-train: | epoch  18 | 500/962 batches | lr 0.0000 | ms/batch 667.21 | loss 24.18 | mse 68.74 | mre 62214.18 |gepc 64.27 |cls_loss  1.09 | cls_err  0.58
+10:47:01-scGPT-INFO-train: | epoch  18 | 600/962 batches | lr 0.0000 | ms/batch 671.47 | loss 23.87 | mse 67.20 | mre 62648.30 |gepc 62.93 |cls_loss  1.09 | cls_err  0.57
+10:48:08-scGPT-INFO-train: | epoch  18 | 700/962 batches | lr 0.0000 | ms/batch 668.50 | loss 24.59 | mse 71.00 | mre 62539.31 |gepc 66.24 |cls_loss  1.09 | cls_err  0.57
+10:49:11-scGPT-INFO-train: | epoch  18 | 800/962 batches | lr 0.0000 | ms/batch 637.73 | loss 24.14 | mse 68.56 | mre 62936.12 |gepc 64.14 |cls_loss  1.09 | cls_err  0.58
+10:50:13-scGPT-INFO-train: | epoch  18 | 900/962 batches | lr 0.0000 | ms/batch 616.51 | loss 24.29 | mse 69.48 | mre 63078.75 |gepc 64.92 |cls_loss  1.09 | cls_err  0.56
+10:51:23-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:51:23-scGPT-INFO-<module>: | end of epoch  18 | time: 655.89s | valid loss/mse 25.1122 | mre 62889.9333 | cls_err 0.5879
+10:51:23-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+10:52:27-scGPT-INFO-train: | epoch  19 | 100/962 batches | lr 0.0000 | ms/batch 627.16 | loss 24.18 | mse 68.09 | mre 64150.86 |gepc 63.77 |cls_loss  1.10 | cls_err  0.58
+10:53:32-scGPT-INFO-train: | epoch  19 | 200/962 batches | lr 0.0000 | ms/batch 642.13 | loss 24.18 | mse 68.86 | mre 63666.30 |gepc 64.40 |cls_loss  1.09 | cls_err  0.57
+10:54:39-scGPT-INFO-train: | epoch  19 | 300/962 batches | lr 0.0000 | ms/batch 670.13 | loss 24.02 | mse 67.87 | mre 64020.89 |gepc 63.54 |cls_loss  1.09 | cls_err  0.58
+10:55:46-scGPT-INFO-train: | epoch  19 | 400/962 batches | lr 0.0000 | ms/batch 675.88 | loss 24.02 | mse 68.03 | mre 64201.10 |gepc 63.69 |cls_loss  1.08 | cls_err  0.56
+10:56:54-scGPT-INFO-train: | epoch  19 | 500/962 batches | lr 0.0000 | ms/batch 674.05 | loss 23.95 | mse 67.66 | mre 64451.72 |gepc 63.36 |cls_loss  1.08 | cls_err  0.57
+10:58:01-scGPT-INFO-train: | epoch  19 | 600/962 batches | lr 0.0000 | ms/batch 676.94 | loss 24.53 | mse 70.71 | mre 64377.21 |gepc 66.03 |cls_loss  1.09 | cls_err  0.58
+10:59:08-scGPT-INFO-train: | epoch  19 | 700/962 batches | lr 0.0000 | ms/batch 668.80 | loss 23.85 | mse 67.04 | mre 64823.22 |gepc 62.83 |cls_loss  1.09 | cls_err  0.58
+11:00:15-scGPT-INFO-train: | epoch  19 | 800/962 batches | lr 0.0000 | ms/batch 671.34 | loss 24.14 | mse 68.52 | mre 64845.98 |gepc 64.10 |cls_loss  1.09 | cls_err  0.59
+11:01:22-scGPT-INFO-train: | epoch  19 | 900/962 batches | lr 0.0000 | ms/batch 662.91 | loss 24.08 | mse 68.25 | mre 65056.03 |gepc 63.87 |cls_loss  1.09 | cls_err  0.57
+11:02:39-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+11:02:39-scGPT-INFO-<module>: | end of epoch  19 | time: 676.39s | valid loss/mse 25.1005 | mre 64846.3279 | cls_err 0.5879
+11:02:39-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+11:03:49-scGPT-INFO-train: | epoch  20 | 100/962 batches | lr 0.0000 | ms/batch 682.41 | loss 24.35 | mse 69.05 | mre 66018.40 |gepc 64.63 |cls_loss  1.10 | cls_err  0.58
+11:04:57-scGPT-INFO-train: | epoch  20 | 200/962 batches | lr 0.0000 | ms/batch 673.97 | loss 24.23 | mse 69.03 | mre 65521.57 |gepc 64.57 |cls_loss  1.09 | cls_err  0.58
+11:06:02-scGPT-INFO-train: | epoch  20 | 300/962 batches | lr 0.0000 | ms/batch 652.07 | loss 23.82 | mse 66.89 | mre 66123.68 |gepc 62.72 |cls_loss  1.09 | cls_err  0.57
+11:07:04-scGPT-INFO-train: | epoch  20 | 400/962 batches | lr 0.0000 | ms/batch 620.99 | loss 24.12 | mse 68.62 | mre 67306.58 |gepc 64.22 |cls_loss  1.08 | cls_err  0.57
+11:08:09-scGPT-INFO-train: | epoch  20 | 500/962 batches | lr 0.0000 | ms/batch 650.54 | loss 23.52 | mse 65.41 | mre 68944.61 |gepc 61.40 |cls_loss  1.08 | cls_err  0.57
+11:09:16-scGPT-INFO-train: | epoch  20 | 600/962 batches | lr 0.0000 | ms/batch 669.25 | loss 24.41 | mse 70.12 | mre 69814.55 |gepc 65.55 |cls_loss  1.08 | cls_err  0.58
+11:10:23-scGPT-INFO-train: | epoch  20 | 700/962 batches | lr 0.0000 | ms/batch 668.93 | loss 23.95 | mse 67.63 | mre 71310.13 |gepc 63.37 |cls_loss  1.09 | cls_err  0.58
+11:11:30-scGPT-INFO-train: | epoch  20 | 800/962 batches | lr 0.0000 | ms/batch 673.58 | loss 24.02 | mse 68.00 | mre 72648.55 |gepc 63.71 |cls_loss  1.08 | cls_err  0.58
+11:12:37-scGPT-INFO-train: | epoch  20 | 900/962 batches | lr 0.0000 | ms/batch 667.77 | loss 24.21 | mse 69.22 | mre 73901.66 |gepc 64.75 |cls_loss  1.08 | cls_err  0.56
+11:13:56-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+11:13:56-scGPT-INFO-<module>: | end of epoch  20 | time: 676.30s | valid loss/mse 25.0269 | mre 74953.4079 | cls_err 0.5879
+11:13:56-scGPT-INFO-<module>: -----------------------------------------------------------------------------------------
+11:13:56-scGPT-INFO-<module>: Saving model to diabetes_scGPT_mlm_objective/save/dev-Jun23-07-27
+11:13:56-scGPT-INFO-eval_testdata: Evaluating cls cell embeddings
+11:14:05-scGPT-INFO-eval_custom_metrics: Skipping CellType Silhouette calculation (Dataset is restricted to Adipocyte-only).
+11:14:12-scGPT-INFO-<module>: {'best_model_epoch': 2, 'Condition_Silhouette': -0.045344267, 'CellType_Silhouette': 1.0, 'L2_No_Diabetes_vs_T1D': 0.0071056155, 'L2_No_Diabetes_vs_T2D': 0.036271125, 'condition_plot': <Figure size 320x320 with 1 Axes>, 'cell_type_plot': <Figure size 320x320 with 1 Axes>}
+11:14:22-scGPT-INFO-<module>: {'accuracy': 0.3958930276981853, 'macro_f1': 0.18907515110046755, 'macro_auc': 0.6793261308678362}

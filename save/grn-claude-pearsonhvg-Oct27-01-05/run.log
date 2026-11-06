@@ -1,0 +1,317 @@
+01:05:54-scGPT-INFO-<module>: After QC: 21498  / 38395 cells
+01:05:54-scGPT-INFO-<module>: condition
+No_Diabetes    10337
+T2D             6381
+T1D             4780
+01:05:54-scGPT-INFO-<module>: condition
+No_Diabetes    22
+T1D            18
+T2D            21
+01:05:54-scGPT-INFO-<module>: After PTPRC purity gate: 13340 cells
+01:05:54-scGPT-INFO-<module>: condition
+No_Diabetes    6755
+T2D            3789
+T1D            2796
+01:05:55-scGPT-INFO-<module>: Prevalence filter (min_cells=667, 5.0% of cells): 9871 / 24285 genes retained, 14414 dropped
+01:05:55-scGPT-INFO-__call__: Filtering genes by counts ...
+01:05:55-scGPT-INFO-__call__: Normalizing total counts ...
+01:05:56-scGPT-INFO-__call__: Log1p transforming ...
+01:05:56-scGPT-INFO-__call__: Binning data ...
+01:06:02-scGPT-INFO-<module>: Using 2193 / 3001 genes (dropped 808)
+01:06:02-scGPT-INFO-<module>: Extended gene panel: 2193 genes (2193 original + 0 markers added)
+01:06:26-scGPT-INFO-<module>: Attention extraction: 100 / 1668 batches done (6.0%)
+01:06:48-scGPT-INFO-<module>: Attention extraction: 200 / 1668 batches done (12.0%)
+01:07:10-scGPT-INFO-<module>: Attention extraction: 300 / 1668 batches done (18.0%)
+01:07:32-scGPT-INFO-<module>: Attention extraction: 400 / 1668 batches done (24.0%)
+01:07:54-scGPT-INFO-<module>: Attention extraction: 500 / 1668 batches done (30.0%)
+01:08:17-scGPT-INFO-<module>: Attention extraction: 600 / 1668 batches done (36.0%)
+01:08:39-scGPT-INFO-<module>: Attention extraction: 700 / 1668 batches done (42.0%)
+01:09:01-scGPT-INFO-<module>: Attention extraction: 800 / 1668 batches done (48.0%)
+01:09:23-scGPT-INFO-<module>: Attention extraction: 900 / 1668 batches done (54.0%)
+01:09:45-scGPT-INFO-<module>: Attention extraction: 1000 / 1668 batches done (60.0%)
+01:10:07-scGPT-INFO-<module>: Attention extraction: 1100 / 1668 batches done (65.9%)
+01:10:29-scGPT-INFO-<module>: Attention extraction: 1200 / 1668 batches done (71.9%)
+01:10:51-scGPT-INFO-<module>: Attention extraction: 1300 / 1668 batches done (77.9%)
+01:11:14-scGPT-INFO-<module>: Attention extraction: 1400 / 1668 batches done (83.9%)
+01:11:36-scGPT-INFO-<module>: Attention extraction: 1500 / 1668 batches done (89.9%)
+01:11:58-scGPT-INFO-<module>: Attention extraction: 1600 / 1668 batches done (95.9%)
+01:12:13-scGPT-INFO-<module>: {'No_Diabetes': array([[0.5029138 , 0.43587577, 0.40831998, ..., 0.50460315, 0.37204754,
+        0.45748112],
+       [0.43386438, 0.5122711 , 0.40709364, ..., 0.57744503, 0.54795146,
+        0.58797663],
+       [0.57385147, 0.42655492, 0.5832542 , ..., 0.48914772, 0.55969906,
+        0.44574738],
+       ...,
+       [0.42478698, 0.4859117 , 0.4363921 , ..., 0.55316925, 0.5800962 ,
+        0.557662  ],
+       [0.36625165, 0.45241633, 0.43998265, ..., 0.5795912 , 0.55852985,
+        0.6318163 ],
+       [0.38553473, 0.48933578, 0.42562297, ..., 0.54978573, 0.5282747 ,
+        0.6152195 ]], dtype=float32), 'T2D': array([[0.48800254, 0.44888267, 0.41266873, ..., 0.5098108 , 0.36880746,
+        0.4650591 ],
+       [0.44686058, 0.4932887 , 0.40939227, ..., 0.5892303 , 0.56131905,
+        0.60179573],
+       [0.57131994, 0.4240784 , 0.58478117, ..., 0.49251434, 0.56206053,
+        0.4468527 ],
+       ...,
+       [0.42122093, 0.49771836, 0.43712628, ..., 0.5517376 , 0.5727676 ,
+        0.5552965 ],
+       [0.3657848 , 0.46049973, 0.4383787 , ..., 0.5855206 , 0.5537073 ,
+        0.6345313 ],
+       [0.3800303 , 0.5021659 , 0.42180526, ..., 0.5466834 , 0.52019286,
+        0.61050075]], dtype=float32), 'T1D': array([[0.4843088 , 0.45012593, 0.4135612 , ..., 0.51247215, 0.3696208 ,
+        0.47220767],
+       [0.4472584 , 0.4909019 , 0.40642744, ..., 0.5872146 , 0.55889475,
+        0.59950954],
+       [0.57310814, 0.42653272, 0.5832469 , ..., 0.49799252, 0.56794286,
+        0.4508453 ],
+       ...,
+       [0.42021102, 0.5015183 , 0.44454372, ..., 0.54858446, 0.57353455,
+        0.5509726 ],
+       [0.36825147, 0.4668228 , 0.44408682, ..., 0.5855382 , 0.5589266 ,
+        0.63294244],
+       [0.37955126, 0.5043424 , 0.42776   , ..., 0.5459001 , 0.525287  ,
+        0.6078386 ]], dtype=float32)}
+01:12:13-scGPT-INFO-<module>: Top T1D-driving genes: ['DIRC3', 'LRCH1', 'EPB41L4B', 'RNF149', 'DHRS3', 'FGF13', 'ANKRD30A', 'PRKD1', 'AKT3', 'NWD2', 'NCKAP5', 'MLLT3', 'LINC02615', 'CRYBG1', 'G0S2', 'DEPP1', 'PLEKHG1', 'EPB41', 'SEMA6A', 'DOCK3']
+01:12:13-scGPT-INFO-<module>: Scores T1D: [6.0596275, 5.385229, 3.9380455, 3.8961704, 3.8736482, 3.8126793, 3.7840872, 3.6926916, 3.6835756, 3.6124003, 3.6065886, 3.539956, 3.5194502, 3.4857671, 3.4716196, 3.465426, 3.4597285, 3.3372476, 3.3241649, 3.3100467]
+01:12:13-scGPT-INFO-<module>: Top T2D-driving genes: ['RNF149', 'LRCH1', 'DEPP1', 'DHRS3', 'DIRC3', 'LDHA', 'G0S2', 'ME1', 'PLS3', 'ODC1', 'FGF13', 'NCKAP5', 'EPB41L4B', 'MLLT3', 'COL4A3', 'MRC1', 'PPP1R14A', 'SMAD3', 'CRYBG1', 'AHNAK']
+01:12:13-scGPT-INFO-<module>: Scores T2D: [3.9123328, 3.8966599, 3.6337364, 3.4306297, 3.3045464, 3.2636914, 3.2432086, 3.1599174, 3.1368558, 3.1365995, 3.1360955, 3.1119478, 2.956944, 2.956243, 2.899239, 2.8499408, 2.8282542, 2.8174052, 2.8102047, 2.8034158]
+01:12:13-scGPT-INFO-<module>: Done. Files saved:
+01:12:13-scGPT-INFO-<module>:   attention_matrices.npz
+01:12:13-scGPT-INFO-<module>:   difference_matrices.npz
+01:12:13-scGPT-INFO-<module>:   gene_panel.json
+01:12:13-scGPT-INFO-<module>:   gene_vocab_idx.npy
+01:12:13-scGPT-INFO-<module>:   ranked_genes_top20.csv
+01:12:13-scGPT-INFO-<module>:   ranked_genes_top20.json
+01:12:13-scGPT-INFO-<module>:   run.log
+01:12:13-scGPT-INFO-<module>:   sample_counts.json
+01:12:13-scGPT-INFO-<module>: Canonical marker scores (T1D): {
+  "PPARG": {
+    "score": 0.4245817959308624,
+    "rank": 1649,
+    "percentile": 0.24886052871467634
+  },
+  "CEBPA": {
+    "score": 1.114822268486023,
+    "rank": 869,
+    "percentile": 0.6043755697356427
+  },
+  "CEBPB": {
+    "score": 0.07132354378700256,
+    "rank": 2109,
+    "percentile": 0.03919781221513219
+  },
+  "CEBPD": {
+    "score": 0.5876152515411377,
+    "rank": 1453,
+    "percentile": 0.3381950774840474
+  },
+  "SREBF1": {
+    "score": 0.8653910756111145,
+    "rank": 1121,
+    "percentile": 0.4895168641750228
+  },
+  "FABP4": {
+    "score": 1.4899893999099731,
+    "rank": 558,
+    "percentile": 0.7461257976298997
+  },
+  "CD36": {
+    "score": 1.0210977792739868,
+    "rank": 958,
+    "percentile": 0.5638103919781221
+  },
+  "PLIN1": {
+    "score": 0.5372310876846313,
+    "rank": 1514,
+    "percentile": 0.31039197812215136
+  },
+  "LPL": {
+    "score": 0.699273407459259,
+    "rank": 1312,
+    "percentile": 0.40246125797629895
+  },
+  "ADIPOQ": {
+    "score": 0.7568928003311157,
+    "rank": 1238,
+    "percentile": 0.4361896080218779
+  }
+}
+01:12:13-scGPT-INFO-<module>: Canonical marker scores (T2D): {
+  "PPARG": {
+    "score": 0.5487533211708069,
+    "rank": 1314,
+    "percentile": 0.4015496809480401
+  },
+  "CEBPA": {
+    "score": 1.1003772020339966,
+    "rank": 627,
+    "percentile": 0.7146763901549681
+  },
+  "CEBPB": {
+    "score": 0.9037672281265259,
+    "rank": 854,
+    "percentile": 0.6112123974475843
+  },
+  "CEBPD": {
+    "score": 1.0989586114883423,
+    "rank": 632,
+    "percentile": 0.7123974475843209
+  },
+  "SREBF1": {
+    "score": 0.8090279698371887,
+    "rank": 970,
+    "percentile": 0.5583409298085689
+  },
+  "FABP4": {
+    "score": 1.6821843385696411,
+    "rank": 240,
+    "percentile": 0.8910665451230629
+  },
+  "CD36": {
+    "score": 0.62386155128479,
+    "rank": 1211,
+    "percentile": 0.44849589790337285
+  },
+  "PLIN1": {
+    "score": 0.7617315053939819,
+    "rank": 1025,
+    "percentile": 0.5332725615314494
+  },
+  "LPL": {
+    "score": 1.1250001192092896,
+    "rank": 600,
+    "percentile": 0.7269826800364632
+  },
+  "ADIPOQ": {
+    "score": 0.7911533117294312,
+    "rank": 989,
+    "percentile": 0.5496809480401094
+  }
+}
+01:12:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=No_Diabetes: {
+  "PPARG": {
+    "row_sum": 1088.6815185546875,
+    "z_score_vs_panel": -1.4174578189849854
+  },
+  "CEBPA": {
+    "row_sum": 1098.1041259765625,
+    "z_score_vs_panel": 0.29082128405570984
+  },
+  "CEBPB": {
+    "row_sum": 1098.92529296875,
+    "z_score_vs_panel": 0.43969541788101196
+  },
+  "CEBPD": {
+    "row_sum": 1093.791259765625,
+    "z_score_vs_panel": -0.49108320474624634
+  },
+  "SREBF1": {
+    "row_sum": 1097.97705078125,
+    "z_score_vs_panel": 0.26778310537338257
+  },
+  "FABP4": {
+    "row_sum": 1100.9652099609375,
+    "z_score_vs_panel": 0.8095238208770752
+  },
+  "CD36": {
+    "row_sum": 1097.149658203125,
+    "z_score_vs_panel": 0.11778029799461365
+  },
+  "PLIN1": {
+    "row_sum": 1097.4013671875,
+    "z_score_vs_panel": 0.16341407597064972
+  },
+  "LPL": {
+    "row_sum": 1098.1483154296875,
+    "z_score_vs_panel": 0.29883265495300293
+  },
+  "ADIPOQ": {
+    "row_sum": 1097.6832275390625,
+    "z_score_vs_panel": 0.21451418101787567
+  }
+}
+01:12:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=T2D: {
+  "PPARG": {
+    "row_sum": 1089.230224609375,
+    "z_score_vs_panel": -1.31309974193573
+  },
+  "CEBPA": {
+    "row_sum": 1097.00390625,
+    "z_score_vs_panel": 0.09101783484220505
+  },
+  "CEBPB": {
+    "row_sum": 1099.8291015625,
+    "z_score_vs_panel": 0.6013174057006836
+  },
+  "CEBPD": {
+    "row_sum": 1094.8902587890625,
+    "z_score_vs_panel": -0.29075875878334045
+  },
+  "SREBF1": {
+    "row_sum": 1098.7861328125,
+    "z_score_vs_panel": 0.4129316806793213
+  },
+  "FABP4": {
+    "row_sum": 1102.6473388671875,
+    "z_score_vs_panel": 1.1103602647781372
+  },
+  "CD36": {
+    "row_sum": 1096.52587890625,
+    "z_score_vs_panel": 0.0046743652783334255
+  },
+  "PLIN1": {
+    "row_sum": 1098.1629638671875,
+    "z_score_vs_panel": 0.30037206411361694
+  },
+  "LPL": {
+    "row_sum": 1099.2733154296875,
+    "z_score_vs_panel": 0.5009288191795349
+  },
+  "ADIPOQ": {
+    "row_sum": 1098.474365234375,
+    "z_score_vs_panel": 0.3566187918186188
+  }
+}
+01:12:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=T1D: {
+  "PPARG": {
+    "row_sum": 1089.106201171875,
+    "z_score_vs_panel": -1.2926645278930664
+  },
+  "CEBPA": {
+    "row_sum": 1096.989501953125,
+    "z_score_vs_panel": 0.08558007329702377
+  },
+  "CEBPB": {
+    "row_sum": 1098.99658203125,
+    "z_score_vs_panel": 0.43647971749305725
+  },
+  "CEBPD": {
+    "row_sum": 1094.37890625,
+    "z_score_vs_panel": -0.37083274126052856
+  },
+  "SREBF1": {
+    "row_sum": 1098.84228515625,
+    "z_score_vs_panel": 0.40950384736061096
+  },
+  "FABP4": {
+    "row_sum": 1102.4552001953125,
+    "z_score_vs_panel": 1.041153073310852
+  },
+  "CD36": {
+    "row_sum": 1096.128662109375,
+    "z_score_vs_panel": -0.06492134183645248
+  },
+  "PLIN1": {
+    "row_sum": 1097.9384765625,
+    "z_score_vs_panel": 0.25149017572402954
+  },
+  "LPL": {
+    "row_sum": 1098.84765625,
+    "z_score_vs_panel": 0.41044288873672485
+  },
+  "ADIPOQ": {
+    "row_sum": 1098.4400634765625,
+    "z_score_vs_panel": 0.3391830623149872
+  }
+}

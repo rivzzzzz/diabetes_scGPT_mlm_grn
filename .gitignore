@@ -1,6 +1,9 @@
 data/
+data_files/
 *.h5
 *.h5ad
 *.pt
+save/**/*.pt
+save/**/*.npz
 __pycache__/
 .ipynb_checkpoints/

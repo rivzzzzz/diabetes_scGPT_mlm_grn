@@ -1,0 +1,12 @@
+{
+  "cells_per_condition": {
+    "No_Diabetes": 6755,
+    "T2D": 3789,
+    "T1D": 2796
+  },
+  "donors_per_condition": {
+    "No_Diabetes": 22,
+    "T1D": 18,
+    "T2D": 21
+  }
+}

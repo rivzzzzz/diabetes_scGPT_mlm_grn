@@ -1,0 +1,255 @@
+07:56:05-scGPT-INFO-<module>: After QC: 21498  / 38395 cells
+07:56:05-scGPT-INFO-<module>: condition
+No_Diabetes    10337
+T2D             6381
+T1D             4780
+07:56:05-scGPT-INFO-<module>: condition
+No_Diabetes    22
+T1D            18
+T2D            21
+07:56:07-scGPT-INFO-<module>: Prevalence filter (min_cells=1074, 5.0% of cells): 10821 / 24285 genes retained, 13464 dropped
+07:56:07-scGPT-INFO-__call__: Filtering genes by counts ...
+07:56:07-scGPT-INFO-__call__: Normalizing total counts ...
+07:56:07-scGPT-INFO-__call__: Binning data ...
+07:56:20-scGPT-INFO-<module>: Using 1848 / 3000 genes (dropped 1152)
+07:56:20-scGPT-INFO-<module>: Extended gene panel: 1850 genes (1848 original + 2 markers added)
+07:56:34-scGPT-INFO-<module>: Attention extraction: 100 / 2688 batches done (3.7%)
+07:56:47-scGPT-INFO-<module>: Attention extraction: 200 / 2688 batches done (7.4%)
+07:57:01-scGPT-INFO-<module>: Attention extraction: 300 / 2688 batches done (11.2%)
+07:57:14-scGPT-INFO-<module>: Attention extraction: 400 / 2688 batches done (14.9%)
+07:57:27-scGPT-INFO-<module>: Attention extraction: 500 / 2688 batches done (18.6%)
+07:57:40-scGPT-INFO-<module>: Attention extraction: 600 / 2688 batches done (22.3%)
+07:57:53-scGPT-INFO-<module>: Attention extraction: 700 / 2688 batches done (26.0%)
+07:58:06-scGPT-INFO-<module>: Attention extraction: 800 / 2688 batches done (29.8%)
+07:58:19-scGPT-INFO-<module>: Attention extraction: 900 / 2688 batches done (33.5%)
+07:58:32-scGPT-INFO-<module>: Attention extraction: 1000 / 2688 batches done (37.2%)
+07:58:45-scGPT-INFO-<module>: Attention extraction: 1100 / 2688 batches done (40.9%)
+07:58:58-scGPT-INFO-<module>: Attention extraction: 1200 / 2688 batches done (44.6%)
+07:59:11-scGPT-INFO-<module>: Attention extraction: 1300 / 2688 batches done (48.4%)
+07:59:24-scGPT-INFO-<module>: Attention extraction: 1400 / 2688 batches done (52.1%)
+07:59:37-scGPT-INFO-<module>: Attention extraction: 1500 / 2688 batches done (55.8%)
+07:59:50-scGPT-INFO-<module>: Attention extraction: 1600 / 2688 batches done (59.5%)
+08:00:03-scGPT-INFO-<module>: Attention extraction: 1700 / 2688 batches done (63.2%)
+08:00:16-scGPT-INFO-<module>: Attention extraction: 1800 / 2688 batches done (67.0%)
+08:00:29-scGPT-INFO-<module>: Attention extraction: 1900 / 2688 batches done (70.7%)
+08:00:42-scGPT-INFO-<module>: Attention extraction: 2000 / 2688 batches done (74.4%)
+08:00:56-scGPT-INFO-<module>: Attention extraction: 2100 / 2688 batches done (78.1%)
+08:01:09-scGPT-INFO-<module>: Attention extraction: 2200 / 2688 batches done (81.8%)
+08:01:22-scGPT-INFO-<module>: Attention extraction: 2300 / 2688 batches done (85.6%)
+08:01:35-scGPT-INFO-<module>: Attention extraction: 2400 / 2688 batches done (89.3%)
+08:01:48-scGPT-INFO-<module>: Attention extraction: 2500 / 2688 batches done (93.0%)
+08:02:01-scGPT-INFO-<module>: Attention extraction: 2600 / 2688 batches done (96.7%)
+08:02:13-scGPT-INFO-<module>: {'No_Diabetes': array([[0.7588317 , 0.7627271 , 0.3401886 , ..., 0.2161041 , 0.6212524 ,
+        0.5583257 ],
+       [0.45729828, 0.3691015 , 0.56768376, ..., 0.5976576 , 0.5066883 ,
+        0.534291  ],
+       [0.59764886, 0.6554424 , 0.4869004 , ..., 0.42745104, 0.4529548 ,
+        0.42763758],
+       ...,
+       [0.6297924 , 0.75934756, 0.3579005 , ..., 0.24400544, 0.51089245,
+        0.45433837],
+       [0.43092293, 0.5535938 , 0.5133417 , ..., 0.56311417, 0.5075902 ,
+        0.49818134],
+       [0.42056084, 0.567625  , 0.51009786, ..., 0.6292441 , 0.5077175 ,
+        0.49187776]], dtype=float32), 'T2D': array([[0.7549332 , 0.74362564, 0.35517362, ..., 0.24621624, 0.6100727 ,
+        0.5386047 ],
+       [0.43620384, 0.38398424, 0.56274045, ..., 0.5789827 , 0.4796203 ,
+        0.50979507],
+       [0.61367095, 0.6411326 , 0.47760698, ..., 0.43088797, 0.48736385,
+        0.44637161],
+       ...,
+       [0.6222107 , 0.76353794, 0.36092153, ..., 0.27159017, 0.5328593 ,
+        0.498975  ],
+       [0.45100847, 0.5424037 , 0.49795902, ..., 0.5005626 , 0.51360947,
+        0.49811822],
+       [0.44478583, 0.55098206, 0.48847222, ..., 0.57923716, 0.52716196,
+        0.496483  ]], dtype=float32), 'T1D': array([[0.75792444, 0.7507194 , 0.3537497 , ..., 0.25523967, 0.6140461 ,
+        0.5447889 ],
+       [0.44109085, 0.3708191 , 0.5616374 , ..., 0.5804439 , 0.47651663,
+        0.5006504 ],
+       [0.62151116, 0.6471586 , 0.47799674, ..., 0.41942456, 0.48432764,
+        0.45705435],
+       ...,
+       [0.6177217 , 0.7613821 , 0.37285066, ..., 0.2871147 , 0.5299764 ,
+        0.49736255],
+       [0.44202685, 0.5436322 , 0.49430493, ..., 0.49627426, 0.51497465,
+        0.49788   ],
+       [0.4492707 , 0.54870623, 0.48733452, ..., 0.5682554 , 0.52075344,
+        0.48784906]], dtype=float32)}
+08:02:13-scGPT-INFO-<module>: Top T1D-driving genes: ['BACH2', 'AQP1', 'MX1', 'HLA-DRB1', 'SOX4', 'MAF', 'CD93', 'FGL2', 'ITGA4', 'RNASE1', 'ZEB1-AS1', 'FPR3', 'ITGB2', 'HBEGF', 'P2RY8', 'SRGN', 'MNDA', 'PRDM1', 'MX2', 'DYNC1I1']
+08:02:13-scGPT-INFO-<module>: Scores T1D: [23.175665, 21.195692, 21.104641, 20.148481, 20.063618, 19.828337, 19.635612, 19.529799, 19.330404, 19.297462, 18.830204, 18.739729, 18.614752, 18.498095, 18.237928, 18.200396, 18.134996, 18.090769, 18.085527, 17.81903]
+08:02:13-scGPT-INFO-<module>: Top T2D-driving genes: ['SOX4', 'BACH2', 'MX1', 'MAF', 'HLA-DRB1', 'CD93', 'P2RY14', 'HBEGF', 'GYS2', 'ADGRE5', 'FGL2', 'ZEB1-AS1', 'AQP1', 'AKR1C2', 'FPR3', 'ITGA4', 'MX2', 'PRDM1', 'CTSL', 'RNASE1']
+08:02:13-scGPT-INFO-<module>: Scores T2D: [16.56192, 16.549461, 16.279362, 16.100266, 15.847592, 15.708048, 15.398144, 15.354153, 15.339895, 15.079189, 14.935322, 14.718369, 14.406562, 14.034271, 13.946382, 13.8724375, 13.789828, 13.67379, 13.671862, 13.650945]
+08:02:13-scGPT-INFO-<module>: Done. Files saved:
+08:02:13-scGPT-INFO-<module>:   attention_matrices.npz
+08:02:13-scGPT-INFO-<module>:   difference_matrices.npz
+08:02:13-scGPT-INFO-<module>:   gene_panel.json
+08:02:13-scGPT-INFO-<module>:   gene_vocab_idx.npy
+08:02:13-scGPT-INFO-<module>:   ranked_genes_top20.csv
+08:02:13-scGPT-INFO-<module>:   ranked_genes_top20.json
+08:02:13-scGPT-INFO-<module>:   run.log
+08:02:13-scGPT-INFO-<module>:   sample_counts.json
+08:02:13-scGPT-INFO-<module>: Canonical marker scores (T1D): {
+  "ADIPOQ": {
+    "score": 6.959506034851074,
+    "rank": 714,
+    "percentile": 0.6148028092922744
+  },
+  "PLIN1": {
+    "score": 0.12728682160377502,
+    "rank": 1833,
+    "percentile": 0.010264721772015095
+  },
+  "FABP4": {
+    "score": 0.6055090427398682,
+    "rank": 1727,
+    "percentile": 0.06753106428957323
+  },
+  "LEP": {
+    "score": 17.37322425842285,
+    "rank": 30,
+    "percentile": 0.984332793084819
+  },
+  "CD68": {
+    "score": 10.965998649597168,
+    "rank": 304,
+    "percentile": 0.8363047001620746
+  },
+  "ITGAM": {
+    "score": 14.144394874572754,
+    "rank": 108,
+    "percentile": 0.9421934089681253
+  },
+  "PTPRC": {
+    "score": 8.553121566772461,
+    "rank": 530,
+    "percentile": 0.7142085359265262
+  }
+}
+08:02:13-scGPT-INFO-<module>: Canonical marker scores (T2D): {
+  "ADIPOQ": {
+    "score": 7.24196720123291,
+    "rank": 423,
+    "percentile": 0.7720151269584008
+  },
+  "PLIN1": {
+    "score": 0.9311434030532837,
+    "rank": 1632,
+    "percentile": 0.11885467314964882
+  },
+  "FABP4": {
+    "score": 0.3360143303871155,
+    "rank": 1781,
+    "percentile": 0.03835764451647761
+  },
+  "LEP": {
+    "score": 13.21761703491211,
+    "rank": 27,
+    "percentile": 0.9859535386277688
+  },
+  "CD68": {
+    "score": 8.831628799438477,
+    "rank": 247,
+    "percentile": 0.86709886547812
+  },
+  "ITGAM": {
+    "score": 10.348407745361328,
+    "rank": 129,
+    "percentile": 0.930848190167477
+  },
+  "PTPRC": {
+    "score": 7.137556076049805,
+    "rank": 441,
+    "percentile": 0.7622906537007024
+  }
+}
+08:02:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=No_Diabetes: {
+  "ADIPOQ": {
+    "row_sum": 897.641845703125,
+    "z_score_vs_panel": -1.1243685483932495
+  },
+  "PLIN1": {
+    "row_sum": 911.833984375,
+    "z_score_vs_panel": -0.5410997271537781
+  },
+  "FABP4": {
+    "row_sum": 908.302978515625,
+    "z_score_vs_panel": -0.6862170696258545
+  },
+  "LEP": {
+    "row_sum": 900.934814453125,
+    "z_score_vs_panel": -0.9890340566635132
+  },
+  "CD68": {
+    "row_sum": 956.8885498046875,
+    "z_score_vs_panel": 1.310553789138794
+  },
+  "ITGAM": {
+    "row_sum": 951.7640380859375,
+    "z_score_vs_panel": 1.0999464988708496
+  },
+  "PTPRC": {
+    "row_sum": 949.8670654296875,
+    "z_score_vs_panel": 1.0219846963882446
+  }
+}
+08:02:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=T2D: {
+  "ADIPOQ": {
+    "row_sum": 904.8837890625,
+    "z_score_vs_panel": -0.9882622957229614
+  },
+  "PLIN1": {
+    "row_sum": 912.76513671875,
+    "z_score_vs_panel": -0.6010701656341553
+  },
+  "FABP4": {
+    "row_sum": 908.638916015625,
+    "z_score_vs_panel": -0.8037817478179932
+  },
+  "LEP": {
+    "row_sum": 914.1524047851562,
+    "z_score_vs_panel": -0.5329169631004333
+  },
+  "CD68": {
+    "row_sum": 948.0570068359375,
+    "z_score_vs_panel": 1.1327366828918457
+  },
+  "ITGAM": {
+    "row_sum": 941.4157104492188,
+    "z_score_vs_panel": 0.8064653873443604
+  },
+  "PTPRC": {
+    "row_sum": 942.7296142578125,
+    "z_score_vs_panel": 0.871014416217804
+  }
+}
+08:02:13-scGPT-INFO-<module>: Raw attention stats for markers, condition=T1D: {
+  "ADIPOQ": {
+    "row_sum": 904.6013793945312,
+    "z_score_vs_panel": -1.0696135759353638
+  },
+  "PLIN1": {
+    "row_sum": 911.9613037109375,
+    "z_score_vs_panel": -0.683691680431366
+  },
+  "FABP4": {
+    "row_sum": 908.908447265625,
+    "z_score_vs_panel": -0.8437699675559998
+  },
+  "LEP": {
+    "row_sum": 918.3079833984375,
+    "z_score_vs_panel": -0.3508998155593872
+  },
+  "CD68": {
+    "row_sum": 945.922607421875,
+    "z_score_vs_panel": 1.097089171409607
+  },
+  "ITGAM": {
+    "row_sum": 937.6197509765625,
+    "z_score_vs_panel": 0.6617240309715271
+  },
+  "PTPRC": {
+    "row_sum": 941.3140869140625,
+    "z_score_vs_panel": 0.8554387092590332
+  }
+}
