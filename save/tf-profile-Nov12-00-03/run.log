@@ -1,0 +1,213 @@
+00:03:13-scGPT-INFO-<module>: ==============================================================================================================
+00:03:13-scGPT-INFO-<module>: PART A -- strict partner profiles (both conditions must agree, correlation shift same sign)
+00:03:13-scGPT-INFO-<module>: ==============================================================================================================
+00:03:14-scGPT-INFO-<module>: 
+### PPARG (reference) -- notDE
+00:03:14-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:14-scGPT-INFO-<module>: DGAT2           99%   100%    99%    0.18    0.39    0.34   +0.21   +0.16  notDE
+00:03:14-scGPT-INFO-<module>: GPD1            99%   100%    99%    0.23    0.41    0.42   +0.18   +0.19  notDE
+00:03:14-scGPT-INFO-<module>: ZNF117          99%    99%    99%    0.29    0.47    0.45   +0.19   +0.16  notDE
+00:03:14-scGPT-INFO-<module>: PDE8B           99%   100%    99%    0.29    0.46    0.51   +0.17   +0.21  notDE
+00:03:14-scGPT-INFO-<module>: 
+### CEBPA (reference) -- notDE
+00:03:14-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:14-scGPT-INFO-<module>: KCNQ1OT1        92%    92%    94%   -0.10    0.01   -0.01   +0.11   +0.09  notDE
+00:03:14-scGPT-INFO-<module>: MTRNR2L12       92%    92%    92%    0.05   -0.05   -0.05   -0.10   -0.10  notDE
+00:03:14-scGPT-INFO-<module>: SLC7A6          91%    97%    91%    0.04    0.13    0.14   +0.09   +0.10  notDE
+00:03:14-scGPT-INFO-<module>: TMEM132C        90%    90%    90%    0.01    0.10    0.14   +0.09   +0.12  notDE
+00:03:14-scGPT-INFO-<module>: 
+### MLXIPL -- notDE
+00:03:14-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:14-scGPT-INFO-<module>: PRKAR2B         99%    99%   100%    0.18    0.38    0.36   +0.20   +0.18  notDE
+00:03:14-scGPT-INFO-<module>: PDE8B           99%    99%   100%    0.12    0.34    0.36   +0.22   +0.24  notDE
+00:03:14-scGPT-INFO-<module>: ITSN1           99%   100%    99%    0.13    0.29    0.28   +0.16   +0.15  notDE
+00:03:14-scGPT-INFO-<module>: DMD             98%    99%    98%    0.09    0.23    0.26   +0.14   +0.17  notDE
+00:03:14-scGPT-INFO-<module>: 
+### ZEB1 -- notDE
+00:03:14-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:14-scGPT-INFO-<module>: GPAM           100%   100%   100%   -0.04   -0.30   -0.28   -0.26   -0.23  T2D:Down
+00:03:14-scGPT-INFO-<module>: PDE3B          100%   100%   100%   -0.12   -0.37   -0.36   -0.25   -0.24  notDE
+00:03:14-scGPT-INFO-<module>: PRKAR2B         99%    99%   100%   -0.07   -0.34   -0.28   -0.27   -0.21  notDE
+00:03:14-scGPT-INFO-<module>: ADRA1A          99%   100%    99%   -0.11   -0.31   -0.28   -0.19   -0.17  notDE
+00:03:14-scGPT-INFO-<module>: 
+### RORA -- notDE
+00:03:14-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:14-scGPT-INFO-<module>: PFKFB1          99%   100%    99%   -0.01   -0.20   -0.16   -0.19   -0.15  T1D:Down
+00:03:14-scGPT-INFO-<module>: ABCD2           99%    99%    99%   -0.04   -0.26   -0.19   -0.21   -0.14  notDE
+00:03:14-scGPT-INFO-<module>: ADCY5           98%    99%    98%   -0.03   -0.24   -0.16   -0.21   -0.13  notDE
+00:03:14-scGPT-INFO-<module>: ADRA1A          98%    99%    98%   -0.04   -0.28   -0.17   -0.24   -0.12  notDE
+00:03:15-scGPT-INFO-<module>: 
+### TCF4 -- notDE
+00:03:15-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:15-scGPT-INFO-<module>: HACD2           99%    99%    99%   -0.03   -0.23   -0.19   -0.20   -0.16  T1D:Down,T2D:Down
+00:03:15-scGPT-INFO-<module>: ESRRG           99%    99%    99%   -0.02   -0.20   -0.20   -0.18   -0.18  notDE
+00:03:15-scGPT-INFO-<module>: NWD2            99%    99%    99%   -0.10   -0.26   -0.29   -0.17   -0.19  notDE
+00:03:15-scGPT-INFO-<module>: TMEM131L        99%    99%   100%   -0.02   -0.23   -0.21   -0.21   -0.19  notDE
+00:03:15-scGPT-INFO-<module>: 
+### FOXP1 -- notDE
+00:03:15-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:15-scGPT-INFO-<module>: APCDD1          96%    96%    97%    0.06   -0.11   -0.06   -0.17   -0.12  T1D:Down
+00:03:15-scGPT-INFO-<module>: HK2             96%    99%    96%    0.02   -0.14   -0.09   -0.15   -0.10  T2D:Down
+00:03:15-scGPT-INFO-<module>: ABCD2           95%    99%    95%    0.06   -0.06   -0.06   -0.12   -0.12  notDE
+00:03:15-scGPT-INFO-<module>: PTPRG           94%    94%    95%   -0.00   -0.12   -0.12   -0.11   -0.12  notDE
+00:03:15-scGPT-INFO-<module>: 
+### EBF1 -- notDE
+00:03:15-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:15-scGPT-INFO-<module>: BTNL9           99%   100%    99%    0.23   -0.04    0.07   -0.27   -0.15  notDE
+00:03:15-scGPT-INFO-<module>: PCOLCE2         99%    99%   100%    0.10    0.36    0.30   +0.26   +0.20  notDE
+00:03:15-scGPT-INFO-<module>: ASAP1           99%    99%    99%   -0.12   -0.32   -0.27   -0.19   -0.15  notDE
+00:03:15-scGPT-INFO-<module>: ABCA9           98%    98%    99%   -0.08    0.12    0.10   +0.20   +0.18  notDE
+00:03:15-scGPT-INFO-<module>: 
+### BHLHE40 -- notDE
+00:03:15-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:15-scGPT-INFO-<module>: TACR1           94%    94%    94%    0.04    0.14    0.16   +0.11   +0.12  T2D:Up
+00:03:15-scGPT-INFO-<module>: TTTY14          92%    99%    92%    0.10    0.01    0.00   -0.10   -0.10  notDE
+00:03:15-scGPT-INFO-<module>: COL24A1         92%    93%    92%    0.02   -0.08   -0.10   -0.10   -0.11  notDE
+00:03:15-scGPT-INFO-<module>: KAZN-AS1        87%    87%    90%    0.08   -0.04   -0.00   -0.11   -0.08  notDE
+00:03:16-scGPT-INFO-<module>: 
+### CREB3L2 -- notDE
+00:03:16-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:16-scGPT-INFO-<module>: LINC02240       98%   100%    98%   -0.14    0.01    0.05   +0.15   +0.19  notDE
+00:03:16-scGPT-INFO-<module>: LINC02237       97%   100%    97%   -0.11    0.03    0.04   +0.14   +0.15  T1D:Down
+00:03:16-scGPT-INFO-<module>: TSKU            97%   100%    97%   -0.13    0.01    0.03   +0.13   +0.16  notDE
+00:03:16-scGPT-INFO-<module>: HK2             97%   100%    97%   -0.12    0.01    0.08   +0.13   +0.20  T2D:Down
+00:03:16-scGPT-INFO-<module>: 
+### GLIS3 -- notDE
+00:03:16-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:16-scGPT-INFO-<module>: MYCBP2          99%   100%    99%    0.01   -0.17   -0.16   -0.18   -0.16  notDE
+00:03:16-scGPT-INFO-<module>: TNFRSF21        98%    99%    98%   -0.06   -0.22   -0.23   -0.16   -0.17  notDE
+00:03:16-scGPT-INFO-<module>: TMEM131L        98%    98%    99%   -0.11   -0.34   -0.27   -0.23   -0.16  notDE
+00:03:16-scGPT-INFO-<module>: PDE8B           98%    99%    98%   -0.22   -0.37   -0.37   -0.15   -0.15  notDE
+00:03:16-scGPT-INFO-<module>: 
+### KLF4 -- notDE
+00:03:16-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:16-scGPT-INFO-<module>: PICALM          95%    96%    95%   -0.05    0.07    0.05   +0.13   +0.10  notDE
+00:03:16-scGPT-INFO-<module>: CAV1            95%    98%    95%   -0.07    0.06    0.03   +0.13   +0.10  notDE
+00:03:16-scGPT-INFO-<module>: CPM             94%    96%    94%   -0.18   -0.07   -0.04   +0.11   +0.14  notDE
+00:03:16-scGPT-INFO-<module>: FZD4            93%    98%    93%   -0.13   -0.02   -0.01   +0.11   +0.12  notDE
+00:03:16-scGPT-INFO-<module>: 
+### FOXO1 -- notDE
+00:03:16-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:16-scGPT-INFO-<module>: DGAT2           99%    99%    99%    0.13    0.37    0.29   +0.24   +0.16  notDE
+00:03:16-scGPT-INFO-<module>: CIDEC           98%   100%    98%    0.19    0.34    0.32   +0.15   +0.13  notDE
+00:03:16-scGPT-INFO-<module>: PLIN4           97%    97%    97%    0.24    0.37    0.36   +0.13   +0.12  notDE
+00:03:16-scGPT-INFO-<module>: PLXNA4          97%    97%    99%    0.24    0.40    0.39   +0.16   +0.15  notDE
+00:03:17-scGPT-INFO-<module>: 
+### STAT3 -- notDE
+00:03:17-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:17-scGPT-INFO-<module>: G0S2            96%    98%    96%   -0.14   -0.02    0.03   +0.12   +0.18  notDE
+00:03:17-scGPT-INFO-<module>: GPAM            95%    95%   100%   -0.25   -0.03   -0.02   +0.22   +0.23  T2D:Down
+00:03:17-scGPT-INFO-<module>: VLDLR-AS1       95%    99%    95%   -0.12   -0.00    0.00   +0.11   +0.12  T1D:Down
+00:03:17-scGPT-INFO-<module>: ABHD5           91%    91%    98%    0.08   -0.07   -0.04   -0.15   -0.12  notDE
+00:03:17-scGPT-INFO-<module>: 
+### EGR1 -- notDE
+00:03:17-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:17-scGPT-INFO-<module>: TTTY10          94%    94%    95%    0.08   -0.03   -0.05   -0.11   -0.14  notDE
+00:03:17-scGPT-INFO-<module>: XIST            94%    94%    99%   -0.17    0.01   -0.01   +0.17   +0.16  notDE
+00:03:17-scGPT-INFO-<module>: ZBED3-AS1       91%    91%    97%   -0.19   -0.05   -0.08   +0.14   +0.11  notDE
+00:03:17-scGPT-INFO-<module>: SRGAP2          91%    91%    91%    0.10   -0.00    0.02   -0.11   -0.08  notDE
+00:03:17-scGPT-INFO-<module>: 
+### NFIA -- notDE
+00:03:17-scGPT-INFO-<module>: partner        dual   attn   corr  r_hlth   r_T1D   r_T2D  dr_T1D  dr_T2D  DE
+00:03:17-scGPT-INFO-<module>: CTIF            98%    99%    98%   -0.01    0.14    0.12   +0.15   +0.13  notDE
+00:03:17-scGPT-INFO-<module>: TTTY10          96%    96%    96%    0.00    0.13    0.11   +0.12   +0.11  notDE
+00:03:17-scGPT-INFO-<module>: ANGPTL4         92%    92%    97%   -0.17   -0.04    0.00   +0.13   +0.17  notDE
+00:03:17-scGPT-INFO-<module>: LINC00278       92%    96%    92%   -0.00    0.17    0.08   +0.17   +0.08  notDE
+00:03:17-scGPT-INFO-<module>: 
+==============================================================================================================
+00:03:17-scGPT-INFO-<module>: PART B -- perturbation probe for directionality
+00:03:17-scGPT-INFO-<module>: ==============================================================================================================
+00:03:17-scGPT-INFO-<module>: Interest set: 70 genes
+00:03:28-scGPT-INFO-<module>: High-expression flag cutoff (98th pct of mean counts): 12.65
+00:03:28-scGPT-INFO-__call__: Normalizing total counts ...
+00:03:28-scGPT-INFO-__call__: Log1p transforming ...
+00:03:28-scGPT-INFO-__call__: Binning data ...
+00:03:32-scGPT-INFO-<module>: Loaded model; missing=0 unexpected=0
+00:04:05-scGPT-INFO-<module>: [No_Diabetes] 30/130
+00:04:38-scGPT-INFO-<module>: [No_Diabetes] 60/130
+00:05:11-scGPT-INFO-<module>: [No_Diabetes] 90/130
+00:05:44-scGPT-INFO-<module>: [No_Diabetes] 120/130
+00:05:55-scGPT-INFO-<module>: [No_Diabetes] done
+00:06:29-scGPT-INFO-<module>: [T1D] 30/130
+00:07:02-scGPT-INFO-<module>: [T1D] 60/130
+00:07:35-scGPT-INFO-<module>: [T1D] 90/130
+00:08:08-scGPT-INFO-<module>: [T1D] 120/130
+00:08:19-scGPT-INFO-<module>: [T1D] done
+00:08:52-scGPT-INFO-<module>: [T2D] 30/130
+00:09:26-scGPT-INFO-<module>: [T2D] 60/130
+00:09:59-scGPT-INFO-<module>: [T2D] 90/130
+00:10:32-scGPT-INFO-<module>: [T2D] 120/130
+00:10:43-scGPT-INFO-<module>: [T2D] done
+00:10:43-scGPT-INFO-<module>: 
+==============================================================================================================
+00:10:43-scGPT-INFO-<module>: DIRECTIONALITY: zero TF -> partner  vs  zero partner -> TF  (mean over conditions)
+00:10:43-scGPT-INFO-<module>: hi = gene mean expression above 98th pct; probe unreliable there
+00:10:43-scGPT-INFO-<module>: ==============================================================================================================
+00:10:43-scGPT-INFO-<module>: TF         partner       zeroTF->p  zerop->TF   ratio  flags
+00:10:43-scGPT-INFO-<module>: RORA       ADRA1A          -0.0205    -0.0001   251.8  
+00:10:43-scGPT-INFO-<module>: NFIA       ANGPTL4         -0.0342    +0.0010    33.6  TF-hi
+00:10:43-scGPT-INFO-<module>: NFIA       LINC00278       -0.0413    -0.0019    22.1  TF-hi
+00:10:43-scGPT-INFO-<module>: EBF1       BTNL9           -0.0547    -0.0029    18.7  TF-hi
+00:10:43-scGPT-INFO-<module>: PPARG      DGAT2           -0.0225    +0.0014    16.3  TF-hi
+00:10:43-scGPT-INFO-<module>: RORA       ABCD2           -0.0259    -0.0017    15.5  
+00:10:43-scGPT-INFO-<module>: EBF1       PCOLCE2         -0.0327    +0.0026    12.6  TF-hi
+00:10:43-scGPT-INFO-<module>: NFIA       TTTY10          -0.0248    -0.0024    10.5  TF-hi
+00:10:43-scGPT-INFO-<module>: FOXO1      DGAT2           -0.0191    +0.0023     8.2  TF-hi
+00:10:43-scGPT-INFO-<module>: PPARG      ZNF117          -0.0166    +0.0025     6.6  TF-hi
+00:10:43-scGPT-INFO-<module>: EBF1       ABCA9           -0.0375    +0.0077     4.9  TF-hi
+00:10:43-scGPT-INFO-<module>: PPARG      PDE8B           -0.0273    -0.0063     4.3  TF-hi
+00:10:43-scGPT-INFO-<module>: FOXO1      CIDEC           -0.0324    +0.0076     4.3  TF-hi
+00:10:43-scGPT-INFO-<module>: RORA       PFKFB1          -0.0257    +0.0063     4.1  
+00:10:43-scGPT-INFO-<module>: FOXP1      ABCD2           -0.0163    -0.0047     3.5  
+00:10:43-scGPT-INFO-<module>: EBF1       ASAP1           -0.0267    -0.0084     3.2  TF-hi
+00:10:43-scGPT-INFO-<module>: NFIA       CTIF            -0.0159    +0.0051     3.1  TF-hi
+00:10:43-scGPT-INFO-<module>: RORA       ADCY5           -0.0248    -0.0085     2.9  
+00:10:43-scGPT-INFO-<module>: STAT3      VLDLR-AS1       -0.0148    -0.0062     2.4  
+00:10:43-scGPT-INFO-<module>: FOXP1      HK2             -0.0208    -0.0089     2.3  
+00:10:43-scGPT-INFO-<module>: PPARG      GPD1            -0.0224    +0.0101     2.2  TF-hi
+00:10:43-scGPT-INFO-<module>: EGR1       SRGAP2          -0.0105    -0.0049     2.2  
+00:10:43-scGPT-INFO-<module>: BHLHE40    TACR1           -0.0012    -0.0006     1.8  
+00:10:43-scGPT-INFO-<module>: CREB3L2    TSKU            -0.0122    -0.0067     1.8  
+00:10:43-scGPT-INFO-<module>: FOXP1      APCDD1          -0.0130    -0.0083     1.6  
+00:10:43-scGPT-INFO-<module>: CREB3L2    HK2             -0.0150    -0.0101     1.5  
+00:10:43-scGPT-INFO-<module>: STAT3      G0S2            -0.0115    -0.0078     1.5  
+00:10:43-scGPT-INFO-<module>: TCF4       HACD2           -0.0164    -0.0138     1.2  
+00:10:43-scGPT-INFO-<module>: TCF4       TMEM131L        -0.0198    -0.0169     1.2  
+00:10:43-scGPT-INFO-<module>: CEBPA      MTRNR2L12       -0.0022    -0.0019     1.2  
+00:10:43-scGPT-INFO-<module>: MLXIPL     PDE8B           -0.0149    -0.0131     1.1  
+00:10:43-scGPT-INFO-<module>: STAT3      ABHD5           -0.0150    -0.0135     1.1  
+00:10:43-scGPT-INFO-<module>: CREB3L2    LINC02237       -0.0099    -0.0104     1.0  
+00:10:43-scGPT-INFO-<module>: TCF4       NWD2            -0.0124    -0.0133     0.9  
+00:10:43-scGPT-INFO-<module>: CEBPA      KCNQ1OT1        -0.0026    -0.0028     0.9  
+00:10:43-scGPT-INFO-<module>: GLIS3      TNFRSF21        -0.0138    -0.0165     0.8  
+00:10:43-scGPT-INFO-<module>: EGR1       XIST            -0.0118    -0.0154     0.8  
+00:10:43-scGPT-INFO-<module>: BHLHE40    KAZN-AS1        -0.0014    -0.0019     0.8  
+00:10:43-scGPT-INFO-<module>: GLIS3      TMEM131L        -0.0122    -0.0174     0.7  
+00:10:43-scGPT-INFO-<module>: CREB3L2    LINC02240       -0.0108    -0.0167     0.7  
+00:10:43-scGPT-INFO-<module>: GLIS3      PDE8B           -0.0139    -0.0216     0.6  
+00:10:43-scGPT-INFO-<module>: TCF4       ESRRG           -0.0079    -0.0126     0.6  
+00:10:43-scGPT-INFO-<module>: ZEB1       PRKAR2B         -0.0144    -0.0229     0.6  
+00:10:43-scGPT-INFO-<module>: EGR1       TTTY10          -0.0055    -0.0088     0.6  
+00:10:43-scGPT-INFO-<module>: ZEB1       PDE3B           -0.0122    -0.0214     0.6  partner-hi
+00:10:43-scGPT-INFO-<module>: FOXP1      PTPRG           -0.0128    -0.0243     0.5  partner-hi
+00:10:43-scGPT-INFO-<module>: BHLHE40    COL24A1         -0.0030    -0.0058     0.5  
+00:10:43-scGPT-INFO-<module>: BHLHE40    TTTY14          -0.0028    -0.0068     0.4  
+00:10:43-scGPT-INFO-<module>: KLF4       FZD4            -0.0028    -0.0069     0.4  
+00:10:43-scGPT-INFO-<module>: EGR1       ZBED3-AS1       -0.0060    -0.0152     0.4  
+00:10:43-scGPT-INFO-<module>: ZEB1       ADRA1A          -0.0132    -0.0342     0.4  
+00:10:43-scGPT-INFO-<module>: FOXO1      PLXNA4          -0.0032    -0.0089     0.4  TF-hi
+00:10:43-scGPT-INFO-<module>: KLF4       CAV1            -0.0026    -0.0089     0.3  
+00:10:43-scGPT-INFO-<module>: KLF4       CPM             -0.0028    -0.0099     0.3  
+00:10:43-scGPT-INFO-<module>: ZEB1       GPAM            -0.0063    -0.0242     0.3  partner-hi
+00:10:43-scGPT-INFO-<module>: MLXIPL     PRKAR2B         -0.0038    -0.0154     0.2  
+00:10:43-scGPT-INFO-<module>: CEBPA      SLC7A6          -0.0012    -0.0067     0.2  
+00:10:43-scGPT-INFO-<module>: KLF4       PICALM          -0.0028    -0.0203     0.1  
+00:10:43-scGPT-INFO-<module>: CEBPA      TMEM132C        -0.0011    -0.0095     0.1  
+00:10:43-scGPT-INFO-<module>: STAT3      GPAM            -0.0067    +0.0712     0.1  partner-hi
+00:10:43-scGPT-INFO-<module>: FOXO1      PLIN4           -0.0028    +0.0381     0.1  TF-hi
+00:10:43-scGPT-INFO-<module>: GLIS3      MYCBP2          -0.0019    -0.0318     0.1  partner-hi
+00:10:43-scGPT-INFO-<module>: MLXIPL     ITSN1           -0.0011    -0.0194     0.1  
+00:10:43-scGPT-INFO-<module>: MLXIPL     DMD             -0.0006    -0.0205     0.0  partner-hi
+00:10:43-scGPT-INFO-<module>: 
+Saved to diabetes_scGPT_mlm_objective/save/tf-profile-Nov12-00-03
+00:10:43-scGPT-INFO-<module>: Done.

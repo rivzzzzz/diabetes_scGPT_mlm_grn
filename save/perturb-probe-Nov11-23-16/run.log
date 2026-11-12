@@ -1,0 +1,90 @@
+23:16:50-scGPT-INFO-<module>: save to diabetes_scGPT_mlm_objective/save/perturb-probe-Nov11-23-16
+23:16:50-scGPT-INFO-<module>: Loading data
+23:17:23-scGPT-INFO-<module>: After QC: 21498 cells
+23:17:23-scGPT-INFO-<module>: After PTPRC purity gate: 13340 cells
+23:17:29-scGPT-INFO-<module>: Gene panel: 2193 genes
+23:17:29-scGPT-INFO-__call__: Normalizing total counts ...
+23:17:29-scGPT-INFO-__call__: Log1p transforming ...
+23:17:29-scGPT-INFO-__call__: Binning data ...
+23:17:35-scGPT-INFO-<module>: Loaded diabetes_scGPT_mlm_objective/save/dev_diabetes_mlm_objective_claude_pearsonhvg_1-Oct26-22-11/model_e20.pt; missing=0 unexpected=0
+23:17:35-scGPT-INFO-<module>: Markers present in panel: ['PPARG', 'CEBPA', 'CEBPB', 'CEBPD', 'SREBF1', 'FABP4', 'CD36', 'PLIN1', 'LPL', 'ADIPOQ']
+23:17:35-scGPT-INFO-<module>: [No_Diabetes] 128 cells, tokenized to (128, 2194)
+23:17:58-scGPT-INFO-<module>: [No_Diabetes] 20/110 perturbations done
+23:18:20-scGPT-INFO-<module>: [No_Diabetes] 40/110 perturbations done
+23:18:42-scGPT-INFO-<module>: [No_Diabetes] 60/110 perturbations done
+23:19:04-scGPT-INFO-<module>: [No_Diabetes] 80/110 perturbations done
+23:19:27-scGPT-INFO-<module>: [No_Diabetes] 100/110 perturbations done
+23:19:38-scGPT-INFO-<module>: 
+=== [No_Diabetes] effect of zeroing each TF, vs. background of 100 random genes ===
+23:19:38-scGPT-INFO-<module>:   zero PPARG   -> CEBPA: -0.0084 (98%)  CEBPB: -0.0236 (95%)  CEBPD: -0.0230 (93%)  SREBF1: -0.0266 (100%)  FABP4: -0.0199 (99%)  CD36: -0.0194 (100%)  PLIN1: -0.0105 (92%)  LPL: -0.0156 (93%)  ADIPOQ: -0.0190 (100%)
+23:19:38-scGPT-INFO-<module>:   zero CEBPA   -> PPARG: -0.0005 (12%)  CEBPB: -0.0017 (21%)  CEBPD: -0.0016 (16%)  SREBF1: -0.0015 (30%)  FABP4: -0.0010 (14%)  CD36: -0.0009 (20%)  PLIN1: +0.0002 (6%)  LPL: -0.0006 (13%)  ADIPOQ: -0.0006 (23%)
+23:19:38-scGPT-INFO-<module>:   zero CEBPB   -> PPARG: -0.0029 (55%)  CEBPA: -0.0032 (64%)  CEBPD: -0.0118 (64%)  SREBF1: -0.0069 (65%)  FABP4: -0.0065 (65%)  CD36: -0.0062 (64%)  PLIN1: -0.0042 (67%)  LPL: -0.0054 (64%)  ADIPOQ: -0.0048 (69%)
+23:19:38-scGPT-INFO-<module>:   zero CEBPD   -> PPARG: -0.0034 (61%)  CEBPA: -0.0017 (42%)  CEBPB: -0.0061 (48%)  SREBF1: -0.0043 (50%)  FABP4: -0.0048 (54%)  CD36: -0.0048 (61%)  PLIN1: -0.0027 (57%)  LPL: -0.0028 (46%)  ADIPOQ: -0.0022 (53%)
+23:19:38-scGPT-INFO-<module>:   zero SREBF1  -> PPARG: -0.0063 (76%)  CEBPA: -0.0038 (71%)  CEBPB: -0.0143 (74%)  CEBPD: -0.0155 (76%)  FABP4: -0.0101 (77%)  CD36: -0.0090 (73%)  PLIN1: -0.0067 (75%)  LPL: -0.0081 (76%)  ADIPOQ: -0.0059 (76%)
+23:19:38-scGPT-INFO-<module>:   zero FABP4   -> PPARG: -0.0012 (35%)  CEBPA: -0.0069 (95%)  CEBPB: -0.0175 (85%)  CEBPD: -0.0158 (76%)  SREBF1: -0.0182 (94%)  CD36: -0.0052 (61%)  PLIN1: -0.0043 (67%)  LPL: -0.0063 (71%)  ADIPOQ: -0.0081 (85%)
+23:19:38-scGPT-INFO-<module>:   zero CD36    -> PPARG: -0.0103 (96%)  CEBPA: -0.0061 (93%)  CEBPB: -0.0195 (88%)  CEBPD: -0.0180 (85%)  SREBF1: -0.0190 (96%)  FABP4: -0.0172 (93%)  PLIN1: -0.0127 (99%)  LPL: -0.0139 (90%)  ADIPOQ: -0.0140 (97%)
+23:19:38-scGPT-INFO-<module>:   zero PLIN1   -> PPARG: +0.0330 (100%)  CEBPA: -0.0136 (100%)  CEBPB: -0.0195 (88%)  CEBPD: -0.0269 (100%)  SREBF1: -0.0281 (100%)  FABP4: +0.0103 (77%)  CD36: +0.0237 (100%)  LPL: +0.0155 (93%)  ADIPOQ: -0.0006 (23%)
+23:19:38-scGPT-INFO-<module>:   zero LPL     -> PPARG: -0.0027 (53%)  CEBPA: -0.0066 (94%)  CEBPB: -0.0190 (86%)  CEBPD: -0.0200 (88%)  SREBF1: -0.0190 (96%)  FABP4: -0.0121 (82%)  CD36: -0.0070 (67%)  PLIN1: -0.0026 (57%)  ADIPOQ: -0.0121 (95%)
+23:19:38-scGPT-INFO-<module>:   zero ADIPOQ  -> PPARG: +0.0403 (100%)  CEBPA: -0.0152 (100%)  CEBPB: -0.0153 (80%)  CEBPD: -0.0243 (97%)  SREBF1: -0.0251 (100%)  FABP4: +0.0162 (92%)  CD36: +0.0319 (100%)  PLIN1: +0.0322 (100%)  LPL: +0.0234 (100%)
+23:19:38-scGPT-INFO-<module>: [T1D] 128 cells, tokenized to (128, 2194)
+23:20:00-scGPT-INFO-<module>: [T1D] 20/110 perturbations done
+23:20:23-scGPT-INFO-<module>: [T1D] 40/110 perturbations done
+23:20:45-scGPT-INFO-<module>: [T1D] 60/110 perturbations done
+23:21:07-scGPT-INFO-<module>: [T1D] 80/110 perturbations done
+23:21:29-scGPT-INFO-<module>: [T1D] 100/110 perturbations done
+23:21:40-scGPT-INFO-<module>: 
+=== [T1D] effect of zeroing each TF, vs. background of 100 random genes ===
+23:21:40-scGPT-INFO-<module>:   zero PPARG   -> CEBPA: -0.0069 (100%)  CEBPB: -0.0244 (97%)  CEBPD: -0.0240 (95%)  SREBF1: -0.0254 (100%)  FABP4: -0.0216 (97%)  CD36: -0.0208 (98%)  PLIN1: -0.0078 (86%)  LPL: -0.0181 (96%)  ADIPOQ: -0.0215 (100%)
+23:21:40-scGPT-INFO-<module>:   zero CEBPA   -> PPARG: -0.0007 (14%)  CEBPB: -0.0012 (6%)  CEBPD: -0.0015 (8%)  SREBF1: -0.0008 (5%)  FABP4: -0.0007 (7%)  CD36: -0.0005 (5%)  PLIN1: -0.0002 (4%)  LPL: -0.0005 (5%)  ADIPOQ: -0.0001 (1%)
+23:21:40-scGPT-INFO-<module>:   zero CEBPB   -> PPARG: -0.0032 (56%)  CEBPA: -0.0016 (46%)  CEBPD: -0.0073 (44%)  SREBF1: -0.0038 (41%)  FABP4: -0.0048 (54%)  CD36: -0.0048 (57%)  PLIN1: -0.0022 (49%)  LPL: -0.0034 (44%)  ADIPOQ: -0.0031 (54%)
+23:21:40-scGPT-INFO-<module>:   zero CEBPD   -> PPARG: -0.0037 (61%)  CEBPA: -0.0014 (43%)  CEBPB: -0.0085 (55%)  SREBF1: -0.0051 (48%)  FABP4: -0.0063 (66%)  CD36: -0.0056 (66%)  PLIN1: -0.0005 (10%)  LPL: -0.0044 (49%)  ADIPOQ: -0.0037 (61%)
+23:21:40-scGPT-INFO-<module>:   zero SREBF1  -> PPARG: -0.0024 (44%)  CEBPA: -0.0024 (63%)  CEBPB: -0.0092 (61%)  CEBPD: -0.0097 (58%)  FABP4: -0.0055 (59%)  CD36: -0.0057 (68%)  PLIN1: -0.0023 (51%)  LPL: -0.0055 (62%)  ADIPOQ: -0.0032 (55%)
+23:21:40-scGPT-INFO-<module>:   zero FABP4   -> PPARG: -0.0002 (2%)  CEBPA: -0.0044 (89%)  CEBPB: -0.0138 (79%)  CEBPD: -0.0128 (74%)  SREBF1: -0.0146 (90%)  CD36: -0.0059 (70%)  PLIN1: -0.0037 (69%)  LPL: -0.0090 (76%)  ADIPOQ: -0.0121 (93%)
+23:21:40-scGPT-INFO-<module>:   zero CD36    -> PPARG: -0.0071 (80%)  CEBPA: -0.0045 (89%)  CEBPB: -0.0164 (81%)  CEBPD: -0.0153 (79%)  SREBF1: -0.0155 (92%)  FABP4: -0.0177 (93%)  PLIN1: -0.0066 (82%)  LPL: -0.0127 (87%)  ADIPOQ: -0.0129 (93%)
+23:21:40-scGPT-INFO-<module>:   zero PLIN1   -> PPARG: +0.0251 (100%)  CEBPA: -0.0095 (100%)  CEBPB: -0.0140 (79%)  CEBPD: -0.0217 (91%)  SREBF1: -0.0203 (96%)  FABP4: +0.0051 (57%)  CD36: +0.0168 (95%)  LPL: +0.0067 (69%)  ADIPOQ: -0.0034 (59%)
+23:21:40-scGPT-INFO-<module>:   zero LPL     -> PPARG: -0.0029 (51%)  CEBPA: -0.0045 (89%)  CEBPB: -0.0137 (79%)  CEBPD: -0.0148 (79%)  SREBF1: -0.0138 (87%)  FABP4: -0.0076 (69%)  CD36: -0.0085 (78%)  PLIN1: -0.0051 (73%)  ADIPOQ: -0.0101 (91%)
+23:21:40-scGPT-INFO-<module>:   zero ADIPOQ  -> PPARG: +0.0300 (100%)  CEBPA: -0.0112 (100%)  CEBPB: -0.0111 (70%)  CEBPD: -0.0194 (87%)  SREBF1: -0.0185 (95%)  FABP4: +0.0125 (84%)  CD36: +0.0232 (100%)  PLIN1: +0.0254 (100%)  LPL: +0.0160 (92%)
+23:21:40-scGPT-INFO-<module>: [T2D] 128 cells, tokenized to (128, 2194)
+23:22:02-scGPT-INFO-<module>: [T2D] 20/110 perturbations done
+23:22:24-scGPT-INFO-<module>: [T2D] 40/110 perturbations done
+23:22:46-scGPT-INFO-<module>: [T2D] 60/110 perturbations done
+23:23:09-scGPT-INFO-<module>: [T2D] 80/110 perturbations done
+23:23:31-scGPT-INFO-<module>: [T2D] 100/110 perturbations done
+23:23:42-scGPT-INFO-<module>: 
+=== [T2D] effect of zeroing each TF, vs. background of 100 random genes ===
+23:23:42-scGPT-INFO-<module>:   zero PPARG   -> CEBPA: -0.0064 (99%)  CEBPB: -0.0233 (94%)  CEBPD: -0.0231 (95%)  SREBF1: -0.0259 (100%)  FABP4: -0.0209 (99%)  CD36: -0.0166 (94%)  PLIN1: -0.0085 (81%)  LPL: -0.0151 (92%)  ADIPOQ: -0.0160 (97%)
+23:23:42-scGPT-INFO-<module>:   zero CEBPA   -> PPARG: +0.0000 (0%)  CEBPB: -0.0007 (2%)  CEBPD: -0.0009 (4%)  SREBF1: -0.0004 (1%)  FABP4: -0.0002 (2%)  CD36: -0.0002 (1%)  PLIN1: +0.0000 (0%)  LPL: -0.0005 (6%)  ADIPOQ: -0.0002 (5%)
+23:23:42-scGPT-INFO-<module>:   zero CEBPB   -> PPARG: -0.0039 (57%)  CEBPA: -0.0015 (54%)  CEBPD: -0.0086 (52%)  SREBF1: -0.0043 (51%)  FABP4: -0.0059 (56%)  CD36: -0.0038 (46%)  PLIN1: -0.0027 (47%)  LPL: -0.0045 (54%)  ADIPOQ: -0.0022 (43%)
+23:23:42-scGPT-INFO-<module>:   zero CEBPD   -> PPARG: -0.0029 (50%)  CEBPA: -0.0010 (44%)  CEBPB: -0.0072 (51%)  SREBF1: -0.0045 (51%)  FABP4: -0.0055 (55%)  CD36: -0.0040 (48%)  PLIN1: -0.0031 (52%)  LPL: -0.0046 (54%)  ADIPOQ: -0.0033 (55%)
+23:23:42-scGPT-INFO-<module>:   zero SREBF1  -> PPARG: -0.0032 (54%)  CEBPA: -0.0016 (54%)  CEBPB: -0.0085 (55%)  CEBPD: -0.0090 (52%)  FABP4: -0.0059 (56%)  CD36: -0.0056 (57%)  PLIN1: -0.0032 (53%)  LPL: -0.0057 (58%)  ADIPOQ: -0.0032 (54%)
+23:23:42-scGPT-INFO-<module>:   zero FABP4   -> PPARG: -0.0005 (12%)  CEBPA: -0.0051 (97%)  CEBPB: -0.0171 (86%)  CEBPD: -0.0177 (86%)  SREBF1: -0.0201 (98%)  CD36: -0.0079 (70%)  PLIN1: -0.0033 (53%)  LPL: -0.0094 (77%)  ADIPOQ: -0.0115 (91%)
+23:23:42-scGPT-INFO-<module>:   zero CD36    -> PPARG: -0.0095 (93%)  CEBPA: -0.0040 (88%)  CEBPB: -0.0182 (87%)  CEBPD: -0.0174 (84%)  SREBF1: -0.0168 (94%)  FABP4: -0.0208 (99%)  PLIN1: -0.0109 (90%)  LPL: -0.0164 (93%)  ADIPOQ: -0.0133 (95%)
+23:23:42-scGPT-INFO-<module>:   zero PLIN1   -> PPARG: +0.0334 (100%)  CEBPA: -0.0120 (100%)  CEBPB: -0.0193 (88%)  CEBPD: -0.0275 (100%)  SREBF1: -0.0257 (100%)  FABP4: +0.0107 (83%)  CD36: +0.0247 (100%)  LPL: +0.0154 (92%)  ADIPOQ: +0.0002 (5%)
+23:23:42-scGPT-INFO-<module>:   zero LPL     -> PPARG: -0.0022 (45%)  CEBPA: -0.0040 (88%)  CEBPB: -0.0154 (85%)  CEBPD: -0.0171 (84%)  SREBF1: -0.0153 (89%)  FABP4: -0.0103 (79%)  CD36: -0.0079 (70%)  PLIN1: -0.0054 (67%)  ADIPOQ: -0.0076 (83%)
+23:23:42-scGPT-INFO-<module>:   zero ADIPOQ  -> PPARG: +0.0251 (100%)  CEBPA: -0.0095 (100%)  CEBPB: -0.0116 (68%)  CEBPD: -0.0184 (88%)  SREBF1: -0.0175 (94%)  FABP4: +0.0096 (78%)  CD36: +0.0198 (99%)  PLIN1: +0.0186 (100%)  LPL: +0.0142 (91%)
+23:23:42-scGPT-INFO-<module>: 
+=== Directional asymmetry: zero A, measure B  vs  zero B, measure A ===
+23:23:42-scGPT-INFO-<module>: [No_Diabetes]
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> LPL: -0.0156   |   zero LPL -> PPARG: -0.0027
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> PLIN1: -0.0105   |   zero PLIN1 -> PPARG: +0.0330
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> ADIPOQ: -0.0190   |   zero ADIPOQ -> PPARG: +0.0403
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> FABP4: -0.0199   |   zero FABP4 -> PPARG: -0.0012
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CD36: -0.0194   |   zero CD36 -> PPARG: -0.0103
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CEBPA: -0.0084   |   zero CEBPA -> PPARG: -0.0005
+23:23:42-scGPT-INFO-<module>: [T1D]
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> LPL: -0.0181   |   zero LPL -> PPARG: -0.0029
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> PLIN1: -0.0078   |   zero PLIN1 -> PPARG: +0.0251
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> ADIPOQ: -0.0215   |   zero ADIPOQ -> PPARG: +0.0300
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> FABP4: -0.0216   |   zero FABP4 -> PPARG: -0.0002
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CD36: -0.0208   |   zero CD36 -> PPARG: -0.0071
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CEBPA: -0.0069   |   zero CEBPA -> PPARG: -0.0007
+23:23:42-scGPT-INFO-<module>: [T2D]
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> LPL: -0.0151   |   zero LPL -> PPARG: -0.0022
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> PLIN1: -0.0085   |   zero PLIN1 -> PPARG: +0.0334
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> ADIPOQ: -0.0160   |   zero ADIPOQ -> PPARG: +0.0251
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> FABP4: -0.0209   |   zero FABP4 -> PPARG: -0.0005
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CD36: -0.0166   |   zero CD36 -> PPARG: -0.0095
+23:23:42-scGPT-INFO-<module>:   zero PPARG -> CEBPA: -0.0064   |   zero CEBPA -> PPARG: +0.0000
+23:23:42-scGPT-INFO-<module>: 
+Saved to diabetes_scGPT_mlm_objective/save/perturb-probe-Nov11-23-16
+23:23:42-scGPT-INFO-<module>: Done.

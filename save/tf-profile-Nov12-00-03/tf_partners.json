@@ -1,0 +1,98 @@
+{
+  "PPARG": [
+    "DGAT2",
+    "GPD1",
+    "ZNF117",
+    "PDE8B"
+  ],
+  "CEBPA": [
+    "KCNQ1OT1",
+    "MTRNR2L12",
+    "SLC7A6",
+    "TMEM132C"
+  ],
+  "MLXIPL": [
+    "PRKAR2B",
+    "PDE8B",
+    "ITSN1",
+    "DMD"
+  ],
+  "ZEB1": [
+    "GPAM",
+    "PDE3B",
+    "PRKAR2B",
+    "ADRA1A"
+  ],
+  "RORA": [
+    "PFKFB1",
+    "ABCD2",
+    "ADCY5",
+    "ADRA1A"
+  ],
+  "TCF4": [
+    "HACD2",
+    "ESRRG",
+    "NWD2",
+    "TMEM131L"
+  ],
+  "FOXP1": [
+    "APCDD1",
+    "HK2",
+    "ABCD2",
+    "PTPRG"
+  ],
+  "EBF1": [
+    "BTNL9",
+    "PCOLCE2",
+    "ASAP1",
+    "ABCA9"
+  ],
+  "BHLHE40": [
+    "TACR1",
+    "TTTY14",
+    "COL24A1",
+    "KAZN-AS1"
+  ],
+  "CREB3L2": [
+    "LINC02240",
+    "LINC02237",
+    "TSKU",
+    "HK2"
+  ],
+  "GLIS3": [
+    "MYCBP2",
+    "TNFRSF21",
+    "TMEM131L",
+    "PDE8B"
+  ],
+  "KLF4": [
+    "PICALM",
+    "CAV1",
+    "CPM",
+    "FZD4"
+  ],
+  "FOXO1": [
+    "DGAT2",
+    "CIDEC",
+    "PLIN4",
+    "PLXNA4"
+  ],
+  "STAT3": [
+    "G0S2",
+    "GPAM",
+    "VLDLR-AS1",
+    "ABHD5"
+  ],
+  "EGR1": [
+    "TTTY10",
+    "XIST",
+    "ZBED3-AS1",
+    "SRGAP2"
+  ],
+  "NFIA": [
+    "CTIF",
+    "TTTY10",
+    "ANGPTL4",
+    "LINC00278"
+  ]
+}

@@ -1,0 +1,53 @@
+00:21:14-scGPT-INFO-<module>: obs columns available: ['orig.ident', 'nCount_RNA', 'nCount_ATAC', 'nFeature_RNA', 'nFeature_ATAC', 'percent.mt', 'TSS.enrichment', 'cell_type', 'condition', 'age', 'sex']
+00:21:16-scGPT-INFO-<module>: donor id taken from obs column 'orig.ident'
+00:21:16-scGPT-INFO-<module>: 13340 cells, 61 donors
+00:21:23-scGPT-INFO-<module>: Donors with >=30 adipocytes: 59
+00:21:23-scGPT-INFO-<module>: No_Diabetes    22
+T2D            19
+T1D            18
+00:21:23-scGPT-INFO-<module>: 
+====================================================================================================
+00:21:23-scGPT-INFO-<module>: Q2/Q3 -- DONOR-LEVEL test (each donor = 1 observation; labels permuted across donors)
+00:21:23-scGPT-INFO-<module>: ====================================================================================================
+00:21:23-scGPT-INFO-<module>: ZEB1-PPARG:  mean r healthy=-0.126  diabetic=-0.171  diff=-0.045  permutation p=0.3229
+00:21:23-scGPT-INFO-<module>: ZEB1-CEBPB:  mean r healthy=+0.044  diabetic=+0.005  diff=-0.039  permutation p=0.1316
+00:21:23-scGPT-INFO-<module>: ZEB1-CEBPA:  mean r healthy=-0.029  diabetic=-0.036  diff=-0.008  permutation p=0.7867
+00:21:23-scGPT-INFO-<module>: ZEB1-CEBPD:  mean r healthy=+0.161  diabetic=+0.154  diff=-0.007  permutation p=0.8045
+00:21:23-scGPT-INFO-<module>: PPARG-LPL:  mean r healthy=+0.405  diabetic=+0.384  diff=-0.021  permutation p=0.6273
+00:21:23-scGPT-INFO-<module>: 
+Building random-pair null for effect size ...
+00:21:28-scGPT-INFO-<module>: Random-pair donor-level |diff|: median=0.020  95th pct=0.064
+00:21:28-scGPT-INFO-<module>:   ZEB1-PPARG: diff=-0.045 -> bigger than 85.0% of random pairs
+00:21:28-scGPT-INFO-<module>:   ZEB1-CEBPB: diff=-0.039 -> bigger than 79.2% of random pairs
+00:21:28-scGPT-INFO-<module>:   ZEB1-CEBPA: diff=-0.008 -> bigger than 22.6% of random pairs
+00:21:28-scGPT-INFO-<module>:   ZEB1-CEBPD: diff=-0.007 -> bigger than 20.8% of random pairs
+00:21:28-scGPT-INFO-<module>:   PPARG-LPL: diff=-0.021 -> bigger than 52.2% of random pairs
+00:21:28-scGPT-INFO-<module>: 
+====================================================================================================
+00:21:28-scGPT-INFO-<module>: Q4 -- CONFOUNDERS: per-donor r ~ diabetic + age + sex   (OLS, numpy lstsq)
+00:21:28-scGPT-INFO-<module>: NOTE: BMI is NOT in this dataset -- that confounder is unaddressed.
+00:21:28-scGPT-INFO-<module>: ====================================================================================================
+00:21:28-scGPT-INFO-<module>: ZEB1-PPARG:  beta_diabetic=-0.050 (SE 0.047, t=-1.06)  beta_age=-0.0023 (t=-0.96)  beta_male=-0.027 (t=-0.57)
+00:21:28-scGPT-INFO-<module>: ZEB1-CEBPB:  beta_diabetic=-0.038 (SE 0.026, t=-1.44)  beta_age=-0.0000 (t=-0.01)  beta_male=-0.006 (t=-0.25)
+00:21:28-scGPT-INFO-<module>: ZEB1-CEBPA:  beta_diabetic=-0.009 (SE 0.030, t=-0.30)  beta_age=-0.0004 (t=-0.28)  beta_male=-0.003 (t=-0.11)
+00:21:28-scGPT-INFO-<module>: ZEB1-CEBPD:  beta_diabetic=-0.001 (SE 0.029, t=-0.03)  beta_age=+0.0020 (t=+1.38)  beta_male=+0.015 (t=+0.53)
+00:21:28-scGPT-INFO-<module>: PPARG-LPL:  beta_diabetic=-0.033 (SE 0.045, t=-0.73)  beta_age=-0.0014 (t=-0.60)  beta_male=+0.039 (t=+0.88)
+00:21:28-scGPT-INFO-<module>: 
+====================================================================================================
+00:21:28-scGPT-INFO-<module>: Q1 -- DIRECTIONALITY probe on ZEB1 <-> PPARG/CEBPs (the test we hadn't run)
+00:21:28-scGPT-INFO-<module>: ====================================================================================================
+00:21:28-scGPT-INFO-__call__: Binning data ...
+00:21:33-scGPT-INFO-<module>: model loaded; missing=0 unexpected=0
+00:22:47-scGPT-INFO-<module>: [No_Diabetes] probe done
+00:24:02-scGPT-INFO-<module>: [T1D] probe done
+00:25:18-scGPT-INFO-<module>: [T2D] probe done
+00:25:18-scGPT-INFO-<module>: 
+pair                zero A -> B  zero B -> A    ratio  (mean over conditions)
+00:25:18-scGPT-INFO-<module>: ZEB1->PPARG             -0.0085      -0.0305      0.3
+00:25:18-scGPT-INFO-<module>: ZEB1->CEBPB             -0.0179      -0.0083      2.2
+00:25:18-scGPT-INFO-<module>: ZEB1->CEBPA             -0.0034      -0.0018      1.9
+00:25:18-scGPT-INFO-<module>: ZEB1->CEBPD             -0.0183      -0.0056      3.3
+00:25:18-scGPT-INFO-<module>: PPARG->LPL               -0.0133      -0.0024      5.4
+00:25:18-scGPT-INFO-<module>: 
+Saved to diabetes_scGPT_mlm_objective/save/zeb1-validation-Nov12-00-21
+00:25:18-scGPT-INFO-<module>: Done.
