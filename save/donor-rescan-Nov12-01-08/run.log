@@ -1,0 +1,66 @@
+saving to diabetes_scGPT_mlm_objective/save/donor-rescan-Nov12-01-08
+13340 cells, 2193 genes, 61 donors
+Donors with >= 30 adipocytes: 59
+No_Diabetes    22
+T2D            19
+T1D            18
+cells per donor: median=161 min=37 max=1066
+edges tested: 2,403,528
+
+==========================================================================================
+T1D vs healthy   (healthy n=22, other n=18)
+==========================================================================================
+edges passing FDR<0.05: 0 / 2,403,528
+smallest raw p: 9.84e-08   smallest q: 0.165
+
+focus pair              r healthy   r other     diff      raw p          q
+ZEB1-PPARG                 -0.126    -0.220   -0.094     0.0819      0.741
+ZEB1-CEBPB                  0.044    -0.011   -0.055     0.0741      0.732
+PPARG-LPL                   0.405     0.400   -0.004      0.934      0.994
+PPARG-PLIN1                 0.439     0.399   -0.040      0.475      0.922
+PPARG-ADIPOQ                0.335     0.325   -0.010       0.84      0.983
+PPARG-FABP4                 0.305     0.378   +0.074      0.185       0.82
+PPARG-CD36                  0.345     0.385   +0.040      0.483      0.923
+MLXIPL-FASN                 0.342     0.323   -0.019      0.661      0.958
+
+==========================================================================================
+T2D vs healthy   (healthy n=22, other n=19)
+==========================================================================================
+edges passing FDR<0.05: 0 / 2,403,528
+smallest raw p: 1.34e-07   smallest q: 0.161
+
+focus pair              r healthy   r other     diff      raw p          q
+ZEB1-PPARG                 -0.126    -0.125   +0.002      0.974      0.997
+ZEB1-CEBPB                  0.044     0.021   -0.023      0.433      0.882
+PPARG-LPL                   0.405     0.348   -0.056       0.28      0.821
+PPARG-PLIN1                 0.439     0.397   -0.042      0.451      0.889
+PPARG-ADIPOQ                0.335     0.277   -0.058      0.261      0.811
+PPARG-FABP4                 0.305     0.342   +0.037      0.489      0.901
+PPARG-CD36                  0.345     0.357   +0.012      0.837      0.977
+MLXIPL-FASN                 0.342     0.262   -0.080     0.0724      0.652
+
+==========================================================================================
+diabetic(pooled) vs healthy   (healthy n=22, other n=37)
+==========================================================================================
+edges passing FDR<0.05: 0 / 2,403,528
+smallest raw p: 9.73e-08   smallest q: 0.0948
+
+focus pair              r healthy   r other     diff      raw p          q
+ZEB1-PPARG                 -0.126    -0.171   -0.045      0.307      0.824
+ZEB1-CEBPB                  0.044     0.005   -0.039      0.139      0.705
+PPARG-LPL                   0.405     0.374   -0.031      0.484      0.894
+PPARG-PLIN1                 0.439     0.398   -0.041       0.37      0.852
+PPARG-ADIPOQ                0.335     0.301   -0.035      0.403      0.866
+PPARG-FABP4                 0.305     0.360   +0.055      0.249      0.792
+PPARG-CD36                  0.345     0.371   +0.025      0.599      0.927
+MLXIPL-FASN                 0.342     0.292   -0.050       0.19      0.751
+
+==========================================================================================
+SUMMARY
+==========================================================================================
+  T1D vs healthy                   edges surviving FDR<0.05: 0   (min q = 0.165)
+  T2D vs healthy                   edges surviving FDR<0.05: 0   (min q = 0.161)
+  diabetic(pooled) vs healthy      edges surviving FDR<0.05: 0   (min q = 0.0948)
+
+Saved to diabetes_scGPT_mlm_objective/save/donor-rescan-Nov12-01-08
+Done.
